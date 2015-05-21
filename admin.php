@@ -15,7 +15,7 @@
 				}
 			});
 */
-			$('button').click(function(){
+			$('#button').click(function(){
 				$('#other_info').hide();
 			});
 		});
@@ -38,8 +38,8 @@
 		<input type = "text" placeholder = "Enter Student Time in">
 		<input type = "text" placeholder = "Enter Student Time Out">
 	</div>
-		<input type = "submit" value = "Submit" name = "button">
-
+		<input type = "submit" value = "Submit">
+		<button id = "button">fuck</button>
 
 	</form>
 
