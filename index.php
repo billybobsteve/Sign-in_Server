@@ -4,7 +4,7 @@
 	</head>
 
 	<body>
-		<form>
+		<form action="action_out.php" method="post">
 			<p>Full name: <input type="text" name = "name" /></p>
 			<p>Destination: <input type="text" destination = "destination" /></p>
 		</form>
