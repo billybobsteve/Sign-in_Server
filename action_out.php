@@ -4,7 +4,7 @@ $dest = htmlspecialchars($_POST['destination']);
 $time_out = date('Y-m-d H:i:s');
 echo "{$name} has just been signed out to {$dest}"; 
 
-$dbhost = "localhost:3306";
+$dbhost = 'localhost';
 $dbhost = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
