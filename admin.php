@@ -2,7 +2,7 @@
 	<head>
 		<title>ADMIN</title>
 		<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
-		<script src="jquery-2.1.4.min.js"/>
+		<script src="jquery-2.1.4.min.js"> </script>
 		<script>
 		$(document).ready(function(){
 			/*
