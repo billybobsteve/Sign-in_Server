@@ -5,7 +5,7 @@
 		<script src="jquery-2.1.4.min.js"> </script>
 		<script>
 		$(document).ready(function(){
-			$('list').on('change', function(){
+			$('#options').on('change', function(){
 				if($(this).val() === "edit_student"){
 					$("#other_info").show();
 				}
