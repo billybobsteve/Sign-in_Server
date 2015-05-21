@@ -1,6 +1,10 @@
-<!DOCTYPE HTML>
-<HTML>
+<html>
 	<head>
-	<title>Sign out/in</title>
+		<title>Sign out/in</title>
 	</head>
-</HTML>
+
+	<body>
+		
+	</body>
+	
+</html>
