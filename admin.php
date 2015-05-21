@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<title>ADMIN</title>
+		<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
+		<script src="jquery-2.1.4.min.js"/>
+		<script src="script.js"/> 
 	</head>
 
 	<body>
@@ -25,7 +28,6 @@
 	</form>
 
 	</body>
-	<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
-	<script src="jquery-2.1.4.min.js"/>
-	<script src="script.js"/> 
+	
+	
 </html>
