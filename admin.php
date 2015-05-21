@@ -3,7 +3,18 @@
 		<title>ADMIN</title>
 		<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
 		<script src="jquery-2.1.4.min.js"/>
-		<script src="script.js"/> 
+		<script type = "text/javascript">
+		$(document).ready(function(){
+			$('list').on('change', function(){
+				if($(this).val() === "edit_student"){
+					$("#other_info").show();
+				}
+				else{
+					$("#other_info").hide();
+				}
+			});
+		});
+		</script> 
 	</head>
 
 	<body>
