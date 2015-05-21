@@ -39,9 +39,8 @@
 		<input type = "text" placeholder = "Enter Student Time Out">
 	</div>
 		<input type = "submit" value = "Submit">
-		<button id = "button">fuck</button>
-
 	</form>
+	<button id = "button">fuck</button>
 
 	</body>
 	
