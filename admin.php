@@ -8,7 +8,7 @@
 		<h3> Choose Action </h3>
 
 		<form action = "admin.php" method = "post" name = "list">
-		<select required id = "options" onChange = "down_change()">
+		<select required id = "options">
 			<option value = "out_students">Get Out Students</option>
 			<option value = "all_students">Get All Students</option>
 			<option value = "edit_student">Edit Student</option>  	
