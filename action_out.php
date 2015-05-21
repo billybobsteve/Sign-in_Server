@@ -1,1 +1,5 @@
-<?php echo htmlspecialchars($_POST['name']) . "has just been signed out to" . <?htmlspecialchars($_POST['destination']); ?>
+<?php 
+$name = htmlspecialchars($_POST['name'])
+$dest = htmlspecialchars($_POST['destination'])
+echo "{$name} has just been signed out to {$dest}"; 
+?>
