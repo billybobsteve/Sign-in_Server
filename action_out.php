@@ -13,7 +13,7 @@ if (!conn) {
 	die('Could not connect: ' . mysql_error());
 }
 
-$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest}, {$time_out})";
+$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$name}', '{$dest}', '{$time_out}')";
 
 echo $sql;
 
