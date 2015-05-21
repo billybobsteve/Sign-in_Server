@@ -15,6 +15,8 @@ if (!conn) {
 
 $sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest}, {$time_out})";
 
+echo $sql;
+
 mysql_select_db('signoutdb');
 
 $retval = mysql_query($sql, $conn);
