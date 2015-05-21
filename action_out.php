@@ -1,7 +1,7 @@
 <?php 
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
-$time_out = date ("Y-m-d H:i:s", $phptime);
+$time_out = date("Y-m-d H:i:s");
 echo "{$name} has just been signed out to {$dest}"; 
 
 $dbhost = 'localhost';
@@ -14,8 +14,6 @@ if (!conn) {
 }
 
 $sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$name}', '{$dest}', '{$time_out}')";
-
-echo $sql;
 
 mysql_select_db('signoutdb');
 
