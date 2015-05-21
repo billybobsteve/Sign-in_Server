@@ -4,8 +4,8 @@ $dest = htmlspecialchars($_POST['destination']);
 $time_out = date('Y-m-d H:i:s');
 echo "{$name} has just been signed out to {$dest}"; 
 
-$dbhost = "52.7.134.39:3036";
-$dbhost = 'root';
+$dbhost = "52.7.134.39:3306";
+$dbhost = 'mysql';
 $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
