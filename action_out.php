@@ -7,7 +7,9 @@ echo "{$name} has just been signed out to {$dest}";
 $dbhost = 'localhost';
 $dbhost = 'root';
 $dbpass = 'ec2inmybutt';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+//$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+$conn = mysql_connect('localhost', 'root', 'ec2inmybutt');
 
 if (!conn) {
 	/*die('Could not connect: ' . mysql_error());*/
