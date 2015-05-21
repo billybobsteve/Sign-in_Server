@@ -13,7 +13,6 @@
 
 		<?php 
 		echo '<p>Hello World</p>'; 
-		phpinfo();
 		?> 
 	</body>
 	<link href="style.css" type="text/css">
