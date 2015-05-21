@@ -5,7 +5,6 @@
 		<script src="jquery-2.1.4.min.js"> </script>
 		<script>
 		$(document).ready(function(){
-			/*
 			$('list').on('change', function(){
 				if($(this).val() === "edit_student"){
 					$("#other_info").show();
@@ -14,10 +13,7 @@
 					$("#other_info").hide();
 				}
 			});
-*/
-			$('#button').click(function(){
-				$('#other_info').hide();
-			});
+
 		});
 		</script> 
 	</head>
@@ -40,7 +36,6 @@
 	</div>
 		<input type = "submit" value = "Submit">
 	</form>
-	<button id = "button">fuck</button>
 
 	</body>
 	
