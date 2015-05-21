@@ -14,7 +14,10 @@ if (!conn) {
 	echo ('Could not connect: ' . mysql_error());
 }
 
-$sql = 'INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest}, {$time_out})';
+//$sql = 'INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest}, {$time_out})';
+
+$sql = 'INSERT INTO Students (Name, Location) VALUES ("Chase", "Chipotle")';
+
 
 mysql_select_db('signoutdb');
 
