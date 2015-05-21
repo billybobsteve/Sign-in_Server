@@ -10,7 +10,8 @@ $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 if (!conn) {
-	die('Could not connect: ' . mysql_error());
+	/*die('Could not connect: ' . mysql_error());*/
+	echo ('Could not connect: ' . mysql_error());
 }
 
 $sql = 'INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest}, {$time_out})';
@@ -18,6 +19,10 @@ $sql = 'INSERT INTO Students (Name, Location, TimeOut) VALUES ({$name}, {$dest},
 mysql_select_db('signoutdb');
 
 $retval = mysql_query($sql, $conn);
+if(! $retval ) {
+  /*die('Could not enter data: ' . mysql_error());*/
+  echo ('Could not enter data: ' . mysql_error());
+}
 
 mysql_close($conn);
 
