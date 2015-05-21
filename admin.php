@@ -5,6 +5,7 @@
 		<script src="jquery-2.1.4.min.js"/>
 		<script>
 		$(document).ready(function(){
+			/*
 			$('list').on('change', function(){
 				if($(this).val() === "edit_student"){
 					$("#other_info").show();
@@ -12,6 +13,10 @@
 				else{
 					$("#other_info").hide();
 				}
+			});
+*/
+			$('button').click(function(){
+				$('#other_info').hide();
 			});
 		});
 		</script> 
@@ -27,13 +32,13 @@
 			<option value = "all_students">Get All Students</option>
 			<option value = "edit_student">Edit Student</option>  	
 		</select>
-		<div id = "other_info" style = "display: none;">
+		<div id = "other_info">
 		<input type = "text" placeholder = "Enter Student Full Name">
 		<input type = "text" placeholder = "Enter Student Location">
 		<input type = "text" placeholder = "Enter Student Time in">
 		<input type = "text" placeholder = "Enter Student Time Out">
 	</div>
-		<input type = "submit" value = "Submit">
+		<input type = "submit" value = "Submit" name = "button">
 
 
 	</form>
