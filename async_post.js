@@ -4,7 +4,7 @@ function post() {
 		var form_data = $('#selection_form').serialize();
 		var post_url = 'action_admin.php';
 	}
-	else if (location.pathname.includes("index.php")) {
+	else if (location.pathname.includes("front.php")) {
 		var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
