@@ -71,13 +71,13 @@ input{
 	clear: both;
 }
 
-.ui-icon ui-icon-triangle-1-n{
+.ui-icon-triangle-1-n{
 	margin-left: 10px;
 	color: #99ff00;
 	float:left;
 }
 
-.ui-icon ui-icon-triangle-1-s{
+.ui-icon-triangle-1-s{
 	margin-right: 10px;
 	float:right;
 }
