@@ -2,6 +2,7 @@
 	<head>
 		<title>ADMIN</title>
 		<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
+		<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 	</head>
 
 	<body>
