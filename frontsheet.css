@@ -66,25 +66,18 @@ input{
 }
 
 .ui-icon{
-	font-size: 14px;
+	font-size: 5px;
 	position: relative;
 	clear: both;
 }
-
+/*
 .ui-icon-triangle-1-n{
 	margin-left: 10px;
 }
 
 .ui-icon-triangle-1-s{
-	margin-right: 10px;]
-}
-
-/*
-.ui-button-text{
-	height: 50%;
-}
-*/
-
+	margin-left: 10px;]
+}*/
 
 
 
