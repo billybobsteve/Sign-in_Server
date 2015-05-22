@@ -49,7 +49,7 @@
 				Time Out: <input type="text" class = "in" id="time"/>
 				<p>
 					<div id = "groupList">
-						<p> Previously entered names: </p>
+						<span> Previously entered names: </span>
 						<ol id="nameList">
 							
 						</ol>
