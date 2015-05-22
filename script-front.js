@@ -1,4 +1,13 @@
-$("#time").val("08:30");
+var pad = function(x){
+	if(x<10){
+		return "0"+x;
+	}
+	return x;
+}
+var now = new Date()
+var hours = new now.getHours();
+var mins = new now.getMinutes();
+$("#time").val(pad(hours)+":"+pad(mins));
 
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 1 },
