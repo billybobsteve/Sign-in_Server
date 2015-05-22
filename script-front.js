@@ -37,4 +37,5 @@ $("#plus").click(function(){
 	$("#nameList").append(
 		"<li>" + $("#name").val() +"</li>"
 	);
+	$("#name").val("")
 });
