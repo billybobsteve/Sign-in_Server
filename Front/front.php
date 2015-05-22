@@ -42,7 +42,7 @@
 			<div id = "dataInput">
 				Full name: <input type="text" name = "name"/>
 				Destination: <input type="text" name = "destination" class = "in"/>
-				Time Out: <input type="" class = "in"/>
+				Time Out: <input type="text" class = "in" id="time"/>
 				<p>
 					<div id = "groupList">
 						Previously entered names:
@@ -63,8 +63,10 @@
 
 
 	<link href="style.css" type="text/css">
-	<script src="timepicker.js"></script>
-	<script src="script-front.js"></script>
 	<script src="jquery-2.1.4.min.js"> </script>
+	<script src="globalize.min.js"> </script>
+	<script src="date.js"> </script>
+	<script src="jquery-ui.min.js"> </script>
+	<script src="script-front.js"> </script>
 
 </html>
