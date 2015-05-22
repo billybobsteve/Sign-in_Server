@@ -40,6 +40,11 @@ input{
 	text-align: left;
 }
 
+#plus{
+	font-family: impact;
+	font-style: normal;
+}
+
 #button{
 	text-align: center;
 	position: relative;
@@ -47,8 +52,8 @@ input{
 	background-color: #89FA8B;
 }
 
-.ui-spinner-button {/*
-	font-size: .5em;
+.ui-spinner-button {
+	font-size: .5em;/*
 	text-align: center;
 	position: relative;
 	cursor: default;*/

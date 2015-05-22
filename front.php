@@ -44,7 +44,8 @@
 		<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 
 			<div id = "dataInput">
-				Full name: <span> <input type="text" name = "name" id="name"/><a id="plus" href="#">+<a></span>
+				Full name: <span> <input type="text" name = "name" id="name"/>
+					<a id="plus" href="#"> <strong> + </strong> <a> </span>
 				Destination: <input type="text" name = "destination" class = "in"/>
 				Time Out: <input type="text" class = "in" id="time"/>
 				<p>
