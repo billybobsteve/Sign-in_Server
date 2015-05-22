@@ -6,7 +6,7 @@ function post() {
 		type:'post',
 		data:form_data
 	});
-	ajax_post.data(return_data);
+	ajax_post.done(return_data);
 }
 
 function return_data(data, textStatus, jqXHR) {
