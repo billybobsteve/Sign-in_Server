@@ -4,9 +4,9 @@ var pad = function(x){
 	}
 	return x;
 }
-var now = new Date()
-var hours = new now.getHours();
-var mins = new now.getMinutes();
+var now = new Date();
+var hours = now.getHours();
+var mins = now.getMinutes();
 $("#time").val(pad(hours)+":"+pad(mins));
 
 $.widget( "ui.timespinner", $.ui.spinner, {
