@@ -2,7 +2,6 @@
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time_out = date("Y-m-d H:i:s");
-echo "{$name} has just been signed out to {$dest}"; 
 
 $dbhost = 'localhost';
 $dbuser = 'root';
@@ -23,5 +22,7 @@ if(! $retval ) {
 }
 
 mysql_close($conn);
+
+echo "{$name} has just been signed out to {$dest}"; 
 
 ?>
