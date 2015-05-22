@@ -3,6 +3,14 @@
 	font-family: "Helvetica", "sans-serif";
 }
 
+html, body {
+	min-height: 100%;
+}
+
+body {
+	position:relative;
+}
+
 h1{
 	margin-top: 2%;
 	text-align: center;
@@ -20,10 +28,8 @@ h1{
 	text-align: center;
 }
 
-#confirmation {
-	margin: auto;
+.overlay {
 	font-size:24px;
-	text-align: center;
 	color:#FF0000;
 	position: absolute;
   	top: 0;
