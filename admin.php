@@ -5,9 +5,9 @@
 	</head>
 
 	<body>
-
+		<div id = "nicee">
 		<h3> Choose Action </h3>
-
+		</div>
 		<form action = "action_admin.php" method = "post">
 		<select required id = "options"  name = "list">
 			<option value = "out_students">Get Out Students</option>
@@ -16,9 +16,9 @@
 		</select>
 		<div id = "other_info">
 		<input type = "text" placeholder = "Enter Student Full Name">
-		<input type = "text" placeholder = "Enter Student Location">
+		<!--<input type = "text" placeholder = "Enter Student Location">
 		<input type = "text" placeholder = "Enter Student Time in">
-		<input type = "text" placeholder = "Enter Student Time Out">
+		<input type = "text" placeholder = "Enter Student Time Out">-->
 	</div>
 		<input type = "submit" value = "Submit">
 	</form>
