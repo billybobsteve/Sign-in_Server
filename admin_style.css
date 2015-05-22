@@ -18,8 +18,8 @@ input {
 
 input[type = "button"] {
 	background: #E27575;
-	height: 50px;
-	width: 100px;
+	height: 25px;
+	width: 150px;
 	border: none;
 	color: #FFF;
 	box-shadow: 1px 1px 5px #B6B6B6;
@@ -33,6 +33,7 @@ input[type = "button"]:hover {
 }
 
 #options {
+	border: 1px solid #DADADA;
 	margin-top: 10px;
 	appearance: none;
 	width: 70%;
@@ -40,7 +41,7 @@ input[type = "button"]:hover {
 	line-height: 20px;
 	outline: 0 none;
 	box-shadow: inset 0px 1px 2px #ECECEC;
-	font-size: 24px;
+	font-size: 16px;
 
 }
 
