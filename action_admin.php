@@ -16,6 +16,7 @@ mysql_select_db('signoutdb');
 
 switch ($option) {
 	case "out_students" :
+		echo "out_students"
 		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL';
 		$retval = mysql_query($sql, $conn);
 		if(! $retval ) {
@@ -29,6 +30,7 @@ switch ($option) {
 		} 
 		break;
 	case "all_students" :
+		echo "all_students"
 		$sql = 'SELECT * FROM Students';
 		$retval = mysql_query($sql, $conn);
 		if(! $retval ) {
