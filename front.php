@@ -44,7 +44,7 @@
 		<form action="action_out.php" method="post">
 
 			<div id = "dataInput">
-				Full name: <input type="text" name = "name"/>
+				Full name: <span> <input type="text" name = "name"/><a href="#">+<a></span>
 				Destination: <input type="text" name = "destination" class = "in"/>
 				Time Out: <input type="text" class = "in" id="time"/>
 				<p>
@@ -69,7 +69,6 @@
 	
 	<script src="jquery-2.1.4.min.js"> </script>
 	<script src="globalize.min.js"> </script>
-	<script src="date.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
 	<script src="script-front.js"> </script>
 
