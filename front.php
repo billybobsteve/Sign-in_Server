@@ -49,12 +49,7 @@
 				Time Out: <input type="text" class = "in" id="time"/>
 				<p>
 					<div id = "groupList">
-						Previously entered names:
-
-						<ol>
-							<li>
-							</li>
-						</ol>
+						<p> Previously entered names: </p>
 					</div>
 
 					<input type="button" value = "Submit" id="button" onclick = "post();"/>
