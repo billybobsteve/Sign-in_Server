@@ -68,12 +68,11 @@ input{
 .ui-icon{
 	font-size: 10px;
 	position: relative;
-	clear: both;
 }
 
 .ui-icon-triangle-1-n{
 	position: relative;
-	margin-top: -50px;
+	margin-top: 50px;
 	color: #445500;
 }
 
