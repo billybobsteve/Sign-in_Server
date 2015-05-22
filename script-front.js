@@ -1,6 +1,8 @@
+var now = new Date();
+var start = new Date(now.getYear(), now.getMonth(), now.getDay(), 8)
 $("#time").timePicker({
-	startTime: "08.00",
-	endTime: "15.00",
+	startTime: start,
+	endTime: now,
 	show24Hours:false,
 	separator: ':',
 	step: 15
