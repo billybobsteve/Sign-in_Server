@@ -50,7 +50,7 @@
 		});
 	</script> 
 	<script>
-		$(function({
+		$(function(){
 			var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
 			$("autocomplete-1").autocomplete({
 				source: availableTags;
