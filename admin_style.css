@@ -44,7 +44,6 @@ input[type = "button"]:hover {
 #options {
 	border: 1px solid #DADADA;
 	margin-top: 15px;
-	margin-left: 50px;
 	appearance: none;
 	width: 70%;
 	height: 40px;
@@ -53,6 +52,10 @@ input[type = "button"]:hover {
 	box-shadow: inset 0px 1px 2px #ECECEC;
 	font-size: 16px;
 
+}
+#other_info {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
