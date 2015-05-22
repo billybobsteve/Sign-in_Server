@@ -24,7 +24,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             a = t[1].split(' ');
             t[1] = a[0];
             b = (a[1] == "AM") ? 1:2;
-            var n = (Number(t[0]) * b * 60 + Number(t[1]));
+            var n = (Number(t[0]) *  b * 60 + Number(t[1]));
             return Number(n);
         }
         return value;
@@ -33,6 +33,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         if(value == null) {
             return '';
         }
+        console.log(value);
         var v = Number(value);
         while(v < 0) {
             v += (24 * 60);
