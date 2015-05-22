@@ -20,6 +20,5 @@
 	<script src="globalize.min.js"> </script>
 	<script src="date.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
-	<script src="timepicker.js"> </script>
 	<script src="script-front.js"> </script>
 </html>
