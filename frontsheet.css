@@ -66,17 +66,16 @@ input{
 }
 
 .ui-icon{
-	font-size: 5px;
+	font-size: 8px;
 	position: relative;
 	clear: both;
 }
 
 .ui-icon-triangle-1-n{
-	margin-left: 10px;
+	margin-top: -10px;
 }
 
 .ui-icon-triangle-1-s{
-	margin-left: 10px;
 	margin-top: 10px;
 }
 
