@@ -4,7 +4,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
       step: 60 * 1000,
       // hours
       page: 60
-    }
+    },
     _parse: function( value ) {
       if ( typeof value === "string" ) {
         // already a timestamp
