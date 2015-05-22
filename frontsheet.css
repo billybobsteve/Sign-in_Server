@@ -53,8 +53,7 @@ input{
 	background-color: #89FA8B;
 }
 
-.ui-spinner-button {
-	font-size: 5px;/*
+.ui-spinner-button {/*
 	text-align: center;
 	position: relative;*/
 	cursor: default;
