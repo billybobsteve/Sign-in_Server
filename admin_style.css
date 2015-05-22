@@ -1,3 +1,9 @@
+body {
+	background-color: lime; 
+	box-shadow: 0px -2px 2px;
+	border: 1px solid aqua;
+}
+
 input {
 	margin-top: 10px;
 	display: block;
@@ -9,8 +15,7 @@ input {
 }
 
 #other_info {
-	height: 10px;
-	width: 50px;
+
 }
 
 h3 {
@@ -22,7 +27,5 @@ h3 {
 #nicee {
 	height: 50px;
 	width: 100%; 
-	background-color: lime; 
-	box-shadow: 0px -2px 2px;
-	border: 1px solid aqua;
+	
 }
