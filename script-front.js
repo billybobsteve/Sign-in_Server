@@ -10,7 +10,7 @@ var mins = now.getMinutes();
 $("#time").val(pad(hours)+":"+pad(mins));
 
 $.widget( "ui.timespinner", $.ui.spinner, {
-    options: { step: 1, page: 1 },
+    options: { step: 1, page: 60 },
     _parse: function( value ) {
         if ( typeof value === "string" ) {
             if ( Number( value ) == value ) {
@@ -21,8 +21,10 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             }
             console.log(value.split(":"));
             var t = value.split(':', 2);
-            t[1] = t[1].split(' ',1);
-            var n = (Number(t[0]) * 60 + Number(t[1]));
+            a = t[1].split(' ');
+            t[1] = a[0];
+            b = (a[1] == "AM") ? 1:2;
+            var n = (Number(t[0]) * b * 60 + Number(t[1]));
             return Number(n);
         }
         return value;
