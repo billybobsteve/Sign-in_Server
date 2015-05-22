@@ -17,5 +17,10 @@ function post() {
 }
 
 function return_data(data, textStatus, jqXHR) {
-	$("#table").html(data);
+	if (location.pathname.includes("admin.php")) {
+		$("#table").html(data);
+	}
+	else if (location.pathname.includes("front.php")) {
+		
+	}
 }
