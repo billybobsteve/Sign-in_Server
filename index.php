@@ -4,7 +4,7 @@
 	</head>
 
 	<body>
-		<form action="../action_out.php" method="post">
+		<form action="action_out.php" method="post">
 			<p>Full name: <input type="text" name = "name" /></p>
 			<p>Destination: <input type="text" name = "destination" /></p>
 			<p>Time Out: <input type="text" name="time" id="time"/></p>
@@ -15,10 +15,10 @@
 		echo '<p>Hello World</p>'; 
 		?> 
 	</body>
-	<link href="../style.css" type="text/css">
-	<script src="../jquery-2.1.4.min.js"> </script>
-	<script src="../globalize.min.js"> </script>
-	<script src="../date.js"> </script>
-	<script src="../jquery-ui.min.js"> </script>
-	<script src="../script-front.js"> </script>
+	<link href="style.css" type="text/css">
+	<script src="jquery-2.1.4.min.js"> </script>
+	<script src="globalize.min.js"> </script>
+	<script src="date.js"> </script>
+	<script src="jquery-ui.min.js"> </script>
+	<script src="script-front.js"> </script>
 </html>
