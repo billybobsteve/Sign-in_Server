@@ -44,8 +44,7 @@ input{
 }
 
 .ui-spinner-button {/*
-	width: 16px;*/
-	height: 50%;
+	height: 50%;*/
 	font-size: .5em;
 	padding: 0;
 	margin: 0;
@@ -53,4 +52,6 @@ input{
 	position: absolute;
 	cursor: default;
 	color: red;
+
+	margin-left: -30px;
 }
