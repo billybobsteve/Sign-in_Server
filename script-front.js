@@ -34,5 +34,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
 });
 $( "#time" ).timespinner();
 $("#plus").click(function(){
-	$("#name").val()
-})
+	$("#nameList").append(
+		"<li>" + $("#name").val() +"</li>"
+	);
+});
