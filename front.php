@@ -41,7 +41,7 @@
 			</div>
 		</p>
 
-		<form action="action_out.php" method="post">
+		<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 
 			<div id = "dataInput">
 				Full name: <span> <input type="text" name = "name"/><a href="#">+<a></span>
@@ -57,7 +57,7 @@
 						</ol>
 					</div>
 
-					<input type="submit" id="button"/>
+					<input type="button" value = "Submit" id="button" onclick = "post();"/>
 				</p>
 
 			</div>
@@ -71,5 +71,6 @@
 	<script src="globalize.min.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
 	<script src="script-front.js"> </script>
+	<script src="asycn_post.js"> </script>
 
 </html>
