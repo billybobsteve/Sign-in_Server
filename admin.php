@@ -21,12 +21,13 @@
 				<input type = "text" placeholder = "Enter Student Time Out">-->
 			</div>
 			<!--<input type = "submit" value = "Submit"> -->
-			<input type = "button" value = "Submit" onclick="function()">
+				<input type = "button" value = "Submit" onclick="post();">
 		</form>
 
 	</body>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
+	<script src="admin_post.js"> </script>
 	<script>
 		$(document).ready(function(){
 			$("#other_info").hide();
