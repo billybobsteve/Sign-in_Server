@@ -1,4 +1,4 @@
-$("#time").val("08:30 AM");
+$("#time").val("08:30");
 
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 1 },
@@ -38,4 +38,10 @@ $("#plus").click(function(){
 		"<li>" + $("#name").val() +"</li>"
 	);
 	$("#name").val("")
+});
+$('body').on('keypress', '#name', function(args) {
+    if (args.keyCode == 13) {
+        $('#plus').click();
+        return false;
+    }
 });
