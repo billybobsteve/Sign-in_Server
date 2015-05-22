@@ -19,6 +19,13 @@ h1{
 	text-align: center;
 }
 
+#confirmation {
+	margin: auto;
+	text-align: center;
+	color:#FF0000;
+
+}
+
 input{
 	border: 1px solid black;
 	background-color: #ABE7F5;
