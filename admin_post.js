@@ -1,4 +1,4 @@
-post() {
+function post() {
 	//var option = document.getElementById("options").value;
 	var form_data = ('#selection_form').serialize();
 	$.ajax({
