@@ -6,11 +6,12 @@ input {
 
 h3 {
 	/*text-shadow: 1px 1px 1px #ccc;*/
+	padding-left: 50px;
 }
 
 #nicee {
-	height: 150px;
-	width: 100px; 
+	height: 50px;
+	width: 200px; 
 	background-color: lime; 
 	box-shadow: 0px -2px 2px
 }
