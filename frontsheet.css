@@ -47,14 +47,14 @@ input{
 	background-color: #89FA8B;
 }
 
-.ui-spinner-button {
+.ui-spinner-button {/*
 	height: 25%;
 	font-size: .5em;
 	text-align: center;
 	position: relative;
-	cursor: default;
-	color: #6b6b6b;
+	cursor: default;*/
 
 	margin-left: -20px;
 	background-color: #e3e3e3;
+	color: #6b6b6b;
 }
