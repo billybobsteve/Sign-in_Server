@@ -67,19 +67,19 @@ input{
 
 .ui-icon{
 	font-size: 14px;
-	position: relative;/*
-	clear: both;*/
+	position: relative;
+	clear: both;
 }
 
 .ui-icon ui-icon-triangle-1-n{
 	margin-left: 5px;
-	color: #999999;/*
-	float:left;*/
+	color: #999999;
+	float:left;
 }
 
 .ui-icon ui-icon-triangle-1-s{
-	margin-right: 5px;/*
-	float:right;*/
+	margin-right: 5px;
+	float:right;
 }
 
 /*
