@@ -21,6 +21,7 @@ function return_data(data, textStatus, jqXHR) {
 		$("#table").html(data);
 	}
 	else if (location.pathname.includes("index.php")) {
-		$("#confirmation").html("<p>You have successfully been signed out.</p>");
+		alert("test");
+		$("#confirmation").html("You have successfully been signed out.");
 	}
 }
