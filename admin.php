@@ -26,6 +26,10 @@
 		</form>
 		<div id="table">
 		</div>
+			<div class="ui-widget">
+	         	<label for="automplete-1">Tags: </label>
+	         	<input id="automplete-1">
+	      	</div>
 	</body>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
@@ -47,7 +51,7 @@
 	<script>
 		$(function{
 			var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
-			$("search").autocomplete({
+			$("autocomplete-1").autocomplete({
 				source: availableTags;
 			});
 		});
