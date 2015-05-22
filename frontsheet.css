@@ -62,6 +62,10 @@ input{
 	background-color: #e3e3e3;*/
 	color: #6b6b6b;
 }
+
+.ui-icon{
+	font-size: 5px;
+}
 /*
 .ui-button-text{
 	height: 50%;
