@@ -16,7 +16,7 @@
 				<option value = "edit_student">Edit Student</option>  	
 			</select>
 			<div id = "other_info">
-				<input type = "text" placeholder = "Search for Student" id = "search">
+				<input type = "text" placeholder = "Search for Student" id = "search" autocomplete = "off">
 				<!--<input type = "text" placeholder = "Enter Student Location">
 				<input type = "text" placeholder = "Enter Student Time in">
 				<input type = "text" placeholder = "Enter Student Time Out">-->
