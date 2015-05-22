@@ -1,4 +1,4 @@
-$("#time").value("08:30 AM");
+$("#time").val("08:30 AM");
 
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: {
