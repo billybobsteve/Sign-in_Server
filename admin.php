@@ -8,7 +8,7 @@
 		<div id = "nicee">
 		<h3> Choose Action </h3>
 		</div>
-		<form action = "action_admin.php" method = "post">
+		<form id = "selection_form" name = "selection_form" action = "action_admin.php" method = "post">
 			<select required id = "options"  name = "list">
 				<option value = "out_students">Get Out Students</option>
 				<option value = "all_students">Get All Students</option>
@@ -20,7 +20,8 @@
 				<input type = "text" placeholder = "Enter Student Time in">
 				<input type = "text" placeholder = "Enter Student Time Out">-->
 			</div>
-			<input type = "submit" value = "Submit">
+			<!--<input type = "submit" value = "Submit"> -->
+			<input type = "button" >
 		</form>
 
 	</body>
