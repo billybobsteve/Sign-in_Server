@@ -5,5 +5,6 @@ $("#time").timePicker({
 	endTime: now,
 	show24Hours:false,
 	separator: ':',
-	step: 15
+	step: 5
 })
+$("time-picker ul").menu()
