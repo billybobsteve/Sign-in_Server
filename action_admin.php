@@ -1,7 +1,7 @@
 <?php 
 
 $option = htmlspecialchars($_POST['list']);
-//echo $option;
+echo $option;
 
 $dbhost = 'localhost';
 $dbuser = 'root';
