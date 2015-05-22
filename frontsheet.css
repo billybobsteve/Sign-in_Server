@@ -58,7 +58,9 @@ input{
 	position: relative;*/
 	cursor: default;
 
-	margin-left: -20px;/*
+	margin-left: -20px;
+	width: 30px;
+	/*
 	background-color: #e3e3e3;*/
 	color: #6b6b6b;
 }
