@@ -18,6 +18,7 @@
 	<link href="style.css" type="text/css">
 	<script src="jquery-2.1.4.min.js"> </script>
 	<script src="globalize.min.js"> </script>
+	<script src="date.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
 	<script src="timepicker.js"> </script>
 	<script src="script-front.js"> </script>
