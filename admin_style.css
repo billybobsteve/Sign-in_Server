@@ -1,7 +1,13 @@
 body {
-	background-color: lime; 
-	box-shadow: 0px -2px 2px;
-	border: 1px solid aqua;
+	margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
 }
 
 input {
@@ -19,13 +25,17 @@ input {
 }
 
 h3 {
-	/*text-shadow: 1px 1px 1px #ccc;*/
+	text-shadow: 1px 1px 1px #FFF;
 	text-align: center;
-	font-family: Helvetica;
+	font-size: 25px;
+	color: #888;
+	display: block;
+	border-bottom: 1px solid #E4E4E4;
+
 }
 
 #nicee {
 	height: 50px;
 	width: 100%; 
-	
+	border: 1px solid aqua;
 }
