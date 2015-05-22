@@ -3,6 +3,10 @@
 	<head>
 		<title>RCDS Senior Sign-in/Sign-out Sheet</title>
 		<link type = "text/css" rel = "stylesheet" href = "frontsheet.css">
+		<link href="jquery-ui.min.css" type="text/css">
+		<link href="jquery-ui.structure.min.css" type="text/css">
+		<link href="jquery-ui.theme.min.css" type="text/css">
+		<link href="style.css" type="text/css">
 	</head>
 
 	<body>
@@ -62,10 +66,7 @@
 	</body>
 
 
-	<link href="jquery-ui.min.css" type="text/css">
-	<link href="jquery-ui.structure.min.css" type="text/css">
-	<link href="jquery-ui.theme.min.css" type="text/css">
-	<link href="style.css" type="text/css">
+	
 	<script src="jquery-2.1.4.min.js"> </script>
 	<script src="globalize.min.js"> </script>
 	<script src="date.js"> </script>
