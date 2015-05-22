@@ -43,13 +43,13 @@ input{
 	background-color: #89FA8B;
 }
 
-.ui-spinner-button {/*
-	height: 50%;*/
+.ui-spinner-button {
+	height: 25%;
 	font-size: .5em;
 	padding: 0;
 	margin: 0;
-	text-align: center;/*
-	position: absolute;*/
+	text-align: center;
+	position: absolute;
 	cursor: default;
 	color: #6b6b6b;
 
