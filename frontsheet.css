@@ -72,14 +72,14 @@ input{
 
 .ui-icon-triangle-1-n{
 	position: relative;
-	margin-top: 50px;
+	padding-top: 50px;
 	color: #445500;
 }
 
 .ui-icon-triangle-1-s{
 	position: relative;
-	margin-left: 18px;
-	margin-top: 15px;
+	padding-left: 18px;
+	padding-top: 15px;
 }
 
 
