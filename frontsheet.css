@@ -36,6 +36,10 @@ input{
 	margin-right: 10%;
 }
 
+#nameList li{
+	text-align: left;
+}
+
 #button{
 	text-align: center;
 	position: relative;
