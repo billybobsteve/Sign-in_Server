@@ -19,7 +19,6 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             if(value == '') {
                 return null;
             }
-            console.log(value.split(":"));
             var t = value.split(':', 2);
             a = t[1].split(' ');
             t[1] = a[0];
