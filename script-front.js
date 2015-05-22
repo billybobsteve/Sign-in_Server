@@ -1,10 +1,24 @@
-var now = new Date();
-var start = new Date(now.getYear(), now.getMonth(), now.getDay(), 8)
-$("#time").timePicker({
-	startTime: start,
-	endTime: now,
-	show24Hours:false,
-	separator: ':',
-	step: 5
-})
-$("time-picker ul").menu()
+$.widget( "ui.timespinner", $.ui.spinner, {
+    options: {
+      // seconds
+      step: 60 * 1000,
+      // hours
+      page: 60
+    }
+    _parse: function( value ) {
+      if ( typeof value === "string" ) {
+        // already a timestamp
+        if ( Number( value ) == value ) {
+          return Number( value );
+        }
+        return +Globalize.parseDate( value );
+      }
+      return value;
+    },
+ 
+    _format: function( value ) {
+      return Globalize.format( new Date(value), "t" );
+    }
+  })
+});
+$( "#time" ).timespinner();
