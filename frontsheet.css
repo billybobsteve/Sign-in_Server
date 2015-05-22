@@ -48,10 +48,11 @@ input{
 	font-size: .5em;
 	padding: 0;
 	margin: 0;
-	text-align: center;
-	position: absolute;
+	text-align: center;/*
+	position: absolute;*/
 	cursor: default;
-	color: red;
+	color: #6b6b6b;
 
-	margin-left: -30px;
+	margin-left: -20px;
+	background-color: #e3e3e3;
 }
