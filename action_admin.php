@@ -1,5 +1,7 @@
 <?php 
 
+echo "test";
+
 $option = htmlspecialchars($_POST['list']);
 echo $option;
 
