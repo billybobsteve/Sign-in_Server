@@ -50,6 +50,9 @@
 				<p>
 					<div id = "groupList">
 						<p> Previously entered names: </p>
+						<ol id="nameList">
+							
+						</ol>
 					</div>
 
 					<input type="button" value = "Submit" id="button" onclick = "post();"/>
