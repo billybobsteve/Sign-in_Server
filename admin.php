@@ -42,10 +42,11 @@
 					$("#other_info").hide();
 				}
 			});
-
-			var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
-			$("search").autocomplete({
-				source: availableTags;
+			$(function{
+				var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
+				$("search").autocomplete({
+					source: availableTags;
+				});
 			});
 		});
 	</script> 
