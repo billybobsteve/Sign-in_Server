@@ -4,7 +4,7 @@ function post() {
 		var form_data = $('#selection_form').serialize();
 		var post_url = 'action_admin.php';
 	}
-	else if (location.pathname.includes("index.php")) {
+	else { //if (location.pathname.includes("index.php")) {
 		var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
@@ -20,7 +20,7 @@ function return_data(data, textStatus, jqXHR) {
 	if (location.pathname.includes("admin.php")) {
 		$("#table").html(data);
 	}
-	else if (location.pathname.includes("index.php")) {
+	else { //if (location.pathname.includes("index.php")) {
 		alert("test");
 		$("#confirmation").html("You have successfully been signed out.");
 	}
