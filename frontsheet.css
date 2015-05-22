@@ -69,7 +69,13 @@ input{
 
 .ui-icon ui-icon-triangle-1-n{
 	margin-left: 5px;
+	color: #999999;
 }
+
+.ui-icon ui-icon-triangle-1-s{
+	margin-right: 5px;
+}
+
 /*
 .ui-button-text{
 	height: 50%;
