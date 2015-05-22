@@ -21,7 +21,7 @@
 				<input type = "text" placeholder = "Enter Student Time Out">-->
 			</div>
 			<!--<input type = "submit" value = "Submit"> -->
-			<input type = "button" >
+			<input type = "button" value = "Submit" onclick="function()">
 		</form>
 
 	</body>
