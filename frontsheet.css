@@ -64,11 +64,11 @@ input{
 }
 
 .ui-icon{
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .ui-icon ui-icon-triangle-1-n{
-	float: right;
+	margin-left: 5px;
 }
 /*
 .ui-button-text{
