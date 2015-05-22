@@ -36,9 +36,16 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         v = (v % (24 * 60));
         var mm = "00" + (v % 60);
         mm = mm.substring(mm.length - 2);
-        var hh = "00" + (Math.floor(v / 60) % 24);
+        var hh = "00" + (Math.floor(v / 60) % 12);
         hh = hh.substring(hh.length - 2);
-        return hh + ":" + mm;
+        var ampm = ""
+        if(Math.floor(v/60)%24 < 12){
+        	ampm="AM"
+        }
+        else{
+        	ampm="PM"
+        }
+        return hh + ":" + mm + " " + ampm;
     }
 });
 $( "#time" ).timespinner();
