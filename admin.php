@@ -15,7 +15,7 @@
 				<option value = "edit_student">Edit Student</option>  	
 			</select>
 			<div id = "other_info">
-				<input type = "text" placeholder = "Enter Student Full Name">
+				<input type = "text" placeholder = "Search for Student" id = "search">
 				<!--<input type = "text" placeholder = "Enter Student Location">
 				<input type = "text" placeholder = "Enter Student Time in">
 				<input type = "text" placeholder = "Enter Student Time Out">-->
@@ -30,6 +30,7 @@
 	
 	<script src="jquery-2.1.4.min.js"> </script>
 	<script src="async_post.js"> </script>
+	<script src="jquery-ui.min.js"> </script>
 	<script>
 		$(document).ready(function(){
 			$("#other_info").hide();
@@ -42,6 +43,10 @@
 				}
 			});
 
+			var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
+			$("search").autocomplete({
+				source: availableTags;
+			});
 		});
 	</script> 
 
