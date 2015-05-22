@@ -42,7 +42,7 @@ switch ($option) {
     		echo "Student name :{$row['Name']}  <br> ".
        	 	"Location : {$row['Location']} <br> ".
          	"Time out : {$row['TimeOut']} <br> ".
-     		"Time in : {$row['TimeIn']} <br>"
+     		"Time in : {$row['TimeIn']} <br>" .
          	"--------------------------------<br>";
 		} 
 		break;
