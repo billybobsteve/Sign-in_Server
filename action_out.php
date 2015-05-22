@@ -23,6 +23,6 @@ if(! $retval ) {
 
 mysql_close($conn);
 
-//echo "{$name} has just been signed out to {$dest}"; 
+echo "{$name} has just been signed out to {$dest}"; 
 
 ?>
