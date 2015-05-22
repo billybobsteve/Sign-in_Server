@@ -21,6 +21,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             }
             console.log(value.split(":"));
             var t = value.split(':', 2);
+            t[1] = t[1].split(' ',1);
             var n = (Number(t[0]) * 60 + Number(t[1]));
             return Number(n);
         }
