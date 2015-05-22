@@ -14,7 +14,7 @@
 		<h1>
 			Sign In and Out of Campus
 		</h1>
-
+		<div id = "confirmation"> </div>
 		<p>
 			<div id = "instructions">
 				<h3 style = "text-align: center"> Instructions: </h3>
@@ -61,7 +61,6 @@
 
 			</div>
 		</form>
-
 	</body>
 
 
