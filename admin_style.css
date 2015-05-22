@@ -11,9 +11,14 @@ body {
 }
 
 input {
-	margin-top: 10px;
+	margin-top: 15px;
 	display: block;
     box-sizing: border-box;
+}
+
+input[type = "text"] {
+	height: 25px;
+	width: 200px;
 }
 
 input[type = "button"] {
