@@ -46,8 +46,8 @@ input{
 .ui-spinner-button {
 	height: 25%;
 	font-size: .5em;
-	text-align: center;/*
-	position: absolute;*/
+	text-align: center;
+	position: absolute;
 	cursor: default;
 	color: #6b6b6b;
 
