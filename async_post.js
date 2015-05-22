@@ -17,5 +17,5 @@ function post() {
 }
 
 function return_data(data, textStatus, jqXHR) {
-	$(document).write(data);
+	$("#table").html(data);
 }
