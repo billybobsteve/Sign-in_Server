@@ -1,5 +1,3 @@
-/**
-
 *{
 	font-size: 18px;
 }
@@ -44,4 +42,18 @@ input{
 	margin-left: 10%;
 	background-color: #89FA8B;
 }
-*/
+
+.ui-spinner-button {
+	width: 16px;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+	color: red;
+}
