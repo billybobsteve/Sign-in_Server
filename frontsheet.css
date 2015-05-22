@@ -72,11 +72,13 @@ input{
 }
 
 .ui-icon-triangle-1-n{
+	position: relative;
 	margin-top: -20px;
 	color: #99ff00;
 }
 
 .ui-icon-triangle-1-s{
+	position: relative;
 	margin-left: 12px;
 	margin-top: 15px;
 }
