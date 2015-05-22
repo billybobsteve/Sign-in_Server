@@ -42,14 +42,16 @@
 					$("#other_info").hide();
 				}
 			});
-			$(function{
-				var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
-				$("search").autocomplete({
-					source: availableTags;
-				});
-			});
 		});
 	</script> 
+	<script>
+		$(function{
+			var availableTags = ["dicks", "penis", "penisbreath", "Poopy"];
+			$("search").autocomplete({
+				source: availableTags;
+			});
+		});
+	</script>
 
 	
 </html>
