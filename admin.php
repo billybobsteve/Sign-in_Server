@@ -9,19 +9,19 @@
 		<h3> Choose Action </h3>
 		</div>
 		<form action = "action_admin.php" method = "post">
-		<select required id = "options"  name = "list">
-			<option value = "out_students">Get Out Students</option>
-			<option value = "all_students">Get All Students</option>
-			<option value = "edit_student">Edit Student</option>  	
-		</select>
-		<div id = "other_info">
-		<input type = "text" placeholder = "Enter Student Full Name">
-		<!--<input type = "text" placeholder = "Enter Student Location">
-		<input type = "text" placeholder = "Enter Student Time in">
-		<input type = "text" placeholder = "Enter Student Time Out">-->
-	</div>
-		<input type = "submit" value = "Submit">
-	</form>
+			<select required id = "options"  name = "list">
+				<option value = "out_students">Get Out Students</option>
+				<option value = "all_students">Get All Students</option>
+				<option value = "edit_student">Edit Student</option>  	
+			</select>
+			<div id = "other_info">
+				<input type = "text" placeholder = "Enter Student Full Name">
+				<!--<input type = "text" placeholder = "Enter Student Location">
+				<input type = "text" placeholder = "Enter Student Time in">
+				<input type = "text" placeholder = "Enter Student Time Out">-->
+			</div>
+			<input type = "submit" value = "Submit">
+		</form>
 
 	</body>
 	
