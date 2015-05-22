@@ -19,6 +19,5 @@ $.widget( "ui.timespinner", $.ui.spinner, {
     _format: function( value ) {
       return Globalize.format( new Date(value), "t" );
     }
-  })
-});
+ });
 $( "#time" ).timespinner();
