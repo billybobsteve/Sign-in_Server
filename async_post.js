@@ -1,10 +1,11 @@
 function post() {
 	//var option = document.getElementById("options").value;
-	var form_data = $('#selection_form').serialize();
 	if (location.pathname.includes("admin.php")){
-		 var post_url = 'action_admin.php';
+		var form_data = $('#selection_form').serialize();
+		var post_url = 'action_admin.php';
 	}
 	else if (location.pathname.includes("index.php")) {
+		var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
 	var ajax_post = $.ajax({
