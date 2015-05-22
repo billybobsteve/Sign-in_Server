@@ -34,10 +34,12 @@ $.widget( "ui.timespinner", $.ui.spinner, {
 });
 $( "#time" ).timespinner();
 $("#plus").click(function(){
-	$("#nameList").append(
-		"<li>" + $("#name").val() +"</li>"
-	);
-	$("#name").val("")
+	if($("#name").val() != "" ){
+		$("#nameList").append(
+			"<li>" + $("#name").val() +"</li>"
+		);
+		$("#name").val("")
+	}
 });
 $('body').on('keypress', '#name', function(args) {
     if (args.keyCode == 13) {
