@@ -33,3 +33,6 @@ $.widget( "ui.timespinner", $.ui.spinner, {
     }
 });
 $( "#time" ).timespinner();
+$("#plus").click(function(){
+	$()
+})
