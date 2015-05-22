@@ -64,7 +64,11 @@ input{
 }
 
 .ui-icon{
-	font-size: 10px;
+	font-size: 12px;
+}
+
+.ui-icon ui-icon-triangle-1-n{
+	float: right;
 }
 /*
 .ui-button-text{
