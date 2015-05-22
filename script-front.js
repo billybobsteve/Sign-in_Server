@@ -29,6 +29,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         return value;
     },
     _format: function( value ) {
+    	console.log("F:"+value);
         if(value == null) {
             return '';
         }
