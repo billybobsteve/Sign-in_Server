@@ -1,6 +1,6 @@
 function post() {
 	//var option = document.getElementById("options").value;
-	var form_data = ('#selection_form').serialize();
+	var form_data = $('#selection_form').serialize();
 	var ajax_post = $.ajax({
 		url:'action_admin.php',
 		type:'post',
