@@ -4,11 +4,11 @@
 	</head>
 
 	<body>
-		<form action="action_out.php" method="post">
+		<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 			<p>Full name: <input type="text" name = "name" /></p>
 			<p>Destination: <input type="text" name = "destination" /></p>
 			<p>Time Out: <input type="text" name="time" id="time"/></p>
-			<p><input type="submit" /></p>
+			<input type = "button" value = "Submit" onclick="post();">
 		</form>
 
 		<?php 
@@ -21,4 +21,5 @@
 	<script src="date.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
 	<script src="script-front.js"> </script>
+	<script src="async_post.js"></script>
 </html>
