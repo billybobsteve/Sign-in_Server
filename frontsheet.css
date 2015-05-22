@@ -43,7 +43,7 @@ input{
 #plus{
 	font-family: impact;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 #button{
@@ -56,8 +56,8 @@ input{
 .ui-spinner-button {
 	font-size: 5px;/*
 	text-align: center;
-	position: relative;
-	cursor: default;*/
+	position: relative;*/
+	cursor: default;
 
 	margin-left: -20px;
 	background-color: #e3e3e3;
