@@ -16,7 +16,7 @@ if (!conn) {
 
 $sql = "";
 
-for ($i = 1, $i < strlen($name_array), $i++) {
+for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
 	$sql .= "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}');";
 }
