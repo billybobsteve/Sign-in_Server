@@ -33,8 +33,10 @@ input[type="text"] {
 	color:#555;
 }
 
-form{
-	
+label {
+    display: block;
+    width: 270px;
+    text-align: right;
 }
 
 .form_text {
