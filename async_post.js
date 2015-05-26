@@ -49,7 +49,7 @@ function return_data(data, textStatus, jqXHR) {
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
 		//console.log(data);
-		var signed_out = data.split(' ');
+		var signed_out = data.trim().split(' ');
 		var message = "";
 		console.log(signed_out);
 		console.log(signed_out.length);
