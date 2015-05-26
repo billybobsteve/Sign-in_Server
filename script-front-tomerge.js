@@ -8,6 +8,7 @@ var insert_overlay = function() {
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
 		$("#confirmation").html("You have successfully been signed out.");
+		setTimeout(insert_overlay, 5000);
 	}
 	else if (zIndex > 0) {
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
