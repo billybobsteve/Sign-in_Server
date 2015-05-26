@@ -34,7 +34,7 @@
 						</ol>
 					</div>
 	 			
-					<div id = "sign-in-instructions">
+					<div id = "sign-in-instructions" class="hide">
 						<p> To sign in: </p>
 						<ol>
 							<li> Enter your full name. </li>
