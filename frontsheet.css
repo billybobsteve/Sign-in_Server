@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-	background: #C0C0C0;
+	background: #F7F7F7;
 	max-width: 800px;
 	margin-left:auto;
     margin-right:auto;
@@ -118,7 +118,7 @@ input{
 	width:125px;
 	text-decoration:none;
 	text-align: center;
-	color:#fff;
+	color:#000080;
   	cursor:pointer;
   	background:#C0C0C0;
   	margin-left: auto; 
