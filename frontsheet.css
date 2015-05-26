@@ -34,13 +34,12 @@ input[type="text"] {
 }
 
 label {
-    display: block;
     width: 270px;
     text-align: right;
 }
 
 .form_text {
-	display: inline-block;
+	display: block;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
