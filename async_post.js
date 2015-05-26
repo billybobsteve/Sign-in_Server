@@ -60,6 +60,7 @@ function return_data(data, textStatus, jqXHR) {
 			message += signed_out[i] + ",";
 		}
 		message = message.substring(0, message.length-1) + ' have successfully been signed out.'
+		insert_overlay(message);
 	}
 }
 
