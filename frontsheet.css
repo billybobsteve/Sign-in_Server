@@ -73,6 +73,7 @@ form{
     /*background-color: #625D5D; */
     border-radius: 5px;
     text-align: center;
+    line-height: 100%;
     z-index: 11; /* 1px higher than the overlay layer */
 }
 /*
