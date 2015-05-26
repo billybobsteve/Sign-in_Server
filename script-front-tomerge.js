@@ -1,6 +1,7 @@
 var insert_overlay = function() {
 	overlay = document.getElementById("overlay");
 	if (overlay.style.zIndex < 0) {
+		console.log("test");
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		overlay.style.zIndex = 10;
 	}
