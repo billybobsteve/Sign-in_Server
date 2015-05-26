@@ -67,7 +67,7 @@ $(document).ready(function(){
 		$("#sign-out-instructions").addClass("hide");
 		$("#sign-in-instructions").removeClass("hide");
 		$("#time-label").html("Time In: ");
-		$("#title").html("Sign In to Campus");
+		$("#title").html("Sign In To Campus");
 		console.log("in clicked");
 	});
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		$("#sign-in-instructions").addClass("hide");
 		$("#sign-out-instructions").removeClass("hide");
 		$("#time-label").html("Time In: ");
-		$("#title").html("Sign Out of Campus");
+		$("#title").html("Sign Out Of Campus");
 		console.log("out clicked");
 	});
 });
