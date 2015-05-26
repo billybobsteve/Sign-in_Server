@@ -57,7 +57,7 @@
 						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in"/>
 					</div>
 					<div class = "form_text">
-						<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
+						<label for = "time" id="time-label">Time Out: </label><input type="text" class = "in" id="time"/>
 						<span id="downbutton">&#x25bc;</span>
 						<span id="upbutton">&#x25b2;</span>
 					</div>
