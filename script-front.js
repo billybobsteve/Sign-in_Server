@@ -12,6 +12,7 @@ console.log("CHASE IS THE BEST PERSON");
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
+    	console.log("PP: "+v);
     	if(Number(v) === NaN){
     		console.log("not number P: "+v);
     		return v;
