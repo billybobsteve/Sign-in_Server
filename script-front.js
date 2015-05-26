@@ -64,6 +64,7 @@ $(document).ready(function(){
 		$("#in-tab").addClass("activeLink");
 		$("#out-tab").removeClass("activeLink");
 		$("#dest-div").addClass("hide");
+		$("#sign-out-instruct").addClass("hide");
 		$("#time-label").html("Time In: ");
 		console.log("in clicked");
 	});
@@ -72,6 +73,7 @@ $(document).ready(function(){
 		$("#out-tab").addClass("activeLink");
 		$("#in-tab").removeClass("activeLink");
 		$("#dest-div").removeClass("hide");
+		$("#sign-in-instruct").addClass("hide");
 		$("#time-label").html("Time In: ");
 		console.log("out clicked");
 	});

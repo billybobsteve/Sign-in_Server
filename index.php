@@ -24,7 +24,7 @@
 				<div id = "instructions">
 					<h3 style = "text-align: center"> Instructions: </h3>
 					
-					<div id = "signInInstruct">
+					<div id="sign-out-instructions">
 						<p> To sign out: </p>
 						<ol>
 							<li> Enter your full name. </li>
@@ -33,8 +33,8 @@
 							<li> Press the submit button. </li>
 						</ol>
 					</div>
-	 			<!--
-					<div id = "signOutInstruct">
+	 			
+					<div id = "sign-in-instructions">
 						<p> To sign in: </p>
 						<ol>
 							<li> Enter your full name. </li>
@@ -42,7 +42,7 @@
 							<li> Press the submit button. </li>
 						</ol>
 					</div>
-				-->
+				
 				</div>
 			</p>
 
