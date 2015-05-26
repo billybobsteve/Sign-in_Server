@@ -67,7 +67,7 @@ $(document).ready(function(){
 		$("#sign-out-instructions").addClass("hide");
 		$("#sign-in-instructions").removeClass("hide");
 		$("#time-label").html("Time In: ");
-		$("#title").html("Sign in to Campus");
+		$("#title").html("Sign In to Campus");
 		console.log("in clicked");
 	});
 
