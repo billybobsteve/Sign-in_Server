@@ -14,8 +14,6 @@ var insert_overlay = function() {
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
 		overlay.style.zIndex = -10;
-		$("#overlay").fadeOut();
-		$("#confirmation").fadeOut();
 		$("#confirmation").html("");
 	}
 }
