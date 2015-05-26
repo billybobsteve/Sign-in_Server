@@ -54,7 +54,7 @@ function return_data(data, textStatus, jqXHR) {
 		console.log(signed_out);
 		console.log(signed_out.length);
 		if (signed_out.length === 1) {
-			message = signed_out[0] + " has successfully been signed out.";
+			message = signed_out[0] + " has successfully been signed out to " + document.getElementById("destination").value.trim();
 			insert_overlay(message);
 			return;
 		}
@@ -63,7 +63,7 @@ function return_data(data, textStatus, jqXHR) {
 		}
 		//console.log(message);
 		//console.log(message.substring(0,message.length-2));
-		message = message.substring(0, message.length-2) + ' have successfully been signed out to ...';
+		message = message.substring(0, message.length-2) + ' have successfully been signed out to' + document.getElementById("destination").value.trim();
 		insert_overlay(message);
 	}
 }
