@@ -11,7 +11,7 @@
 
 	<body>
 		<div class = "overlay"> </div>
-		<div id = "confirmation">Test </div>
+		<div id = "confirmation"> </div>
 		<h1>
 			Sign In and Out of Campus
 		</h1>
