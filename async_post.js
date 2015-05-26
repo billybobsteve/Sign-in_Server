@@ -49,10 +49,10 @@ function return_data(data, textStatus, jqXHR) {
 	}
 }
 
-function serialize_string(string) {
-	while (string.includes(' ') == true) {
-		string.replace(' ', '+');
-		console.log("idk");
+function serialize_string(input_string) {
+	input_string.trim();
+	while (input_string.includes(' ') == true) {
+		input_string.replace(' ', '+');
 	}
-	return string;
+	return input_string;
 }
