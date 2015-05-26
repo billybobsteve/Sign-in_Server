@@ -31,7 +31,8 @@ input[type="text"] {
 	background:#fff;
 	border:1px solid #ccc;
 	color:#555;
-	margin-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 label {
@@ -152,12 +153,14 @@ input{
 .ui-icon-triangle-1-n{
 	position: relative;
 	padding-top: -5000px;
+	cursor:pointer;
 }
 
 .ui-icon-triangle-1-s{
 	position: relative;
 	padding-left: 12px;
 	padding-top: 35px;
+	cursor:pointer;
 }
 
 
