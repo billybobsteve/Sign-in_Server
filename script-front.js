@@ -13,7 +13,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
     	console.log("PP: "+v);
-    	if(Number(v) === NaN){
+    	if(Number(v) !== NaN){
     		console.log("not number P: "+v);
     		return v;
     	}
@@ -23,7 +23,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         return Number(a[0])*3600*multiplier+Number(a[1])*60;
     },
     _format: function( v ) {
-    	if(Number(v) !== NaN){
+    	if(Number(v) === NaN){
     		console.log("not number F: "+v);
     		return v;
     	}
