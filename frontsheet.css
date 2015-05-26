@@ -53,7 +53,7 @@ form{
 
 #dataInput{
 	text-align: center;
-	display: inline-block;
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -99,7 +99,7 @@ input{
 	padding-right: 20%;
 	margin-right: auto;
 	margin-left: auto;
-	display: inline-block;
+	display: block;
 }
 
 #nameList li{
