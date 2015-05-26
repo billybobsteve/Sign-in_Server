@@ -7,14 +7,16 @@
 
 html, body {
 	min-height: 100%;
-
 	margin: 0;
 }
 
 body {
-	position:relative;
-	background:#567;
+	background:#4EBBF5;
 	max-width: 700px;
+	margin-left:auto;
+    margin-right:auto;
+    text-shadow: 1px 1px 1px #FFF;
+    display: block;
 }
 
 h1{
