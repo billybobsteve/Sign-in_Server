@@ -53,8 +53,8 @@
 				</div>
 				<div class = "form_text">
 					<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
-					<span id="upbutton">▲</span>
-					<span id="downbutton">▼</span>
+					<span id="upbutton">&#x25bc;</span>
+					<span id="downbutton">&#x25b2;</span>
 				</div>
 			</div>
 			<div id = "groupList">
