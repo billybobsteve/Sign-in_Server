@@ -55,14 +55,16 @@
 					<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
 				</div>
 			</div>
-			<p id = "groupList">
-				<div>
-					<span> Previously entered names: </span>
-					<ol id="nameList">
-						
-					</ol>
-				</div>
-			</p>
+			<div id = "groupList">
+				<p>
+					<div>
+						<span> Previously entered names: </span>
+						<ol id="nameList">
+							
+						</ol>
+					</div>
+				</p>
+			</div>
 			<input type="button" value = "Submit" id="button" onclick = "post();"/>
 		</form>
 	</body>
