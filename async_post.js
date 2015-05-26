@@ -12,6 +12,8 @@ function post() {
 		var interim = $('#sign_out_form').serializeArray();
 		var form_data = "name=" + serialize_string(interim[0].value); // + ",";
 
+		console.log(form_data);
+
 		var list = document.getElementById('nameList').getElementsByTagName('li');
 		//name_list = [];
 		for (var i = 0; i < list.length; i++) {
