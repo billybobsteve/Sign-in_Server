@@ -51,6 +51,7 @@ function return_data(data, textStatus, jqXHR) {
 		//console.log(data);
 		var signed_out = data.split(' ');
 		var message = "";
+		console.log(signed_out.length);
 		if (signed_out.length === 1) {
 			message = signed_out[0] + " has successfully been signed out.";
 			insert_overlay(message);
