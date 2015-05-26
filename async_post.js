@@ -12,8 +12,8 @@ function post() {
 		var interim = $('#sign_out_form').serializeArray();
 		var form_data = "name=" + serialize_string(interim[0].value); // + ",";
 
-		console.log(form_data);
-		console.log("test");
+		//console.log(form_data);
+		//console.log("test");
 
 		var list = document.getElementById('nameList').getElementsByTagName('li');
 		//name_list = [];
@@ -25,7 +25,7 @@ function post() {
 		form_data += "&destination=" + serialize_string(interim[1].value);
 
 		console.log(form_data);
-		console.log("test2");
+		//console.log("test2");
 
 
 		//var form_data = $('#sign_out_form').serialize();
@@ -45,6 +45,7 @@ function return_data(data, textStatus, jqXHR) {
 	}
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
+		console.log(data);
 		insert_overlay();
 	}
 }

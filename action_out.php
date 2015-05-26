@@ -21,6 +21,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 	$sql .= "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}');";
 }
 
+echo $sql;
 
 mysql_select_db('signoutdb');
 
@@ -31,6 +32,6 @@ if(! $retval ) {
 
 mysql_close($conn);
 
-echo "{$name} has just been signed out to {$dest}"; 
+//echo "{$name} has just been signed out to {$dest}"; 
 
 ?>
