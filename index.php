@@ -57,7 +57,10 @@
 					<span id="upbutton">&#x25b2;</span>
 				</div>
 			</div>
-			<div id = "groupList">
+			<input type="button" value = "Submit" id="button" onclick = "post();"/>
+			
+		</form>
+		<div id = "groupList">
 				<p>
 					<div>
 						<span> Previously entered names: </span>
@@ -67,9 +70,6 @@
 					</div>
 				</p>
 			</div>
-			<input type="button" value = "Submit" id="button" onclick = "post();"/>
-			
-		</form>
 	</body>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
