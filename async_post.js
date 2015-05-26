@@ -23,6 +23,5 @@ function return_data(data, textStatus, jqXHR) {
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
 		insert_overlay();
-		$("#confirmation").html("You have successfully been signed out.");
 	}
 }

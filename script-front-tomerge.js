@@ -7,11 +7,13 @@ var insert_overlay = function() {
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
+		$("#confirmation").html("You have successfully been signed out.");
 	}
 	else if (zIndex > 0) {
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
 		overlay.style.zIndex = -10;
+		$("#confirmation").html("");
 	}
 }
 /*$("#overlay").click(function(){
