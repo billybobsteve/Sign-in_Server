@@ -9,16 +9,19 @@ var hours = now.getHours();
 var mins = now.getMinutes();
 $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
-console.log("not");
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
+    	if(Number(v) !== NaN)
+    		return v;
     	console.log("P: "+v);
         var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
         var multiplier = (a[2] === "AMPM") ? 1:2;
         return Number(a[0])*3600*multiplier+Number(a[1])*60;
     },
     _format: function( v ) {
+    	if(Number(v) === NaN)
+    		return v;
     	console.log("F: "+v);
     	v = Number(v);
     	var h = ("00"+(v%3600)).substring(2);
