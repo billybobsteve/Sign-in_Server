@@ -7,7 +7,7 @@ var pad = function(x){
 var now = new Date();
 var hours = now.getHours();
 var mins = now.getMinutes();
-$("#time").val(pad(hours)+":"+pad(mins)+"AM");
+$("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
