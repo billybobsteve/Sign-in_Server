@@ -21,6 +21,7 @@ h1{
 	margin-top: 2%; 
 	text-align: center;
 	color:#fff;
+	border-bottom: 1px solid gray
 }
 
 input[type="submit"]:hover{
@@ -38,6 +39,8 @@ input[type="text"] {
 label {
     width: 270px;
     text-align: left;
+    margin-right: auto;
+	margin-left: auto;
 }
 
 .form_text {
@@ -117,7 +120,7 @@ input{
 }
 
 #button{
-	width:100px;
+	width:125px;
 	text-decoration:none;
 	text-align: center;
 	color:#fff;
