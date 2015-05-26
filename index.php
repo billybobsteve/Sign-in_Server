@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<div class = "overlay"> </div>
+		<div id = "overlay"> </div>
 		<div id = "confirmation"> </div>
 		<h1>
 			Sign In and Out of Campus
@@ -70,5 +70,6 @@
 	<script src="jquery-ui.min.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post.js"> </script>
+	<script src="script-front-tomerge.js"> </script>
 
 </html>
