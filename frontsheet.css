@@ -39,8 +39,6 @@ form{
 
 .form_text {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 10px;
 }
 
@@ -111,7 +109,7 @@ input{
 }
 
 #button{
-	width:150px;
+	width:100px;
 	text-decoration:none;
 	text-align: center;
 	color:#fff;
