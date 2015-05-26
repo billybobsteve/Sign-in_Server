@@ -40,7 +40,8 @@ form{
 .form_text {
 	display: block;
 	margin-top: 10px;
-
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #instructions{
@@ -51,9 +52,10 @@ form{
 }
 
 #dataInput{
-	margin: auto;
 	text-align: center;
 	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #overlay {
@@ -95,7 +97,8 @@ input{
 	border:1px solid black;
 	padding-left: 4px;
 	padding-right: 20%;
-	margin-right: 5%;
+	margin-right: auto;
+	margin-left: auto;
 	display: inline-block;
 }
 
