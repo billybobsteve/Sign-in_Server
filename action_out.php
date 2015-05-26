@@ -14,7 +14,13 @@ if (!conn) {
 	die('Could not connect: ' . mysql_error());
 }
 
-$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$name}', '{$dest}', '{$time_out}')";
+$sql = "";
+
+for ($i = 1, $i < strlen($name_array), $i++) {
+	$current_name = $name_array[$i];
+	$sql .= "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}');";
+}
+
 
 mysql_select_db('signoutdb');
 
