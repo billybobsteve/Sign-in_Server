@@ -46,7 +46,7 @@
 			<div id = "dataInput">
 				<div class = "form_text">
 					<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name"/>
-					<a id="plus" href="#"> <strong> + </strong> <a> </span>
+					<a id="plus" href="#"> <strong> + </strong> </a> </span>
 				</div>
 				<div class = "form_text">
 					<label for = "destination">Destination: </label> <input type="text" name = "destination" class = "in"/>
