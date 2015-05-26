@@ -13,7 +13,7 @@ $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
     	console.log("PP: "+v);
-    	if(Number(v) === NaN){
+    	if(isNaN(v)){
     		console.log("P: "+v);
         	var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
         	var multiplier = (a[2] === "AMPM") ? 1:2;
