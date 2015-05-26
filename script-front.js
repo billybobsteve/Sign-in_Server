@@ -11,18 +11,20 @@ var sec_since_midnight = hours*3600+mins*60;
 $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
 
-format = function(v) {
-	console.log(v)
+
+var format = function (v) {
+	console.log(v);
 	v = Number(v);
-	var h = v%3600;
-	v = Math.floor(v / 3600);
-	var m = pad(v % 60);
-	var ampm = (h < 12) ? "AM":"PM";
-	h %= 12;
-	h = pad(h)
-	console.log(h+":"+"m")
-	return h+":"+m+" "+ampm;
-}
+	var h = Math.floor(v / 3600);
+	v = v - h*3600;
+	var m = pad(Math.floor(v / 60));
+	var ampm = (h < 12) ? "AM" : "PM";
+	if(h!=12)
+		h %= 12;
+	h = pad(h);
+	console.log(h + ":" + "m");
+	return h + ":" + m + " " + ampm;
+};
 
 $("#upbutton").click(function(){
 	sec_since_midnight+=60;
@@ -46,6 +48,7 @@ $("#plus").click(function(){
 		$("#name").val("")
 	}
 });
+
 $('body').on('keypress', '#name', function(args) {
 	if (args.keyCode == 13) {
 		$('#plus').click();
