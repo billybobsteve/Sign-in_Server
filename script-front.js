@@ -12,28 +12,27 @@ $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
 
 format = function(v) {
-	if(!isNaN(v)){
-		console.log("F: "+v);
-		v = Number(v);
-		var h = ("00"+(v%3600)).substring(2);
-		v = Math.floor(v / 3600);
-		var m = ("00"+(v%60)).substring(2);
-		var ampm = (h < 12) ? "AM":"PM";
-		h %= 12;
-		return h+":"+m+" "+ampm;
-		
-	}
-	console.log("not correct format F: "+v);
-	return v;
+	v = Number(v);
+	var h = pad(v%3600);
+	v = Math.floor(v / 3600);
+	var m = pad(v % 60);
+	var ampm = (h < 12) ? "AM":"PM";
+	h %= 12;
+	return h+":"+m+" "+ampm;
 }
 
 $("#upbutton").click(function(){
 	sec_since_midnight+=60;
+	if(sec_since_midnight > 86400)
+		sec_since_midnight = 86400;
 	$("#time").val(format(sec_since_midnight));
 })
+
 $("#downbutton").click(function(){
 	sec_since_midnight-=60;
-	$("#time").val(sec_since_midnight);
+	if(sec_since_midnight < 0)
+		sec_since_midnight = 0;
+	$("#time").val(format(sec_since_midnight));
 })
 
 $("#plus").click(function(){
