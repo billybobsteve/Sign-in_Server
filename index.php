@@ -28,7 +28,7 @@
 						<li> Press the submit button. </li>
 					</ol>
 				</div>
-
+ 			<!--
 				<div id = "signOutInstruct">
 					<p> To sign in: </p>
 					<ol>
@@ -37,7 +37,7 @@
 						<li> Press the submit button. </li>
 					</ol>
 				</div>
-
+			-->
 			</div>
 		</p>
 
