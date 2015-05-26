@@ -18,7 +18,7 @@ $sql = "";
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
-	$sql .= "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}'); ";
+	$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}'); ";
 }
 
 echo $sql;
