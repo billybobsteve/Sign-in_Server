@@ -54,6 +54,7 @@ form{
 #dataInput{
 	margin: auto;
 	text-align: center;
+	float: left;
 }
 
 #overlay {
