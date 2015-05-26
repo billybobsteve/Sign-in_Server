@@ -66,6 +66,7 @@
 				</p>
 			</div>
 			<input type="button" value = "Submit" id="button" onclick = "post();"/>
+			
 		</form>
 	</body>
 	

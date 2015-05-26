@@ -125,6 +125,7 @@ input{
 	border-radius: 3px;
 	display: block;
 	border: none;
+	float: bottom;
 }
 
 .ui-spinner-button {/*
