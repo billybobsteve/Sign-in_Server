@@ -1,5 +1,6 @@
 var insert_overlay = function() {
 	overlay = document.getElementById("overlay");
+	overlay.onclick = insert_overlay;
 	confirmation = document.getElementById("confirmation");
 	zIndex = window.getComputedStyle(overlay).getPropertyValue('z-index');
 	//zIndex = style.getPropertyValue('z-index');
