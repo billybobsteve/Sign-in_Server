@@ -15,7 +15,7 @@
 			Sign In and Out of Campus
 		</h1>
 		<div class = "overlay"> </div>
-		<div id = "confirmation"> </div>
+		<div id = "confirmation">Test </div>
 		<p>
 			<div id = "instructions">
 				<h3 style = "text-align: center"> Instructions: </h3>
