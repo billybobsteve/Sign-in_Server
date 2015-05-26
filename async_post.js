@@ -54,7 +54,7 @@ function return_data(data, textStatus, jqXHR) {
 		console.log(signed_out);
 		console.log(signed_out.length);
 		if (signed_out.length === 1) {
-			message = '<span style="color:#FF0000;font-size:18px;opacity:.75">' + signed_out[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#FF0000;font-size:18px;opacity:.75">' + document.getElementById("destination").value.trim() + '</span>';
+			message = '<span style="color:#FF0000;font-size:18px;opacity:.75;">' + signed_out[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#FF0000;font-size:18px;opacity:.75;">' + document.getElementById("destination").value.trim() + '</span>';
 			insert_overlay(message);
 			return;
 		}
@@ -63,7 +63,7 @@ function return_data(data, textStatus, jqXHR) {
 		}
 		//console.log(message);
 		//console.log(message.substring(0,message.length-2));
-		message = '<span style="color:#FF0000;font-size:18px;opacity:.75">' + message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#FF0000;font-size:18px;opacity:.75">' + document.getElementById("destination").value.trim() + '</span>';
+		message = '<span style="color:#FF0000;font-size:18px;opacity:.75;">' + message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#FF0000;font-size:18px;opacity:.75;">' + document.getElementById("destination").value.trim() + '</span>';
 		insert_overlay(message);
 	}
 }
