@@ -12,7 +12,7 @@ var insert_overlay = function() {
 		//setTimeout(insert_overlay, 5000);
 	}
 	else if (zIndex > 0) {
-		overlay.onclick = ;
+		overlay.removeAttribute("onclick");
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
 		overlay.style.zIndex = -10;
