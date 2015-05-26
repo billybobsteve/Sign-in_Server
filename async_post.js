@@ -9,6 +9,13 @@ function post() {
 			alert("Please enter a destination!");
 			return;
 		}
+
+		var list = document.getElementById('nameList').getElementsByTag('li');
+		name_list = [];
+		for (var i = 0; i < list.length, i++) {
+			name_list[i] = list[i].innerText;
+		}
+		console.log(name_list);
 		var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
