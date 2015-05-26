@@ -5,6 +5,10 @@ function post() {
 		var post_url = 'action_admin.php';
 	}
 	else { //if (location.pathname.includes("index.php")) {
+		if (document.getElementById("destination").value.trim() === "") {
+			alert("Please enter a destination!");
+			return;
+		}
 		var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
