@@ -30,11 +30,15 @@ input[type="submit"]:hover{
 }
 
 input[type="text"] {
-	background:#fff;
-	border:1px solid #ccc;
-	color:#555;
+	padding: 10px;
+  	border: solid 1px #fff;
+  	box-shadow: inset 1px 1px 2px 0 #707070;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+input[type = "text"].focus {
+	box-shadow: inset 1px 1px 2px 0 #c9c9c9;
 }
 
 label {
