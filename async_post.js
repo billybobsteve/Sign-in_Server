@@ -53,4 +53,5 @@ function serialize_string(string) {
 	while (string.includes(' ')) {
 		string.replace(' ', '+');
 	}
+	return string;
 }
