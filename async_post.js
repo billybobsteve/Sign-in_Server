@@ -12,7 +12,7 @@ function post() {
 
 		var list = document.getElementById('nameList').getElementsByTag('li');
 		name_list = [];
-		for (var i = 0; i < list.length, i++) {
+		for (var i = 0; i < list.length; i++) {
 			name_list[i] = list[i].innerText;
 		}
 		console.log(name_list);
