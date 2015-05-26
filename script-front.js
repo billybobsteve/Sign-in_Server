@@ -12,7 +12,7 @@ $("#time").val(pad(hours)+":"+pad(mins));
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
-        var a = [v.split(":")[0]].append(v.split(":")[1].split(" "));
+        var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
         var multiplier = (a[2] === "AMPM") ? 1:2;
         return Number(a[0])*3600*multiplier+Number(a[1])*60;
     },
