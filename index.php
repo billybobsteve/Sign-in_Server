@@ -17,8 +17,8 @@
 		<div id="sign-out-tab">
 			<div id = "overlay"> </div>
 			<div id = "confirmation"> </div>
-			<h1>
-				Sign In and Out of Campus
+			<h1 id="title">
+				Sign Out of Campus
 			</h1>
 			<p>
 				<div id = "instructions">
