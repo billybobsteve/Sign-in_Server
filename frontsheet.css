@@ -12,10 +12,10 @@ html, body {
 
 body {
 	background:#4EBBF5;
-	max-width: 700px;
+	max-width: 750px;
 	margin-left:auto;
     margin-right:auto;
-    text-shadow: 1px 1px 1px #FFF;
+    text-shadow: 1px 1px 1px black;	
     display: block;
 }
 
@@ -109,12 +109,10 @@ input{
 	width:100px;
 	text-decoration:none;
 	text-align: center;
-	position: relative;
 	margin-left: 10%;
 	color:#fff;
   	cursor:pointer;
   	background:#3399cc;
-  	border:0;
   	padding:4%;
 }
 
