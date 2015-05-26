@@ -50,8 +50,9 @@ function return_data(data, textStatus, jqXHR) {
 }
 
 function serialize_string(string) {
-	while (string.includes(' ')) {
+	while (string.includes(' ') == true) {
 		string.replace(' ', '+');
+		console.log("idk");
 	}
 	return string;
 }
