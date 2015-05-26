@@ -62,10 +62,22 @@ form{
 } 
 
 #confirmation {
-	text-align: center;
+	/*text-align: center;
 	color:#FF0000;
 	font-size:24px;
-	z-index: 11;
+	z-index: 11; */
+	width: 300px;
+    height: 200px;
+    line-height: 200px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 11; /* 1px higher than the overlay layer */
 }
 
 input{
