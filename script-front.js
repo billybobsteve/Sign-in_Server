@@ -33,7 +33,7 @@ $("#upbutton").click(function(){
 })
 $("#downbutton").click(function(){
 	sec_since_midnight-=60;
-	$("#time").val(format(sec_since_midnight));
+	$("#time").val(sec_since_midnight);
 })
 
 $("#plus").click(function(){
