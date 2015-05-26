@@ -19,12 +19,12 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         	var multiplier = (a[2] === "AMPM") ? 1:2;
         	return Number(a[0])*3600*multiplier+Number(a[1])*60;
     	}
-    	console.log("not number P: "+v);
+    	console.log("not correct format P: "+v);
     	return v;
     },
     _format: function( v ) {
     	if(Number(v) === NaN){
-    		console.log("not number F: "+v);
+    		console.log("not correct format F: "+v);
     		return v;
     	}
     	console.log("F: "+v);
