@@ -56,58 +56,15 @@ $('body').on('keypress', '#name', function(args) {
 		return false;
 	}
 });
-/*
-if ( typeof value === "string" ) {
-			if ( Number( value ) == value ) {
-				return Number( value );
-			}
-			if(value == '') {
-				return null;
-			}
-			var t = value.split(':', 2);
-			a = t[1].split(' ');
-			t[1] = a[0];
-			b = (a[1] == "AM") ? 1:2;
-			var n = (Number(t[0]) *  b * 60 + Number(t[1]));
-			return Number(n);
-		}
-		return value;
 
+$("in-tab").click(function(){
+	$("in-tab").addClass("activeLink");
+	$("out-tab").removeClass("activeLink");
+	$("destination").addClass("hide");
+});
 
-
-console.log("F:"+value);
-		if(value == null) {
-			return '';
-		}
-		console.log(value);
-		var v = Number(value);
-		while(v < 0) {
-			v += (24 * 60);
-		}
-		v = (v % (24 * 60));
-		var mm = "00" + (v % 60);
-		mm = mm.substring(mm.length - 2);
-		var hh = "00" + (Math.floor(v / 60) % 12);
-		hh = hh.substring(hh.length - 2);
-		var ampm = ""
-		if(Math.floor(v/60)%24 < 12){
-			ampm="AM"
-		}
-		else{
-			ampm="PM"
-		}
-		return hh + ":" + mm + " " + ampm;
-
-
-		parse = function(v) {
-		console.log("PP: "+v);
-		if(isNaN(v)){
-			console.log("P: "+v);
-			var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
-			var multiplier = (a[2] === "AMPM") ? 1:2;
-			return Number(a[0])*3600*multiplier+Number(a[1])*60;
-		}
-		console.log("not correct format P: "+v);
-		return v;
-	},
-*/
+$("out-tab").click(function(){
+	$("out-tab").addClass("activeLink");
+	$("in-tab").removeClass("activeLink");
+	$("destination").removeClass("hide");
+});
