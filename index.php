@@ -11,8 +11,8 @@
 
 	<body>
 		<div class="tab-box"> 
-			<a href="javascript:;" class="tabLink activeLink" id="out-tab">Sign Out</a>
-			<a href="javascript:;" class="tabLink " id="in-tab">Sign In</a>
+			<a href="#" class="tabLink activeLink" id="out-tab">Sign Out</a>
+			<a href="#" class="tabLink" id="in-tab">Sign In</a>
 		</div>
 		<div id="sign-out-tab">
 			<div id = "overlay"> </div>
