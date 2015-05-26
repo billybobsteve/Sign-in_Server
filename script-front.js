@@ -12,12 +12,14 @@ $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
 
 format = function(v) {
+	console.log(v)
 	v = Number(v);
 	var h = pad(v%3600);
 	v = Math.floor(v / 3600);
 	var m = pad(v % 60);
 	var ampm = (h < 12) ? "AM":"PM";
 	h %= 12;
+	console.log(h+":"+"m")
 	return h+":"+m+" "+ampm;
 }
 
