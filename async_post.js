@@ -9,14 +9,21 @@ function post() {
 			alert("Please enter a destination!");
 			return;
 		}
+		var interim = $('#sign_out_form').serializeArray();
+		var form_data = "name=" + serialize_string(interim[0].value); // + ",";
 
 		var list = document.getElementById('nameList').getElementsByTagName('li');
-		name_list = [];
+		//name_list = [];
 		for (var i = 0; i < list.length; i++) {
-			name_list[i] = list[i].innerText;
+			//name_list[i] = list[i].innerText;
+			form_data += "," + serialize_string(list[i].innerText);
 		}
-		console.log(name_list);
-		var form_data = $('#sign_out_form').serialize();
+
+		form_data += "&destination=" + serialize_string(interim[1].value);
+
+		console.log(form_data);
+
+		//var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 	}
 	var ajax_post = $.ajax({
@@ -34,5 +41,11 @@ function return_data(data, textStatus, jqXHR) {
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
 		insert_overlay();
+	}
+}
+
+function serialize_string(string) {
+	while (string.contains(' ')) {
+		string.replace(' ', '+');
 	}
 }
