@@ -40,7 +40,8 @@ label {
 }
 
 .form_text {
-	display: block;
+	display: inline-block;
+	width: 270px;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
