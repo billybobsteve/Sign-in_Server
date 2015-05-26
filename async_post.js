@@ -10,7 +10,7 @@ function post() {
 			return;
 		}
 
-		var list = document.getElementById('nameList').getElementsByTag('li');
+		var list = document.getElementById('nameList').getElementsByTagName('li');
 		name_list = [];
 		for (var i = 0; i < list.length; i++) {
 			name_list[i] = list[i].innerText;
