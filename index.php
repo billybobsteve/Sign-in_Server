@@ -57,19 +57,21 @@
 					<span id="upbutton">&#x25b2;</span>
 				</div>
 			</div>
-			<input type="button" value = "Submit" id="button" onclick = "post();"/>
 			
 		</form>
 		<div id = "groupList">
-				<p>
-					<div>
-						<span> Previously entered names: </span>
-						<ol id="nameList">
-							
-						</ol>
-					</div>
-				</p>
-			</div>
+			<p>
+				<div>
+					<span> Previously entered names: </span>
+					<ol id="nameList">
+						
+					</ol>
+				</div>
+			</p>
+		</div>
+		<form>
+			<input type="button" value = "Submit" id="button" onclick = "post();"/>
+		</form>
 	</body>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
