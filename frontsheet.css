@@ -15,7 +15,7 @@ body {
 	max-width: 750px;
 	margin-left:auto;
     margin-right:auto;
-    text-shadow: 1px 1px 1px black;	
+    text-shadow: horizontal-offset vertical-offset blur color;
     display: block;
 }
 
@@ -108,11 +108,9 @@ input{
 	width:100px;
 	text-decoration:none;
 	text-align: center;
-	margin-left: 10%;
 	color:#fff;
   	cursor:pointer;
-  	background:#3399cc;
-  	padding:4%;
+  	background:#3399CC;
 }
 
 .ui-spinner-button {/*
