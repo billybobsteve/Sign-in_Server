@@ -14,20 +14,20 @@ if (!conn) {
 	die('Could not connect: ' . mysql_error());
 }
 
-$sql = "";
+//$sql = "";
+
+//echo $sql;
+
+mysql_select_db('signoutdb');
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
 	$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}'); ";
-}
+	$retval = mysql_query($sql, $conn);
 
-echo $sql;
-
-mysql_select_db('signoutdb');
-
-$retval = mysql_query($sql, $conn);
-if(! $retval ) {
-  die('Could not enter data: ' . mysql_error());
+	if(! $retval ) {
+	  die('Could not enter data: ' . mysql_error());
+	}
 }
 
 mysql_close($conn);
