@@ -63,7 +63,7 @@
 		</form>
 	</body>
 
-
+<script>alert(document.getElementById("myDiv").style.backgroundColor);</script>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
 	<script src="globalize.min.js"> </script>
