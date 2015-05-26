@@ -53,6 +53,7 @@ function serialize_string(input_string) {
 	input_string.trim();
 	while (input_string.includes(' ') == true) {
 		input_string.replace(' ', '+');
+		console.log("test");
 	}
 	return input_string;
 }
