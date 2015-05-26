@@ -48,7 +48,7 @@ function return_data(data, textStatus, jqXHR) {
 	}
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
-		console.log(data);
+		//console.log(data);
 		var signed_out = data.split(' ');
 		var message = "";
 		if (signed_out.length === 1) {
