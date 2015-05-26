@@ -7,38 +7,35 @@ var pad = function(x){
 var now = new Date();
 var hours = now.getHours();
 var mins = now.getMinutes();
+var sec_since_midnight = hours*3600+mins*60;
 $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
-$.widget( "ui.timespinner", $.ui.spinner, {
-	options: { step: 1, page: 60 },
-	_parse: function(v) {
-		console.log("PP: "+v);
-		if(isNaN(v)){
-			console.log("P: "+v);
-			var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
-			var multiplier = (a[2] === "AMPM") ? 1:2;
-			return Number(a[0])*3600*multiplier+Number(a[1])*60;
-		}
-		console.log("not correct format P: "+v);
-		return v;
-	},
-	_format: function(v) {
-		if(!isNaN(v)){
-			console.log("F: "+v);
-			v = Number(v);
-			var h = ("00"+(v%3600)).substring(2);
-			v = Math.floor(v / 3600);
-			var m = ("00"+(v%60)).substring(2);
-			var ampm = (h < 12) ? "AM":"PM";
-			h %= 12;
-			return h+":"+m+" "+ampm;
-			
-		}
-		console.log("not correct format F: "+v);
-		return v;
+
+format = function(v) {
+	if(!isNaN(v)){
+		console.log("F: "+v);
+		v = Number(v);
+		var h = ("00"+(v%3600)).substring(2);
+		v = Math.floor(v / 3600);
+		var m = ("00"+(v%60)).substring(2);
+		var ampm = (h < 12) ? "AM":"PM";
+		h %= 12;
+		return h+":"+m+" "+ampm;
+		
 	}
-});
-$( "#time" ).timespinner();
+	console.log("not correct format F: "+v);
+	return v;
+}
+
+$("#upbutton").click(function(){
+	sec_since_midnight+=60;
+	$("#time").val(format(sec_since_midnight));
+})
+$("#downbutton").click(function(){
+	sec_since_midnight-=60;
+	$("#time").val(format(sec_since_midnight));
+})
+
 $("#plus").click(function(){
 	if($("#name").val() != "" ){
 		$("#nameList").append(
@@ -94,4 +91,17 @@ console.log("F:"+value);
 			ampm="PM"
 		}
 		return hh + ":" + mm + " " + ampm;
+
+
+		parse = function(v) {
+		console.log("PP: "+v);
+		if(isNaN(v)){
+			console.log("P: "+v);
+			var a = [v.split(":")[0]].concat(v.split(":")[1].split(" "));
+			var multiplier = (a[2] === "AMPM") ? 1:2;
+			return Number(a[0])*3600*multiplier+Number(a[1])*60;
+		}
+		console.log("not correct format P: "+v);
+		return v;
+	},
 */
