@@ -5,6 +5,8 @@ $time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
 
+echo count($name_array);
+
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
