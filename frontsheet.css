@@ -15,7 +15,6 @@ body {
 	max-width: 750px;
 	margin-left:auto;
     margin-right:auto;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 h1{
@@ -31,7 +30,6 @@ input[type="submit"]:hover{
 input[type="text"] {
 	background:#fff;
 	border:1px solid #ccc;
-	display: block;
 	color:#555;
 }
 
@@ -114,6 +112,7 @@ input{
   	background:#3399CC;
   	box-shadow: 1px 1px 5px #B6B6B6;
 	border-radius: 3px;
+	display: block;
 	border: none;
 }
 
