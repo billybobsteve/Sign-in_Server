@@ -58,7 +58,7 @@ function return_data(data, textStatus, jqXHR) {
 			insert_overlay(message);
 			return;
 		}
-		for (var i = 0; i < signed_out.length-1; i++) {
+		for (var i = 0; i < signed_out.length; i++) {
 			message += signed_out[i] + ", ";
 		}
 		//console.log(message);
