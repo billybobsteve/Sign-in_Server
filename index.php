@@ -49,7 +49,7 @@
 					<a id="plus" href="#"> <strong> + </strong> </a> </span>
 				</div>
 				<div class = "form_text">
-					<label for = "destination">Destination: </label> <input type="text" name = "destination" class = "in"/>
+					<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in"/>
 				</div>
 				<div class = "form_text">
 					<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
