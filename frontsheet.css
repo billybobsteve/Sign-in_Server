@@ -21,7 +21,10 @@ h1{
 	margin-top: 2%; 
 	text-align: center;
 	color:#fff;
-	border-bottom: 1px solid gray
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	margin-bottom: auto;
 }
 
 input[type="submit"]:hover{
