@@ -49,11 +49,10 @@ function return_data(data, textStatus, jqXHR) {
 	}
 }
 
-function serialize_string(input_string) {
-	input_string.trim();
-	while (input_string.includes(' ') == true) {
-		input_string.replace(' ', '+');
-		console.log("test");
-	}
-	return input_string;
+function serialize_string(string) {
+	string.trim();
+	while (string.includes(' ')) {
+		string = string.replace(' ', '+');
+	}	
+	return string;
 }
