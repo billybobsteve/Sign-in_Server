@@ -11,8 +11,38 @@ $("#time").val(pad(hours)+":"+pad(mins));
 
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
-    _parse: function( value ) {
-        if ( typeof value === "string" ) {
+    _parse: function( v ) {
+        var a = [v.split(":")[0]].append(v.split(":")[1].split(" "));
+        var multiplier = (a[2] === "AMPM") ? 1:2;
+        return Number(a[0])*3600*multiplier+Number(a[1])*60;
+    },
+    _format: function( v ) {
+    	v = Number(v);
+    	var h = ("00"+(v%3600)).substring(2);
+    	v = Math.floor(v / 3600);
+    	var m = ("00"+(v%60)).substring(2);
+    	var ampm = (h < 12) ? "AM":"PM";
+    	h %= 12;
+    	return h+":"+m+" "+ampm;
+    }
+});
+$( "#time" ).timespinner();
+$("#plus").click(function(){
+	if($("#name").val() != "" ){
+		$("#nameList").append(
+			"<li>" + $("#name").val() +"</li>"
+		);
+		$("#name").val("")
+	}
+});
+$('body').on('keypress', '#name', function(args) {
+    if (args.keyCode == 13) {
+        $('#plus').click();
+        return false;
+    }
+});
+/*
+if ( typeof value === "string" ) {
             if ( Number( value ) == value ) {
                 return Number( value );
             }
@@ -27,9 +57,10 @@ $.widget( "ui.timespinner", $.ui.spinner, {
             return Number(n);
         }
         return value;
-    },
-    _format: function( value ) {
-    	console.log("F:"+value);
+
+
+
+console.log("F:"+value);
         if(value == null) {
             return '';
         }
@@ -51,20 +82,4 @@ $.widget( "ui.timespinner", $.ui.spinner, {
         	ampm="PM"
         }
         return hh + ":" + mm + " " + ampm;
-    }
-});
-$( "#time" ).timespinner();
-$("#plus").click(function(){
-	if($("#name").val() != "" ){
-		$("#nameList").append(
-			"<li>" + $("#name").val() +"</li>"
-		);
-		$("#name").val("")
-	}
-});
-$('body').on('keypress', '#name', function(args) {
-    if (args.keyCode == 13) {
-        $('#plus').click();
-        return false;
-    }
-});
+*/
