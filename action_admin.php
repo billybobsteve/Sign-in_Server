@@ -23,10 +23,10 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "Student name :{$row['Name']}  ——— ".
-       	 	"Location : {$row['Location']} ——— ".
-         	"Time out : {$row['TimeOut']} ——— ".
-         	"--------------------------------<br>";
+    		echo "Student name :{$row['Name']} ".
+       	 	"Location : {$row['Location']} ".
+         	"Time out : {$row['TimeOut']} ".
+         	"<br>";
 		} 
 		break;
 	case "all_students" :
@@ -37,11 +37,11 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "Student name :{$row['Name']}  ——— ".
-       	 	"Location : {$row['Location']} ——— ".
-         	"Time out : {$row['TimeOut']} ——— ".
-     		"Time in : {$row['TimeIn']} ———" .
-         	"--------------------------------<br>";
+    		echo "Student name :{$row['Name']} ".
+       	 	"Location : {$row['Location']} ".
+         	"Time out : {$row['TimeOut']} ".
+     		"Time in : {$row['TimeIn']} " .
+         	"<br>";
 		} 
 		break;
 	case "edit_student" :
