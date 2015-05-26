@@ -14,3 +14,6 @@ var insert_overlay = function() {
 		overlay.style.zIndex = -10;
 	}
 }
+/*$("#overlay").click(function(){
+	insert_overlay();
+}); */

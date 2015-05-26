@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<div id = "overlay"> </div>
+		<div id = "overlay" onclick="insert_overlay();"> </div>
 		<div id = "confirmation"> </div>
 		<h1>
 			Sign In and Out of Campus
