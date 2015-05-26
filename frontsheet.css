@@ -37,6 +37,10 @@ form{
 	
 }
 
+.form_text {
+	display: block;
+}
+
 #instructions{
 	text-align: left;
 	margin: 1% 20% 1% 20%;

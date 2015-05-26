@@ -44,10 +44,16 @@
 		<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 
 			<div id = "dataInput">
-				<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name"/>
+				<div class = "form_text">
+					<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name"/>
 					<a id="plus" href="#"> <strong> + </strong> <a> </span>
-				<label for = "destination">Destination: </label> <input type="text" name = "destination" class = "in"/>
-				<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
+				</div>
+				<div class = "form_text">
+					<label for = "destination">Destination: </label> <input type="text" name = "destination" class = "in"/>
+				</div>
+				<div class = "form_text">
+					<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
+				</div>
 				<p>
 					<div id = "groupList">
 						<span> Previously entered names: </span>
