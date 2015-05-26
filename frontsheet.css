@@ -15,6 +15,7 @@ body {
 	max-width: 800px;
 	margin-left:auto;
     margin-right:auto;
+    border: 1px solid gray;
 }
 
 h1{
@@ -22,9 +23,6 @@ h1{
 	text-align: center;
 	color:#fff;
 	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
-	margin-bottom: auto;
 }
 
 input[type="submit"]:hover{
@@ -48,7 +46,7 @@ label {
 
 .form_text {
 	display: inline-block;
-	width: 270px;
+	width: 250px;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
