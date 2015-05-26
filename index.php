@@ -54,17 +54,16 @@
 				<div class = "form_text">
 					<label for = "time">Time Out: </label><input type="text" class = "in" id="time"/>
 				</div>
-				<p>
-					<div id = "groupList">
-						<span> Previously entered names: </span>
-						<ol id="nameList">
-							
-						</ol>
-					</div>
-				</p>
-				
-				<input type="button" value = "Submit" id="button" onclick = "post();"/>
 			</div>
+			<p id = "groupList">
+				<div>
+					<span> Previously entered names: </span>
+					<ol id="nameList">
+						
+					</ol>
+				</div>
+			</p>
+			<input type="button" value = "Submit" id="button" onclick = "post();"/>
 		</form>
 	</body>
 	
