@@ -8,7 +8,7 @@ var insert_overlay = function() {
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
-		$("#confirmation").html("You have successfully been signed out. <br> Click anywhere to dismiss this screen.");
+		$("#confirmation").html('You have successfully been signed out. <div style="font-size:18px;">Click anywhere to dismiss this screen.</div>');
 		//setTimeout(insert_overlay, 5000);
 	}
 	else if (zIndex > 0) {
