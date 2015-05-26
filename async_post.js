@@ -45,7 +45,7 @@ function return_data(data, textStatus, jqXHR) {
 }
 
 function serialize_string(string) {
-	while (string.contains(' ')) {
+	while (string.includes(' ')) {
 		string.replace(' ', '+');
 	}
 }
