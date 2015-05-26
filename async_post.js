@@ -59,7 +59,7 @@ function return_data(data, textStatus, jqXHR) {
 		for (var i = 0; i < signed_out.length; i++) {
 			message += signed_out[i] + ", ";
 		}
-		message = message.substring(0, message.length-1) + ' have successfully been signed out.'
+		message = message.substring(0, message.length-2) + ' have successfully been signed out.'
 		insert_overlay(message);
 	}
 }
