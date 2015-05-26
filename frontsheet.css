@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
 *{
 	font-size: 18px;
-	font-family: "Helvetica", "sans-serif";
+	font-family:'Open Sans',sans-serif;
 }
 
 html, body {
@@ -17,7 +19,6 @@ body {
 h1{
 	margin-top: 2%;/*change for overlay*/
 	text-align: center;
-	background:#3399cc;
 	color:#fff;
 }
 
@@ -32,6 +33,12 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
   background:#2288bb;
+}
+
+input[type="text"] {
+	background:#fff;
+	border:1px solid #ccc;
+	color:#555;
 }
 
 form{
@@ -76,13 +83,13 @@ form{
     text-align: center;
     z-index: 11; /* 1px higher than the overlay layer */
 }
-
+/*
 input{
 	border: 1px solid black;
 	background-color: #ABE7F5;
 
 	margin: auto;
-}
+}*/
 
 #groupList{
 	display: inline-block;
