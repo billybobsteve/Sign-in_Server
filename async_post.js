@@ -19,7 +19,10 @@ function post() {
 		//name_list = [];
 		for (var i = 0; i < list.length; i++) {
 			//name_list[i] = list[i].innerText;
-			form_data += "," + serialize_string(list[i].innerText);
+			if (form_data !== "") {
+				form_data += ",";
+			}
+			form_data += serialize_string(list[i].innerText);
 		}
 
 		form_data += "&destination=" + serialize_string(interim[1].value);
