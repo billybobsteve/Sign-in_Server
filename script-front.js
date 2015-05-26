@@ -61,10 +61,12 @@ $("in-tab").click(function(){
 	$("in-tab").addClass("activeLink");
 	$("out-tab").removeClass("activeLink");
 	$("destination").addClass("hide");
+	console.log("in clicked");
 });
 
 $("out-tab").click(function(){
 	$("out-tab").addClass("activeLink");
 	$("in-tab").removeClass("activeLink");
 	$("destination").removeClass("hide");
+	console.log("out clicked");
 });
