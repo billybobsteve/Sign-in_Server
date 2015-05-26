@@ -61,10 +61,9 @@
 							
 						</ol>
 					</div>
-
-					<input type="button" value = "Submit" id="button" onclick = "post();"/>
 				</p>
-
+				
+				<input type="button" value = "Submit" id="button" onclick = "post();"/>
 			</div>
 		</form>
 	</body>
