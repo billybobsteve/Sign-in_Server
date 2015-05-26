@@ -8,7 +8,7 @@ var now = new Date();
 var hours = now.getHours();
 var mins = now.getMinutes();
 var sec_since_midnight = hours*3600+mins*60;
-$("#time").val(pad(hours)+":"+pad(mins)+" AM");
+$("#time").val(format(sec_since_midnight));
 console.log("CHASE IS THE BEST PERSON");
 
 
