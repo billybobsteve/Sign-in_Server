@@ -19,7 +19,7 @@ function post() {
 		//name_list = [];
 		for (var i = 0; i < list.length; i++) {
 			//name_list[i] = list[i].innerText;
-			if (form_data !== "") {
+			if (form_data !== "name=") {
 				form_data += ",";
 			}
 			form_data += serialize_string(list[i].innerText);
@@ -57,7 +57,7 @@ function return_data(data, textStatus, jqXHR) {
 			return;
 		}
 		for (var i = 0; i < signed_out.length; i++) {
-			message += signed_out[i] + ",";
+			message += signed_out[i] + ", ";
 		}
 		message = message.substring(0, message.length-1) + ' have successfully been signed out.'
 		insert_overlay(message);
