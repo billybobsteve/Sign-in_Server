@@ -9,6 +9,7 @@ var hours = now.getHours();
 var mins = now.getMinutes();
 $("#time").val(pad(hours)+":"+pad(mins)+" AM");
 console.log("CHASE IS THE BEST PERSON");
+console.log("not");
 $.widget( "ui.timespinner", $.ui.spinner, {
     options: { step: 1, page: 60 },
     _parse: function( v ) {
