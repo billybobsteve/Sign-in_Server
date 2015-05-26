@@ -11,7 +11,6 @@ $(document).ready(function(){
 	var sec_since_midnight = hours*3600+mins*60;
 	console.log("CHASE IS THE BEST PERSON");
 
-
 	var format = function (v) {
 		console.log(v);
 		v = Number(v);
@@ -33,7 +32,7 @@ $(document).ready(function(){
 		sec_since_midnight+=60;
 		if(sec_since_midnight > 86400){
 			sec_since_midnight = 86400;
-			}
+		}
 		$("#time").val(format(sec_since_midnight));
 	});
 
@@ -41,7 +40,7 @@ $(document).ready(function(){
 		sec_since_midnight-=60;
 		if(sec_since_midnight < 0){
 			sec_since_midnight = 0;
-			}
+		}
 		$("#time").val(format(sec_since_midnight));
 	});
 
@@ -64,14 +63,14 @@ $(document).ready(function(){
 	$("#in-tab").click(function(){
 		$("#in-tab").addClass("activeLink");
 		$("#out-tab").removeClass("activeLink");
-		$("#destination").addClass("hide");
+		$("#dest-div").addClass("hide");
 		console.log("in clicked");
 	});
 
 	$("#out-tab").click(function(){
 		$("#out-tab").addClass("activeLink");
 		$("#in-tab").removeClass("activeLink");
-		$("#destination").removeClass("hide");
+		$("#dest-div").removeClass("hide");
 		console.log("out clicked");
 	});
 });
