@@ -56,12 +56,12 @@ function return_data(data, textStatus, jqXHR) {
 			insert_overlay(message);
 			return;
 		}
-		for (var i = 0; i < signed_out.length; i++) {
+		for (var i = 0; i < signed_out.length-1; i++) {
 			message += signed_out[i] + ", ";
 		}
-		console.log(message);
-		console.log(message.substring(0,message.length-2));
-		message = message.substring(0, message.length-2) + ' have successfully been signed out.'
+		//console.log(message);
+		//console.log(message.substring(0,message.length-2));
+		message = message.substring(0, message.length-2) + ' have successfully been signed out to ...';
 		insert_overlay(message);
 	}
 }
