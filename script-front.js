@@ -8,7 +8,6 @@ var now = new Date();
 var hours = now.getHours();
 var mins = now.getMinutes();
 var sec_since_midnight = hours*3600+mins*60;
-$("#time").val(format(sec_since_midnight));
 console.log("CHASE IS THE BEST PERSON");
 
 
@@ -25,6 +24,8 @@ var format = function (v) {
 	console.log(h + ":" + "m");
 	return h + ":" + m + " " + ampm;
 };
+
+$("#time").val(format(sec_since_midnight));
 
 $("#upbutton").click(function(){
 	sec_since_midnight+=60;
