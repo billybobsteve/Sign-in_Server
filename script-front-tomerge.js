@@ -1,4 +1,4 @@
-var insert_overlay = function() {
+var insert_overlay = function(message) {
 	overlay = document.getElementById("overlay");
 	confirmation = document.getElementById("confirmation");
 	zIndex = window.getComputedStyle(overlay).getPropertyValue('z-index');
@@ -7,7 +7,7 @@ var insert_overlay = function() {
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
-		$("#confirmation").html('You have successfully been signed out. <div style="font-size:18px;color:#FFFFFF;opacity:.75;">Click anywhere to dismiss this notification.</div>');
+		$("#confirmation").html(message + '<div style="font-size:18px;color:#FFFFFF;opacity:.75;">Click anywhere to dismiss this notification.</div>');
 		overlay.onclick = insert_overlay;
 		//setTimeout(insert_overlay, 5000);
 	}

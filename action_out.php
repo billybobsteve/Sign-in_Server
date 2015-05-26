@@ -28,7 +28,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 	if(! $retval ) {
 	  die('Could not enter data: ' . mysql_error());
 	}
-	echo $current_name . "\r\n"; 
+	echo $current_name . ' '; //"\r\n"; 
 }
 
 mysql_close($conn);

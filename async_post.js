@@ -49,7 +49,17 @@ function return_data(data, textStatus, jqXHR) {
 	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
 		console.log(data);
-		insert_overlay();
+		var signed_out = data.split(' ');
+		var message = "";
+		if (signed_out.length === 1) {
+			message = signed_out[0] + " has successfully been signed out.";
+			insert_overlay(message);
+			return;
+		}
+		for (var i = 0; i < signed_out.length; i++) {
+			message += signed_out[i] + ",";
+		}
+		message = message.substring(0, message.length-1) + ' have successfully been signed out.'
 	}
 }
 
