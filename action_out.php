@@ -5,6 +5,7 @@ $time_out = htmlspecialchars($_POST['datetime']);
 $time_out = date("Y-m-d ") . $time_out;
 $time_out = datetime::createfromformat('Y-m-d H:i:s',$time_out);
 $server_time_out = date("Y-m-d H:i:s");
+echo $time_out;
 
 $name_array = explode(',', $name);
 
