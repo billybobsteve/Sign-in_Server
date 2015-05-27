@@ -7,6 +7,8 @@ $time = $current_date->format('Y-m-d ') . $time;
 
 $time_out = new DateTime($time);
 
+die();
+
 $server_time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
