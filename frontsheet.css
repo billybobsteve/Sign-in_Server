@@ -118,6 +118,8 @@ input{
 	border-top-right-radius: 5px;
 	padding-left: 5px;
 	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-top: 2px;
 	margin-left: -5px;
 }
 
@@ -128,6 +130,7 @@ input{
 	background-color: #ff0000;
 	border-radius: 5px;
 	margin-left: 5px;
+	padding-right: 5px;
 }
 
 #button{
