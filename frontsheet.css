@@ -69,9 +69,8 @@ input[type="text"] {
   	/*background-color: rgba(0,0,0,0.5); changed in javascript */
 } 
 
-#confirmation {/*
-	color:#3399cc;*/
-	color:#000000;
+#confirmation {
+	color:#3399cc;
 	font-size:24px;
 	width: 300px;
     height: 95px;
