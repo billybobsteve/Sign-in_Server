@@ -45,11 +45,17 @@ $(document).ready(function(){
 	});
 
 	$("#plus").click(function(){
+		var index = $("#nameList li").length + 1;
 		if($("#name").val() !== "" ){
 			$("#nameList").append(
-				"<li>" + $("#name").val() +"</li>"
+				"<li id='name-item-"+index+"'>" + $("#name").val() +
+				"<a href='#' id='name-button-"+index+"'>-</a>"
+				"</li>" 
 			);
 			$("#name").val("");
+			$("#name-button-"+index).click(function(){
+				$("#name-item-"+index).remove();
+			});
 		}
 	});
 
