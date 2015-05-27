@@ -124,6 +124,9 @@ input{
 .delete-buttons{
 	font-family: impact;
 	text-decoration: none;
+	color: #ffffff;
+	background-color: #ff0000;
+	border-radius: 20%;
 }
 
 #button{
@@ -151,7 +154,7 @@ input{
 }
 
 #downbutton{
-	
+
 }
 
 .tab-box { 
