@@ -67,8 +67,10 @@
 					</div>
 
 					<div id="arrows_sections">
-						<div id="upHRbutton" class="arrow">&#x25b2;</div>
-						<div id="downHRbutton" class="arrow">&#x25bc;</div>
+						<div id="second_arrows">
+							<div id="upHRbutton" class="arrow">&#x25b2;</div>
+							<div id="downHRbutton" class="arrow">&#x25bc;</div>
+						</div>
 
 						<div id="upMINbutton" class="arrow">&#x25b2;</div>
 						<div id="downMINbutton" class="arrow">&#x25bc;</div>
