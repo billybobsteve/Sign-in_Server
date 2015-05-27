@@ -158,10 +158,12 @@ input{
 
 #second_arrows{
 	display: inline-block;
+	margin-top: 4px;
 }
 
 #third_arrows{
 	display: inline-block;
+	margin-top: 4px;
 }
 
 .arrow{
