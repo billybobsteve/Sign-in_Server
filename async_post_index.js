@@ -66,7 +66,7 @@ function return_data(data, textStatus, jqXHR) {
 		return;
 	}
 	for (var i = 0; i < signed_out.length; i++) {
-		if (signed_out[0] == '1') {
+		if (signed_out[i] == '1') {
 			message += global[i] + ", ";
 		}
 		else {
