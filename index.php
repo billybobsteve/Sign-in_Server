@@ -92,6 +92,7 @@
 	<script src="jquery-2.1.4.min.js"> </script>
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
+	<script src = "jquery.typeahead.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
 	<!--<script src="script-front-tomerge.js"> </script> -->

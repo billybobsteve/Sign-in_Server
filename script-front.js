@@ -100,8 +100,11 @@ $(document).ready(function(){
 	});
 
 	var availableTags = ['pls', 'work?', 'PythonsInTheCloset'];
-	$("name").autocomplete(function(){
-		source: availableTags
+	$("name").typeahead({
+		order: "desc",
+		 source: {
+        	data: ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda"]
+    	}
 	});
 	
 });
