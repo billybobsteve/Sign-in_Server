@@ -143,8 +143,6 @@
 	];
 	 
 	$('.typeahead').typeahead({
-	  hint: true,
-	  highlight: true,
 	  minLength: 1
 	},
 	{
