@@ -98,6 +98,13 @@ $(document).ready(function(){
 		$("#title").html("Sign Out Of Campus");
 		console.log("out clicked");
 	});
+
+	var availableTags = ['pls', 'work?', 'PythonsInTheCloset'];
+
+	$("name").autocomplete(function{
+		source: availableTags
+	});
+	
 });
 
 
