@@ -78,6 +78,7 @@ function post() {
 function return_data_in(data, textStatus, jqXHR) {
 	console.log(data);
 	var signed_in = data.trim().split(',');
+	signed_in.pop();
 	var message = "";
 	var message_error = "";
 	console.log(signed_in);
@@ -107,7 +108,7 @@ function return_data_in(data, textStatus, jqXHR) {
 	message = (signed_in_success != 0) ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
 	message.substring(0, message.length-2) + '</span>' + (signed_in_success > 1 ? ' have' : ' has') + ' successfully been signed back in.' : "";
 	message += (signed_in_failure != 0) ? '<div style="color:#FF0000;font-size:24px;opacity:.9;"> Error: ' +
-	message_error.substring(0, message_error.length-2) + (signed_in_failure > 1 ? ' have' : ' has') + ' has not yet bin signed out. </div>' : "";
+	message_error.substring(0, message_error.length-2) + (signed_in_failure > 1 ? ' have' : ' has') + ' has not yet been signed out. </div>' : "";
 	insert_overlay(message);
 };
 
