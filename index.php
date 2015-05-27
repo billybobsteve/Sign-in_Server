@@ -81,7 +81,7 @@
 			</form>
 
 			<form>
-				<input type="button" value = "Submit" id="button" onclick = "post();"/>
+				<input type="button" value = "Submit" id="button" onclick = "post()"/>
 			</form>
 
 			<div id = "groupList">
