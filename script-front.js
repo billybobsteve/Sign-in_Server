@@ -110,7 +110,7 @@ $(document).ready(function(){
 		$("#dest-div").removeClass("hide");
 		$("#sign-in-instructions").addClass("hide");
 		$("#sign-out-instructions").removeClass("hide");
-		$("#time-label").html("Time In: ");
+		$("#time-label").html("Time Out: ");
 		$("#title").html("Sign Out Of Campus");
 		console.log("out clicked");
 	});
