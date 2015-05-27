@@ -19,6 +19,14 @@ body {
     color: #000080;
 }
 
+@media only screen and (max-device-width: 480px) {
+	body{
+		background: #FAFAFA;
+		color: #BBBBBB;
+	}
+}
+
+
 h1{
 	margin-top: 2%; 
 	text-align: center;
