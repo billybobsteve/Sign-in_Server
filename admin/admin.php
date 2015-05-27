@@ -2,12 +2,12 @@
 	<head>
 		<title>ADMIN</title>
 		<link rel = "stylesheet" type = "text/css" href = "admin_style.css">
-		<link rel = "stylesheet" type = "text/css" href = "jquery-ui.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "../jquery-ui.min.css">
 	</head>
 
 	<body>
 		<div id = "nicee">
-		<h3> Choose Action </h3>
+		    <h3> Choose Action </h3>
 		</div>
 		<form id = "selection_form" name = "selection_form" action = "action_admin.php" method = "post">
 			<select required id = "options"  name = "list">
@@ -29,9 +29,9 @@
 		</div>
 	</body>
 	
-	<script src="jquery-2.1.4.min.js"> </script>
+	<script src="../jquery-2.1.4.min.js"> </script>
 	<script src="async_post_admin.js"> </script>
-	<script src="jquery-ui.min.js"> </script>
+	<script src="../jquery-ui.min.js"> </script>
 	<script>
 		$(document).ready(function(){
 			$("#other_info").hide();
