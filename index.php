@@ -86,7 +86,7 @@
 	<script src="globalize.min.js"> </script>
 	<script src="jquery-ui.min.js"> </script>
 	<script src="script-front.js"> </script>
-	<script src="async_post.js"> </script>
+	<script src="async_post_index.js"> </script>
 	<!--<script src="script-front-tomerge.js"> </script> -->
 
 </html>

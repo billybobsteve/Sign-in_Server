@@ -1,10 +1,5 @@
 function post() {
-	//var option = document.getElementById("options").value;
-	if (window.location.pathname.includes("admin.php")){
-		var form_data = $('#selection_form').serialize();
-		var post_url = 'action_admin.php';
-	}
-	else { //if (location.pathname.includes("index.php")) {
+	//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
 		if (document.getElementById("destination").value.trim() === "") {
 			alert("Please enter a destination!");
 			return;
@@ -33,7 +28,6 @@ function post() {
 
 		//var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
-	}
 	var ajax_post = $.ajax({
 		url:post_url,
 		type:'post',
@@ -43,10 +37,6 @@ function post() {
 }
 
 function return_data(data, textStatus, jqXHR) {
-	if (location.pathname.includes("admin.php")) {
-		$("#table").html(data);
-	}
-	else { //if (location.pathname.includes("index.php")) {
 		//alert("test");
 		//console.log(data);
 		var signed_out = data.trim().split(' ');
@@ -65,7 +55,6 @@ function return_data(data, textStatus, jqXHR) {
 		//console.log(message.substring(0,message.length-2));
 		message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
 		insert_overlay(message);
-	}
 }
 
 function serialize_string(string) {
