@@ -52,7 +52,7 @@ function return_data(data, textStatus, jqXHR) {
 	//return;
 	//console.log(data);
 	var signed_out = data.trim().split(',');
-	//signed_out.pop();
+	signed_out.pop();
 	var message = "";
 	var message_error = "";
 	console.log(signed_out);
