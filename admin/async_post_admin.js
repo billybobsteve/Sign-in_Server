@@ -14,8 +14,16 @@ function post() {
 
 var edit = function(obj){
 	for (var i = 0; i<$("span", obj).length;i++){
-		$($("span", obj)[i]).html("<input type='text' value='"+$($("span", obj)[i]).text()+"'>")
+		$($("span", obj)[i]).html("<input class='text-box' type='text' value='"+$($("span", obj)[i]).text()+"'>")
 	}
+	$(obj).append("<input type='button' value='Apply' id='apply'>");
+	$("#apply").click(function(){
+		for (var i = 0; i<$(".text-box", obj).length;i++){
+			$($("span", obj)[i]).html("<span>"+$($(".text-box", obj)[i]).val()+"</span>");
+		}
+		$("#apply").remove();
+	}
+	});
 }
 
 function return_data(data, textStatus, jqXHR) {
