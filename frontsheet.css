@@ -112,6 +112,10 @@ input{
 	font-family: impact;
 	text-decoration: none;
 	font-size: 20px;
+
+	background-color: #9BE466;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .delete-buttons{
