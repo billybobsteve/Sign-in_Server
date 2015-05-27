@@ -166,6 +166,7 @@ input{
 
 .arrow{
 	font-size: 75%;
+	cursor: pointer;
 }
 
 #upHRbutton{
