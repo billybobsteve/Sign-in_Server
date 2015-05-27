@@ -1,8 +1,9 @@
 <?php 
 
 $name = htmlspecialchars($_POST['name']);
-$time_out = htmlspecialchars($_POST['datetime']);
-$time_out = date("Y-m-d ") . $time_out;
+$time_in = htmlspecialchars($_POST['datetime']);
+$time_in = date("Y-m-d ") . $time_in;
+$time_in = datetime::createfromformat('Y-m-d H:i:s',$time_in);
 $server_time_in = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
