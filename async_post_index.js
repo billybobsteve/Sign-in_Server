@@ -56,7 +56,7 @@ function post() {
 
 		form_data += "&destination=" + serialize_string(interim[1].value);
 
-		form_data += "&datetime=" + datetime;
+		//form_data += "&datetime=" + datetime;
 
 		form_data = form_data.toLowerCase().trim();
 
