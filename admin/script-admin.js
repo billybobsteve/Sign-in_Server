@@ -8,7 +8,10 @@ $(document).ready(function(){
 		}
 	});
 	$("#submit").click(function(){
-		$("table-entry").append("<span href='#' class='button'>Edit</span>");
+		$("table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 	});
+	$("#edit-button").click(){
+		edit("#edit-button").parent());
+	}
 });
 
