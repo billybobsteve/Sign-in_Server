@@ -58,7 +58,7 @@ function return_data(data, textStatus, jqXHR) {
 }
 
 var includes_char = function(str, search_char){
-	for(var i = 0;i<str.length();i++){
+	for(var i = 0;i<str.length;i++){
 		if(str.charAt(i) === search_char){
 			return true;
 		}
