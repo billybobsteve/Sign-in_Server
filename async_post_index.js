@@ -40,6 +40,7 @@ function return_data(data, textStatus, jqXHR) {
 	//alert("test");
 	console.log(data);
 	var signed_out = data.trim().split(',');
+	signed_out.pop();
 	var message = "";
 	console.log(signed_out);
 	console.log(signed_out.length);
