@@ -85,15 +85,15 @@ function return_data_in(data, textStatus, jqXHR) {
 	var signed_in_success = 0;
 	var signed_in_failure = 0;
 
-	for (var i = 0; i < signed_out.length; i++) {
+	for (var i = 0; i < signed_in.length; i++) {
 		if (signed_in[i] == '1') 
 			signed_in_success++;
 		else //if (signed_out[i] == '-1')
 			signed_in_failure++;
 	}
 
-	for (var i = 0; i < signed_out.length; i++) {
-		if (signed_out[i] == '1') {
+	for (var i = 0; i < signed_in.length; i++) {
+		if (signed_in[i] == '1') {
 			message += global[i] + ", ";
 		}
 		else {
