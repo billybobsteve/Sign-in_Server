@@ -106,7 +106,7 @@ var insert_overlay = function(message) {
 		$("#confirmation").html("");
 		confirmation.style.zIndex = -11;
 	}
-}
+};
 /*$("#overlay").click(function(){
 	insert_overlay();
 }); */
