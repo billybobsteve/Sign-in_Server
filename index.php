@@ -99,6 +99,9 @@
 		<div id="sign-in-tab">
 		</div>
 	</body>
+	
+	
+	<script src="jquery-2.1.4.min.js"> </script>
 	<script type="text/javascript">
 		var substringMatcher = function(strs) {
 	  	return function findMatches(q, cb) {
@@ -144,8 +147,6 @@
 	});
 
 	</script>
-	
-	<script src="jquery-2.1.4.min.js"> </script>
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
 	<script src = "typeahead.js"> </script>
