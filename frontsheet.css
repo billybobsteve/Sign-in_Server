@@ -159,11 +159,12 @@ input{
 	font-size: 50%;
 }
 
-#upbutton{
+#upHRbutton{
+	margin-left: -10px;
 }
 
-#downbutton{
-
+#downHRbutton{
+	margin-left: -10px;
 }
 
 .tab-box { 

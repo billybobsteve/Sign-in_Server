@@ -28,7 +28,23 @@ $(document).ready(function(){
 
 	$("#time").val(format(sec_since_midnight));
 
-	$("#upbutton").click(function(){
+	$("#upHRbutton").click(function(){
+		sec_since_midnight+=3600;
+		if(sec_since_midnight > 86400){
+			sec_since_midnight = 86400;
+		}
+		$("#time").val(format(sec_since_midnight));
+	});
+
+	$("#downHRbutton").click(function(){
+		sec_since_midnight-=3600;
+		if(sec_since_midnight < 0){
+			sec_since_midnight = 0;
+		}
+		$("#time").val(format(sec_since_midnight));
+	});
+
+	$("#upMINbutton").click(function(){
 		sec_since_midnight+=60;
 		if(sec_since_midnight > 86400){
 			sec_since_midnight = 86400;
@@ -36,7 +52,7 @@ $(document).ready(function(){
 		$("#time").val(format(sec_since_midnight));
 	});
 
-	$("#downbutton").click(function(){
+	$("#downMINbutton").click(function(){
 		sec_since_midnight-=60;
 		if(sec_since_midnight < 0){
 			sec_since_midnight = 0;
