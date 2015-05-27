@@ -54,7 +54,7 @@ function return_data(data, textStatus, jqXHR) {
 	//console.log(message);
 	//console.log(message.substring(0,message.length-2));
 	message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
-	//insert_overlay(message);
+	insert_overlay(message);
 }
 
 function serialize_string(string) {

@@ -97,7 +97,7 @@ var insert_overlay = function(message) {
 		overlay.style.zIndex = 10;
 		confirmation.style.zIndex = 11;
 		$("#confirmation").html(message + '<div style="font-size:18px;color:#FFFFFF;opacity:.75;">Click anywhere to dismiss this notification.</div>');
-		overlay.onclick = insert_overlay("");
+		//overlay.onclick = insert_overlay("");
 		//setTimeout(insert_overlay, 5000);
 	}
 	else { //if (zIndex > 0) {
