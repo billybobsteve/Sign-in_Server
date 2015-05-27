@@ -23,6 +23,7 @@ h1{
 	margin-top: 2%; 
 	text-align: center;
 	border-bottom: 2px solid #000080;
+	font-size: 24px;
 }
 
 input[type="submit"]:hover{
