@@ -11,7 +11,6 @@ $server_time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
 
-die();
 
 //echo count($name_array);
 
@@ -25,6 +24,8 @@ if (!conn) {
 }
 
 mysql_select_db('signoutdb');
+
+die();
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
