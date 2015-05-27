@@ -15,7 +15,10 @@ function post() {
 
 	global = form_data;
 	global = global.substring(5, global.length);
+	global = global.split(',');
+
 	var selector = document.getElementsByClassName("activeLink").id;
+
 
 	if (selector == "out-tab") {
 		//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
@@ -70,10 +73,40 @@ function post() {
 		});
 		ajax_post.done(return_data_in);
 	}
-}
+};
+
+function return_data_in(data, textStatus, jqXHR) {
+	console.log(data);
+	var signed_in = data.trim().split(',');
+	var message = "";
+	var message_error = "";
+	console.log(signed_in);
+	console.log(signed_in.length);
+	var signed_in_success = 0;
+	var signed_in_failure = 0;
+
+	for (var i = 0; i < signed_out.length; i++) {
+		if (signed_in[i] == '1') 
+			signed_in_success++;
+		else //if (signed_out[i] == '-1')
+			signed_in_failure++;
+	}
+
+	for (var i = 0; i < signed_out.length; i++) {
+		if (signed_out[i] == '1') {
+			message += global[i] + ", ";
+		}
+		else {
+			message_error += global[i] + ", ";
+		}
+	}
+
+	console.log(message.substring(0,message.length-2));
+	console.log(message_error.substring(0, message_error.length-2));
+};
 
 function return_data_out(data, textStatus, jqXHR) {
-	global = global.split(',');
+	//global = global.split(',');
 	//alert("test");
 	console.log(data);
 	//return;
@@ -127,7 +160,7 @@ function return_data_out(data, textStatus, jqXHR) {
 	//message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' were' : ' was') + ' already signed out. </div>';
 	
 	insert_overlay(message);
-}
+};
 
 var includes_char = function(str, search_char){
 	for(var i = 0;i<str.length;i++){
@@ -136,7 +169,7 @@ var includes_char = function(str, search_char){
 		}
 		return false;
 	}
-}
+};
 
 function serialize_string(string) {
 	string.trim();
@@ -145,4 +178,4 @@ function serialize_string(string) {
 		string = string.replace(' ', '+');
 	}	
 	return string;
-}
+};
