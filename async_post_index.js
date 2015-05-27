@@ -69,7 +69,7 @@ var includes_char = function(str, search_char){
 function serialize_string(string) {
 	string.trim();
 	//while (string.includes(' ')) { // Goddamn Safari bullshit
-	while (includes_char(string, ' '))
+	while (includes_char(string, ' ')) {
 		string = string.replace(' ', '+');
 	}	
 	return string;
