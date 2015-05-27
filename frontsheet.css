@@ -69,8 +69,9 @@ input[type="text"] {
   	/*background-color: rgba(0,0,0,0.5); changed in javascript */
 } 
 
-#confirmation {
-	color:#3399cc;
+#confirmation {/*
+	color:#3399cc;*/
+	color:#000000;
 	font-size:24px;
 	width: 300px;
     height: 95px;
@@ -165,7 +166,7 @@ input{
 	margin-left: auto;
 	margin-right: auto;
 
-	margin-top: 10%;
+	margin-top: 5px;
 }
 
 .tab-box a {
