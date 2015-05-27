@@ -63,8 +63,8 @@
 
 					<div class = "form_text">
 						<label for = "time" id="time-label">Time Out: </label><input type="text" class = "in" id="time" autocomplete = "off"/>
-						<div id="downbutton" class="arrow">&#x25bc;</div>
-						<div id="upbutton" class="arrow">&#x25b2;</div>
+						<span id="downbutton" class="arrow">&#x25bc;</span>
+						<span id="upbutton" class="arrow">&#x25b2;</span>
 					</div>
 				</div>
 			</form>
