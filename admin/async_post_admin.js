@@ -13,7 +13,7 @@ function post() {
 }
 
 function return_data(data, textStatus, jqXHR) {
-	if (location.pathname.includes("admin.php")) {
+	//if (location.pathname.includes("admin.php")) {
 		$("#table").html(data);
-	}
+	//}
 }
