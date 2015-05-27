@@ -24,6 +24,7 @@ function post() {
 	}
 
 	global = form_data;
+	global = global.substring(5, global.length);
 
 	form_data += "&destination=" + serialize_string(interim[1].value);
 
