@@ -1,51 +1,78 @@
 var global = "";
 function post() {
-	//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
-	if (document.getElementById("destination").value.trim() === "") {
-		alert("Please enter a destination!");
-		return;
-	}
 	var interim = $('#sign_out_form').serializeArray();
-	var form_data = "name=" + serialize_string(interim[0].value); // + ",";
-	//global += interim[0].value;
-
-	//console.log(form_data);
-	//console.log("test");
-
 	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
-	//name_list = [];
+	var form_data = "name=" + serialize_string(interim[0].value); // + ",";
+
 	for (var i = 0; i < list.length; i++) {
-		//name_list[i] = list[i].innerText;
-		if (form_data !== "name=") {
-			form_data += ",";
-			//global += ",";
+			//name_list[i] = list[i].innerText;
+			if (form_data !== "name=") {
+				form_data += ",";
+				//global += ",";
+			}
+			form_data += serialize_string(list[i].innerText);
 		}
-		form_data += serialize_string(list[i].innerText);
-	}
 
 	global = form_data;
 	global = global.substring(5, global.length);
+	var selector = document.getElementsByClassName("activeLink").id;
 
-	form_data += "&destination=" + serialize_string(interim[1].value);
+	if (selector == "out-tab") {
+		//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
+		if (document.getElementById("destination").value.trim() === "") {
+			alert("Please enter a destination!");
+			return;
+		}
+		//var interim = $('#sign_out_form').serializeArray();
+		//var form_data = "name=" + serialize_string(interim[0].value); // + ",";
+		//global += interim[0].value;
 
-	form_data = form_data.toLowerCase().trim();
+		//console.log(form_data);
+		//console.log("test");
 
-	console.log(global);
-	console.log(form_data);
-	//console.log("test2");
+		//var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
+		//name_list = [];
+		/*for (var i = 0; i < list.length; i++) {
+			//name_list[i] = list[i].innerText;
+			if (form_data !== "name=") {
+				form_data += ",";
+				//global += ",";
+			}
+			form_data += serialize_string(list[i].innerText);
+		} */
+
+		form_data += "&destination=" + serialize_string(interim[1].value);
+
+		form_data = form_data.toLowerCase().trim();
+
+		console.log(global);
+		console.log(form_data);
+		//console.log("test2");
 
 
-	//var form_data = $('#sign_out_form').serialize();
-	var post_url = 'action_out.php'
-	var ajax_post = $.ajax({
-		url:post_url,
-		type:'post',
-		data:form_data
-	});
-	ajax_post.done(return_data);
+		//var form_data = $('#sign_out_form').serialize();
+		var post_url = 'action_out.php'
+		var ajax_post = $.ajax({
+			url:post_url,
+			type:'post',
+			data:form_data
+		});
+		ajax_post.done(return_data_out);
+	}
+	else {
+		form_data = form_data.toLowerCase().trim();
+
+		var post_url = 'action_in.php'
+		var ajax_post = $.ajax({
+			url:post_url,
+			type:'post',
+			data:form_data
+		});
+		ajax_post.done(return_data_in);
+	}
 }
 
-function return_data(data, textStatus, jqXHR) {
+function return_data_out(data, textStatus, jqXHR) {
 	global = global.split(',');
 	//alert("test");
 	console.log(data);
