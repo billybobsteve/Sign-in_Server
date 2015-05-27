@@ -7,7 +7,7 @@ function post() {
 	var time = document.getElementById('time').value;
 	var hour = parseInt(time.substring(0, 2));
 	var min = parseInt(time.substring(2, 4));
-	var hour += (time.substring(4, time.length) == 'AM') ? 0 : 12;
+	var hour = (time.substring(4, time.length) == 'AM') ? 0 : 12;
 
 
 	for (var i = 0; i < list.length; i++) {
