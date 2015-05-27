@@ -23,9 +23,9 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "<div class='table-entry'> <ul> <li>Student name: {$row['Name']}</li> ".
-       	 	"<li> Location: {$row['Location']}  </li>".
-         	"<li> Time out: {$row['TimeOut']} </li> </ul> </div> ";
+    		echo "<div class='table-entry'> <ul> <li>Student name: <span>{$row['Name']}</span></li> ".
+       	 	"<li> Location: <span>{$row['Location']}</span>  </li>".
+         	"<li> Time out: <span>{$row['TimeOut']}</span> </li> </ul> </div> ";
 		} 
 		break;
 	case "all_students" :
@@ -36,10 +36,10 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "<div class='table-entry'> <ul> <li>Student name: {$row['Name']}</li>  ".
-       	 	"<li>Location: {$row['Location']}  </li>".
-         	"<li>Time out: {$row['TimeOut']}  </li>".
-     		"<li>Time in: {$row['TimeIn']}  </li> </ul> </div>";
+    		echo "<div class='table-entry'> <ul> <li>Student name: <span>{$row['Name']}</span></li>  ".
+       	 	"<li>Location: <span>{$row['Location']} </span> </li>".
+         	"<li>Time out: <span>{$row['TimeOut']}</span>  </li>".
+     		"<li>Time in: <span>{$row['TimeIn']} </span> </li> </ul> </div>";
 		} 
 		break;
 	case "edit_student" :

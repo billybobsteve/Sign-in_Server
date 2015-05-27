@@ -15,7 +15,7 @@
 				<option value = "all_students">Get All Students</option>
 				<option value = "edit_student">Edit Student</option>  	
 			</select>
-			<div id = "other_info">
+			<div id = "other_info" class="hide">
 				<input type = "text" placeholder = "Search for Student" id = "search" autocomplete = "off">
 				<!--<input type = "text" placeholder = "Enter Student Location">
 				<input type = "text" placeholder = "Enter Student Time in">
