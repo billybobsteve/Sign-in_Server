@@ -136,35 +136,14 @@ input{
 	border: none;
 }
 
-.ui-spinner-button {/*
-	text-align: center;
-	position: relative;*/
-	cursor: default;
-
-	margin-left: -20px;
-	width: 30px;
-	/*
-	background-color: #e3e3e3;*/
-	color: #6b6b6b;
+#upbutton{
+	
 }
 
-.ui-icon{
-	font-size: 10px;
-	position: relative;
+#downbutton{
+
 }
 
-.ui-icon-triangle-1-n{
-	position: relative;
-	padding-top: -5000px;
-	cursor:pointer;
-}
-
-.ui-icon-triangle-1-s{
-	position: relative;
-	padding-left: 12px;
-	padding-top: 35px;
-	cursor:pointer;
-}
 
 .tab-box { 
 	padding-bottom:5px;
