@@ -20,12 +20,13 @@ function post() {
 			form_data += serialize_string(list[i].innerText);
 		}
 
-		form_data += "&datetime=" + datetime;
-
 
 	global = form_data;
 	global = global.substring(5, global.length);
 	global = global.split(',');
+
+	form_data += "&datetime=" + datetime;
+
 
 	var selector = document.getElementsByClassName("activeLink")[0].id;
 
