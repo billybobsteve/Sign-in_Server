@@ -5,6 +5,7 @@ $time_out = htmlspecialchars($_POST['datetime']);
 $current_date = new DateTime();
 $time_out = $current_date->format('Y-m-d ') . $time_out;
 echo $time_out;
+echo gettype($time_out);
 die();
 $time_out = new DateTime($time_out);
 //$time_out = datetime::createfromformat('Y-m-d H:i:s', $time_out);
