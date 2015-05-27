@@ -128,7 +128,7 @@ function return_data_in(data, textStatus, jqXHR) {
 function return_data_out(data, textStatus, jqXHR) {
 	//global = global.split(',');
 	//alert("test");
-	console.log(data);
+	console.log("log" + data);
 	//return;
 	//console.log(data);
 	var signed_out = data.trim().split(',');
