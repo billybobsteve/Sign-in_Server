@@ -57,18 +57,18 @@ function return_data(data, textStatus, jqXHR) {
 	console.log(signed_out.length);
 	if (signed_out.length === 1) {
 		if (signed_out[0] === '1')
-			message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + signed_out[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
+			message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + global[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
 		else
-			message = '<span style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' + signed_out[0] + '</span>' + " has already been signed out.";
+			message = '<span style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' + global[0] + '</span>' + " has already been signed out.";
 		insert_overlay(message);
 		return;
 	}
 	for (var i = 0; i < signed_out.length; i++) {
 		if (signed_out[0] === '1') {
-			message += signed_out[i] + ", ";
+			message += global[i] + ", ";
 		}
 		else {
-			message_error += signed_out[i] + ", ";
+			message_error += global[i] + ", ";
 		}
 	}
 	//console.log(message);
