@@ -13,8 +13,8 @@ $(document).ready(function(){
 	$("#submit").click(function(){
 		$("table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 	});
-	$("#edit-button").click(){
+	$("#edit-button").click(function(){
 		edit("#edit-button").parent());
-	}
+	});
 });
 
