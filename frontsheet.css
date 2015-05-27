@@ -147,16 +147,11 @@ input{
 	font-size: 50%;
 }
 
-#upbutton{/*
-	margin-right: 10px;*/
-	margin-bottom: -10px;
-	margin-left: 10%;
+#upbutton{
 }
 
-#downbutton{/*
-	margin-left: 10px;*/
-	margin-top: 10px;
-	margin-left: 10%;
+#downbutton{
+	
 }
 
 .tab-box { 
