@@ -50,7 +50,7 @@ $(document).ready(function(){
 		if($("#name").val() !== "" ){
 			$("#nameList").append(
 				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+$("#name").val() + "</span>" +
-				"<a href='#' id='name-button-"+index+"'>-</a>" +
+				"<a href='#' id='name-button-"+index+"' class = 'delete-buttons'> -</a>" +
 				"</li>" 
 			);
 			$("#name").val("");
