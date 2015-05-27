@@ -56,13 +56,15 @@
 						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" autocomplete = "off"/>
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
+					
 					<div class = "form_text" id="dest-div">
 						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off"/>
 					</div>
+
 					<div class = "form_text">
 						<label for = "time" id="time-label">Time Out: </label><input type="text" class = "in" id="time" autocomplete = "off"/>
-						<span id="downbutton">&#x25bc;</span>
-						<span id="upbutton">&#x25b2;</span>
+						<div id="downbutton">&#x25bc;</div>
+						<div id="upbutton">&#x25b2;</div>
 					</div>
 				</div>
 			</form>
