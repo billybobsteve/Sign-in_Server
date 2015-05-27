@@ -84,6 +84,8 @@ $(document).ready(function(){
 });
 
 
+
+
 var insert_overlay = function(message) {
 	overlay = document.getElementById("overlay");
 	confirmation = document.getElementById("confirmation");
