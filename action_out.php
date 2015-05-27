@@ -24,6 +24,9 @@ mysql_select_db('signoutdb');
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
+	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
+	echo mysql_query($sql_name_check, $conn);
+	break;
 	$sql = "INSERT INTO Students (Name, Location, TimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}'); ";
 	$retval = mysql_query($sql, $conn);
 
