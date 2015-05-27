@@ -13,7 +13,9 @@ function post() {
 }
 
 var edit = function(obj){
-	$("span", obj).html("<input type='text'>")
+	for (i in $("span", obj)){
+		console.log("sdf");
+	}
 }
 
 function return_data(data, textStatus, jqXHR) {
