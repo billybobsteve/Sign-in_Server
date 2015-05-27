@@ -66,8 +66,8 @@
 						<input type="text" class = "in" id="time" autocomplete = "off"/>
 					</div>
 
-						<div id="upbutton" class="arrow">&#x25b2;</div>
-						<div id="downbutton" class="arrow">&#x25bc;</div>
+					<div id="upbutton" class="arrow">&#x25b2;</div>
+					<div id="downbutton" class="arrow">&#x25bc;</div>
 				</div>
 			</form>
 

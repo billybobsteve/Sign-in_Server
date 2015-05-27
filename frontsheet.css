@@ -153,6 +153,7 @@ input{
 
 .arrow{
 	font-size: 50%;
+	float:right;
 }
 
 #upbutton{
