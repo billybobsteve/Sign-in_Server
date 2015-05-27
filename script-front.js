@@ -94,6 +94,7 @@ var insert_overlay = function(message) {
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
 		$("#confirmation").html(message + '<div style="font-size:18px;color:#FFFFFF;opacity:.75;">Click anywhere to dismiss this notification.</div>');
+		confirmation.style.zIndex = 11;
 		overlay.onclick = insert_overlay;
 		//setTimeout(insert_overlay, 5000);
 	}
@@ -103,6 +104,7 @@ var insert_overlay = function(message) {
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
 		overlay.style.zIndex = -10;
 		$("#confirmation").html("");
+		confirmation.style.zIndex = -11;
 	}
 }
 /*$("#overlay").click(function(){
