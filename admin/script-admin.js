@@ -2,6 +2,7 @@ $(document).ready(function(){
 	var edit = function(obj){
 		$("span", obj).html("<input type='text'>")
 	}
+	/*
 	$('#options').on('change', function(){
 		if($(this).val() === "edit_student"){
 			$("#other_info").show();
@@ -10,6 +11,7 @@ $(document).ready(function(){
 			$("#other_info").hide();
 		}
 	});
+*/
 	$("#submit").click(function(){
 		console.log("okeh");
 		console.log(document.getElementsByClassName("table-entry").length);
