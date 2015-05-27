@@ -136,14 +136,13 @@ input{
 	border: none;
 }
 
-#upbutton{
-	margin-right: 10px;
+#upbutton{/*
+	margin-right: 10px;*/
 	margin-bottom: 10px;
-	font-size: 2000px;
 }
 
-#downbutton{
-	margin-left: 10px;
+#downbutton{/*
+	margin-left: 10px;*/
 	margin-top: 10px;
 }
 
