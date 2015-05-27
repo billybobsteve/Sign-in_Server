@@ -67,8 +67,8 @@
 					</div>
 
 					<div>
-						<div id="upbutton" class="arrow">&#x25b2;</div>
-						<div id="downbutton" class="arrow">&#x25bc;</div>
+						<span id="upbutton" class="arrow">&#x25b2;</span>
+						<span id="downbutton" class="arrow">&#x25bc;</span>
 					</div>
 				</div>
 			</form>
