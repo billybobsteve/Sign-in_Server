@@ -63,8 +63,12 @@
 						<span id="upbutton">&#x25b2;</span>
 					</div>
 				</div>
-				
 			</form>
+
+			<form>
+				<input type="button" value = "Submit" id="button" onclick = "post();"/>
+			</form>
+
 			<div id = "groupList">
 				<p>
 					<div>
@@ -75,9 +79,6 @@
 					</div>
 				</p>
 			</div>
-			<form>
-				<input type="button" value = "Submit" id="button" onclick = "post();"/>
-			</form>
 		</div>
 		<div id="sign-in-tab">
 		</div>
