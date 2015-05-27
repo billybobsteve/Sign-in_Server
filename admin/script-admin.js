@@ -11,7 +11,8 @@ $(document).ready(function(){
 		}
 	});
 	$("#submit").click(function(){
-		$("table-entry").append("<a href='#' class='edit-button'>Edit</a>");
+		console.log("okeh");
+		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 	});
 	$("#edit-button").click(function(){
 		edit("#edit-button").parent();
