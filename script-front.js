@@ -9,6 +9,7 @@ $(document).ready(function(){
 	var hours = now.getHours();
 	var mins = now.getMinutes();
 	var sec_since_midnight = hours*3600+mins*60;
+	var counter = 0;
 	console.log("CHASE IS THE BEST PERSON");
 
 	var format = function (v) {
@@ -45,7 +46,7 @@ $(document).ready(function(){
 	});
 
 	$("#plus").click(function(){
-		var index = $("#nameList li").length + 1;
+		var index = ++counter;
 		if($("#name").val() !== "" ){
 			$("#nameList").append(
 				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+$("#name").val() + "</span>" +
