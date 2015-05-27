@@ -74,11 +74,12 @@ function return_data(data, textStatus, jqXHR) {
 		}
 	}
 	//console.log(message);
-	//console.log(message.substring(0,message.length-2));
+	console.log(message.substring(0,message.length-2));
+	console.log(message_error.substring(0, message_error.length-2));
 	message = (message_error.trim() === "") ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
-	message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' :'<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
+	message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' : '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
 	message.substring(0, message.length-2) + '</span>' + ' have successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span> <div style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' +
-	message_error.substring(0, message.length-2) + ' was already signed out. </div>';
+	message_error.substring(0, message_error.length-2) + ' was already signed out. </div>';
 	insert_overlay(message);
 }
 
