@@ -32,34 +32,5 @@
 	<script src="../jquery-2.1.4.min.js"> </script>
 	<script src="async_post_admin.js"> </script>
 	<script src="../jquery-ui.min.js"> </script>
-	<script>
-		$(document).ready(function(){
-			$("#other_info").hide();
-			$('#options').on('change', function(){
-				if($(this).val() === "edit_student"){
-					$("#other_info").show();
-				}
-				else{
-					$("#other_info").hide();
-				}
-			});
-		});
-	</script> 
-	<script>
-		$(function(){
-				var countries = [
-	   			{ value: 'Andorra', data: 'AD' },
-	   			{ value: 'Zimbabwe', data: 'ZZ' }
-				];
-
-			$('#search').autocomplete({
-	    		lookup: countries,
-	    		onSelect: function (suggestion) {
-	        		alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-	    		}
-			});
-		});
-	</script>
-
-	
+	<script src="script-admin.js"></script> 	
 </html>
