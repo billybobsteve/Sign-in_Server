@@ -8,6 +8,8 @@
 		<link href="jquery-ui.theme.min.css" type="text/css">
 		<link rel="stylesheet" href="handheld.css" type="text/css" media="handheld, only screen and (max-device-width: 480px)"/>
 		<link href="style.css" type="text/css">
+		<meta name="viewport" content="width=device-width"/>
+
 	</head>
 
 	<body>

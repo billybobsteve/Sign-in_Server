@@ -10,7 +10,6 @@ $(document).ready(function(){
 	var mins = now.getMinutes();
 	var sec_since_midnight = hours*3600+mins*60;
 	var counter = 0;
-	console.log("CHASE IS THE BEST PERSON");
 
 	var format = function (v) {
 		console.log(v);
@@ -132,6 +131,8 @@ var insert_overlay = function(message) {
 		confirmation.style.zIndex = -11;
 	}
 };
+
+
 /*$("#overlay").click(function(){
 	insert_overlay();
 }); */
