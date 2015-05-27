@@ -65,6 +65,17 @@ $(document).ready(function(){
 			$('#plus').click();
 			return false;
 		}
+		else if(args.keyCode === 9){
+			$('#destination').focus();
+			return false;
+		}
+	});
+
+	$('body').on('keypress', '#destination', function(args) {
+		if (args.keyCode === 13) {
+			$('#button').click();
+			return false;
+		}
 	});
 
 	$("#in-tab").click(function(){
