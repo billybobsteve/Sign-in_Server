@@ -40,7 +40,7 @@ input[type="text"] {
 
 .form_text {
 	display: inline-block;
-	width: 200px;
+	width: 250px;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
@@ -153,6 +153,7 @@ input{
 
 .arrow{
 	font-size: 50%;
+	display: inline-block;
 }
 
 #upbutton{
