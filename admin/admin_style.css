@@ -70,6 +70,6 @@ h3 {
 	width: 100%; 
 }
 
-.table-entry{
+.table-entry ul li{
 	list-style-type: none;
 }
