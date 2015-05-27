@@ -103,6 +103,11 @@ function return_data_in(data, textStatus, jqXHR) {
 
 	console.log(message.substring(0,message.length-2));
 	console.log(message_error.substring(0, message_error.length-2));
+
+	message = (signed_in_success != 0) ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
+	message.substring(0, message.length-2) + '</span>' + (signed_in_success > 1 ? ' have' : ' has') + ' successfully been signed back in.' : "";
+	message += (signed_in_failure != 0) ? '<div style="color:#FF0000;font-size:24px;opacity:.9;"> Error: ' +
+	message_error.substring(0, message_error.length-2) + (signed_in_failure > 1 ? ' have' : ' has') + ' has not yet bin signed out. </div>' : "";
 };
 
 function return_data_out(data, textStatus, jqXHR) {
