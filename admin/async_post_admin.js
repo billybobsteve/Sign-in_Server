@@ -14,7 +14,7 @@ function post() {
 
 var edit = function(obj){
 	for (var i = 0; i<$("span", obj).length;i++){
-		$($("span", obj)[i]).html("<input type='text' placeholder='"+$($("span", obj)[i]).text()+"'>")
+		$($("span", obj)[i]).html("<input type='text' value='"+$($("span", obj)[i]).text()+"'>")
 	}
 }
 
