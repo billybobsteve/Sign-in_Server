@@ -58,12 +58,12 @@ function return_data(data, textStatus, jqXHR) {
 	console.log(signed_out);
 	console.log(signed_out.length);
 
-	var singed_out_success = 0;
+	var signed_out_success = 0;
 	var signed_out_failure = 0;
 
 	for (var i = 0; i < signed_out.length; i++) {
 		if (signed_out[i] == '1') 
-			singed_out_success++;
+			signed_out_success++;
 		else //if (signed_out[i] == '-1')
 			signed_out_failure++;
 	}
@@ -88,8 +88,8 @@ function return_data(data, textStatus, jqXHR) {
 	console.log(message.substring(0,message.length-2));
 	console.log(message_error.substring(0, message_error.length-2));
 	message = (message_error.trim() === "") ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
-	message.substring(0, message.length-2) + '</span>' + (singed_out_success > 1 ? ' have' : ' has') + ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' : '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
-	message.substring(0, message.length-2) + '</span>' + (2 > 1 ? ' have' : ' has') +  ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span> <div style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' +
+	message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') + ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' : '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
+	message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') +  ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span> <div style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' +
 	message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' were' : ' was') + ' already signed out. </div>';
 	insert_overlay(message);
 }
