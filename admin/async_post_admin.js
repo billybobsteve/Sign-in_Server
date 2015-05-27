@@ -13,7 +13,7 @@ function post() {
 }
 
 var edit = function(obj){
-	for (i in $("span", obj)){
+	for (var i = 0; i<$("span", obj).length;i++){
 		console.log("sdf");
 	}
 }
