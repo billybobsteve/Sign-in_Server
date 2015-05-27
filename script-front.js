@@ -48,7 +48,7 @@ $(document).ready(function(){
 		var index = $("#nameList li").length + 1;
 		if($("#name").val() !== "" ){
 			$("#nameList").append(
-				"<li id='name-item-"+index+"'>" + $("#name").val() +
+				"<li class='name-item' id='name-item-"+index+"'>" + $("#name").val() +
 				"<a href='#' id='name-button-"+index+"'>-</a>" +
 				"</li>" 
 			);
