@@ -27,7 +27,6 @@ function post() {
 
 	form_data += "&datetime=" + datetime;
 
-
 	var selector = document.getElementsByClassName("activeLink")[0].id;
 
 
