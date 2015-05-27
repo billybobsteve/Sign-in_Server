@@ -25,7 +25,7 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
-die();
+//TODO FIX THIS PIECE OF SHIT
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
