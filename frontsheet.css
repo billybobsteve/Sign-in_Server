@@ -151,12 +151,13 @@ input{
 	border: none;
 }
 
-#arrows_sections{
+/*#arrows_sections{
 	display: inline-block;
-}
+}*/
 
 .arrow{
 	font-size: 50%;
+	display: inline-block;
 }
 
 #upHRbutton{
