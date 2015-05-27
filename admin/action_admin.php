@@ -23,7 +23,7 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "<div class='table-entry'> <ul> <li>Student name:{$row['Name']}</li> ".
+    		echo "<div class='table-entry'> <ul> <li>Student name: {$row['Name']}</li> ".
        	 	"<li> Location: {$row['Location']}  </li>".
          	"<li> Time out: {$row['TimeOut']} </li> </ul> </div> ";
 		} 
@@ -36,7 +36,7 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		while($row = mysql_fetch_assoc($retval)) {
-    		echo "<div class='table-entry'> <ul> <li>Student name :{$row['Name']}</li>  ".
+    		echo "<div class='table-entry'> <ul> <li>Student name: {$row['Name']}</li>  ".
        	 	"<li>Location: {$row['Location']}  </li>".
          	"<li>Time out: {$row['TimeOut']}  </li>".
      		"<li>Time in: {$row['TimeIn']}  </li> </ul> </div>";
