@@ -12,7 +12,7 @@ $(document).ready(function(){
 	});
 	$("#submit").click(function(){
 		console.log("okeh");
-		console.log($(".table-entry").length);
+		console.log(document.getElementsByClassName("table-entry").length);
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 	});
 	$("#edit-button").click(function(){
