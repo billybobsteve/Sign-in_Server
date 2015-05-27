@@ -17,7 +17,7 @@ function post() {
 	global = global.substring(5, global.length);
 	global = global.split(',');
 
-	var selector = document.getElementsByClassName("activeLink").id;
+	var selector = document.getElementsByClassName("activeLink")[0].id;
 
 
 	if (selector == "out-tab") {
