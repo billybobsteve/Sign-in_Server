@@ -19,7 +19,7 @@ body {
     color: #000080;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media screen and (min-width: 319px) and (max-width: 1281px){
 	body{
 		background: #FAFAFA;
 		color: #BBBBBB;
