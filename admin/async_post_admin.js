@@ -22,7 +22,6 @@ var edit = function(obj){
 			$($("span", obj)[i]).html("<span>"+$($(".text-box", obj)[i]).val()+"</span>");
 		}
 		$("#apply").remove();
-	}
 	});
 }
 
