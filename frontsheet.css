@@ -151,9 +151,12 @@ input{
 	border: none;
 }
 
+#arrows_sections{
+	display: inline-block;
+}
+
 .arrow{
-	font-size: 50%;/*
-	display: inline-block;*/
+	font-size: 50%;
 }
 
 #upbutton{
