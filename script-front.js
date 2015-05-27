@@ -99,7 +99,7 @@ $(document).ready(function(){
 		console.log("out clicked");
 	});
 	
-	$("name").typeahead({
+	$("#name").typeahead({
 		order: "desc",
 		local: ["Afghanistan", "Uzbekistan,", "ChaseGoddardistan", "Goochistan"]
 	});
