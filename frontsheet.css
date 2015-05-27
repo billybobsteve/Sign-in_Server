@@ -153,6 +153,7 @@ input{
 
 #arrows_sections{
 	display: inline-block;
+	margin-left: -10px;
 }
 
 #second_arrows{
