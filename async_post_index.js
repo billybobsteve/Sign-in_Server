@@ -10,7 +10,7 @@ function post() {
 	//console.log(form_data);
 	//console.log("test");
 
-	var list = document.getElementById('nameList').getElementsByTagName('li');
+	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
 	//name_list = [];
 	for (var i = 0; i < list.length; i++) {
 		//name_list[i] = list[i].innerText;
