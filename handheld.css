@@ -18,9 +18,12 @@ h1{
 }
 
 body {
-	margin-left: auto;
-	margin-right: auto;
+	background: #FAFAFA;
 	max-width: 500px;
+	margin-left:auto;
+    margin-right:auto;
+    border: 2px solid #000080;
+    color: #000080;
 }
 
 
