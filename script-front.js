@@ -118,11 +118,13 @@ var insert_overlay = function(message) {
 		confirmation.style.zIndex = 11;
 		$("#confirmation").html(message + '<div style="font-size:18px;color:#FFFFFF;opacity:.75;">Click anywhere to dismiss this notification.</div>');
 		overlay.onclick = insert_overlay;
+		confirmation.onclick = insert_overlay;
 		//setTimeout(insert_overlay, 5000);
 	}
 	else { //if (zIndex > 0) {
 		console.log("hiding");
 		overlay.onclick = null;
+		confirmation.onclick = null;
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
 		overlay.style.zIndex = -10;

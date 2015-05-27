@@ -38,9 +38,9 @@ function post() {
 
 function return_data(data, textStatus, jqXHR) {
 	//alert("test");
-	alert(data);
-	return;
 	console.log(data);
+	return;
+	//console.log(data);
 	var signed_out = data.trim().split(',');
 	signed_out.pop();
 	var message = "";
