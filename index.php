@@ -6,6 +6,7 @@
 		<link href="jquery-ui.min.css" type="text/css">
 		<link href="jquery-ui.structure.min.css" type="text/css">
 		<link href="jquery-ui.theme.min.css" type="text/css">
+		<link rel="stylesheet" href="handheld.css" type="text/css" media="handheld"/>
 		<link href="style.css" type="text/css">
 	</head>
 
