@@ -6,11 +6,11 @@ $current_date = new DateTime();
 $time_out = $current_date->format('Y-m-d ') . $time_out;
 echo $time_out;
 echo gettype($time_out);
-die();
-$time_out = new DateTime($time_out);
+
+$time_test = new DateTime($time_out);
 //$time_out = datetime::createfromformat('Y-m-d H:i:s', $time_out);
 echo $time_out;
-
+die();
 
 $server_time_out = date("Y-m-d H:i:s");
 echo $time_out;
