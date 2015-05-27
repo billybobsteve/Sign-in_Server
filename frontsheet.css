@@ -85,7 +85,6 @@ input[type="text"] {
     text-align: center;
     line-height: 100%;
     z-index: -11; /* 1px higher than the overlay layer */
-    pointer-events:none; /* changed in javascript */
 }
 /*
 input{
