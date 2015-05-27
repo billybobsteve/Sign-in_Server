@@ -101,7 +101,7 @@ $(document).ready(function(){
 
 	var availableTags = ['pls', 'work?', 'PythonsInTheCloset'];
 
-	$("name").autocomplete(function{
+	$("name").autocomplete(function(){
 		source: availableTags
 	});
 	
