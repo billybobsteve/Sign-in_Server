@@ -49,7 +49,7 @@ function return_data(data, textStatus, jqXHR) {
 	global = global.split(',');
 	//alert("test");
 	console.log(data);
-	return;
+	//return;
 	//console.log(data);
 	var signed_out = data.trim().split(',');
 	signed_out.pop();
