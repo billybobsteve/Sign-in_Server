@@ -56,7 +56,7 @@ function return_data(data, textStatus, jqXHR) {
 	console.log(signed_out);
 	console.log(signed_out.length);
 	if (signed_out.length === 1) {
-		if (signed_out[0] === 'T')
+		if (signed_out[0] === '1')
 			message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + signed_out[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
 		else
 			message = '<span style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' + signed_out[0] + '</span>' + " has already been signed out.";
@@ -64,7 +64,7 @@ function return_data(data, textStatus, jqXHR) {
 		return;
 	}
 	for (var i = 0; i < signed_out.length; i++) {
-		if (signed_out[0] === 'T') {
+		if (signed_out[0] === '1') {
 			message += signed_out[i] + ", ";
 		}
 		else {
