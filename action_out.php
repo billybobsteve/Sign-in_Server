@@ -7,11 +7,11 @@ $time = $current_date->format('Y-m-d ') . $time;
 
 $time_out = new DateTime($time);
 
-die();
-
 $server_time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
+
+die();
 
 //echo count($name_array);
 
@@ -23,7 +23,6 @@ $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 if (!conn) {
 	die('Could not connect: ' . mysql_error());
 }
-
 
 mysql_select_db('signoutdb');
 
