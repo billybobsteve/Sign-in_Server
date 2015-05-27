@@ -142,9 +142,7 @@
 	  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 	];
 	 
-	$('.typeahead').typeahead({
-	  minLength: 1
-	},
+	$('.typeahead').typeahead(null,
 	{
 	  name: 'states',
 	  source: substringMatcher(states)
