@@ -4,6 +4,11 @@ function post() {
 	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
 	var form_data = "name=" + serialize_string(interim[0].value); // + ",";
 
+	var time = parseInt(document.getElementById('time').value);
+	var hour = parseInt(time.substring(0, 2));
+	var min = parseInt(time.substring(2, 4));
+
+
 	for (var i = 0; i < list.length; i++) {
 			//name_list[i] = list[i].innerText;
 			if (form_data !== "name=") {
