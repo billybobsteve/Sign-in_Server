@@ -114,7 +114,10 @@ $(document).ready(function(){
 		$("#title").html("Sign Out Of Campus");
 		console.log("out clicked");
 	});
-	var substringMatcher = function(strs) {
+		
+});
+
+var substringMatcher = function(strs) {
 	  	return function findMatches(q, cb) {
 		    var matches, substringRegex;
 		 
@@ -156,8 +159,6 @@ $(document).ready(function(){
 	  name: 'states',
 	  source: substringMatcher(states)
 	});
-		
-});
 
 
 
