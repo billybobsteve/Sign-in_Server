@@ -9,6 +9,7 @@ function post() {
 	var min = parseInt(time.substring(2, 4));
 	hour += (time.substring(4, time.length) == 'AM') ? 0 : 12;
 
+	var datetime = "" + hour + ":" + min + ":00";
 
 	for (var i = 0; i < list.length; i++) {
 			//name_list[i] = list[i].innerText;
@@ -18,6 +19,9 @@ function post() {
 			}
 			form_data += serialize_string(list[i].innerText);
 		}
+
+		form_data += "&datetime=" + datetime;
+
 
 	global = form_data;
 	global = global.substring(5, global.length);
@@ -52,6 +56,8 @@ function post() {
 
 		form_data += "&destination=" + serialize_string(interim[1].value);
 
+		form_data += "&datetime=" + datetime;
+
 		form_data = form_data.toLowerCase().trim();
 
 		console.log(global);
@@ -69,6 +75,7 @@ function post() {
 		ajax_post.done(return_data_out);
 	}
 	else {
+		//form_data += "&datetime=" + datetime;
 		form_data = form_data.toLowerCase().trim();
 
 		var post_url = 'action_in.php'

@@ -1,7 +1,9 @@
 <?php 
 
 $name = htmlspecialchars($_POST['name']);
-$time_in = date("Y-m-d H:i:s");
+$time_out = htmlspecialchars($_POST['datetime']);
+$time_out = date("Y-m-d ") . $time_out;
+$server_time_in = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
 
@@ -30,7 +32,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		echo '-1' . ',';
 		continue;
 	}
-	$sql = "UPDATE Students SET TimeIn='{$time_in}' WHERE name='{$current_name}';";
+	$sql = "UPDATE Students SET TimeIn='{$time_in}', ServerTimeIn='{$server_time_in}' WHERE name='{$current_name}';";
 	$retval = mysql_query($sql, $conn);
 
 	if(! $retval ) {
