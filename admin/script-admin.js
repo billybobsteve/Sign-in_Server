@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}
 	});
 	$("#submit").click(function(){
-		$(".table_entry").css("list-style-type","none");
+		$(".table-entry").css("list-style-type","none");
 	});
 });
 
