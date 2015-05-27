@@ -89,7 +89,9 @@ var insert_overlay = function(message) {
 	confirmation = document.getElementById("confirmation");
 	zIndex = window.getComputedStyle(overlay).getPropertyValue('z-index');
 	//zIndex = style.getPropertyValue('z-index');
-	if (zIndex === "-10") {
+	console.log(zIndex);
+	if (zIndex == "-10") {
+		console.log("showing");
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
@@ -99,6 +101,7 @@ var insert_overlay = function(message) {
 		//setTimeout(insert_overlay, 5000);
 	}
 	else { //if (zIndex > 0) {
+		console.log("hiding");
 		overlay.onclick = null;
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,0)";
