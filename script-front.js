@@ -98,13 +98,10 @@ $(document).ready(function(){
 		$("#title").html("Sign Out Of Campus");
 		console.log("out clicked");
 	});
-
-	var availableTags = ['pls', 'work?', 'PythonsInTheCloset'];
+	
 	$("name").typeahead({
 		order: "desc",
-		 source: {
-        	data: ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda"]
-    	}
+		local: ["Afghanistan", "Uzbekistan,", "ChaseGoddardistan", "Goochistan"]
 	});
 	
 });
