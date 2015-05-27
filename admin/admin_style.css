@@ -69,3 +69,7 @@ h3 {
 	height: 50px;
 	width: 100%; 
 }
+
+.table-entry{
+	list-style-type: none;
+}

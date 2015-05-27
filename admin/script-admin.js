@@ -8,8 +8,5 @@ $(document).ready(function(){
 			$("#other_info").hide();
 		}
 	});
-	$("#submit").click(function(){
-		$(".table-entry").css("list-style-type","none");
-	});
 });
 
