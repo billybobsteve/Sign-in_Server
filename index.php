@@ -53,7 +53,7 @@
 
 				<div id = "dataInput">
 					<div class = "form_text">
-						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" autocomplete = "off"/>
+						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "typeahead" autocomplete = "off"/>
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
 					
@@ -142,7 +142,7 @@
 	  'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 	];
 	 
-	$('#name').typeahead({
+	$('.typeahead').typeahead({
 	  hint: true,
 	  highlight: true,
 	  minLength: 1
