@@ -1,19 +1,13 @@
 <?php 
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
-$time_out = htmlspecialchars($_POST['datetime']);
+$time = htmlspecialchars($_POST['datetime']);
 $current_date = new DateTime();
-$time_out = $current_date->format('Y-m-d ') . $time_out;
-echo $time_out;
-echo gettype($time_out);
+$time = $current_date->format('Y-m-d ') . $time;
 
-$time_test = new DateTime($time_out);
-//$time_out = datetime::createfromformat('Y-m-d H:i:s', $time_out);
-echo $time_out;
-die();
+$time_out = new DateTime($time);
 
 $server_time_out = date("Y-m-d H:i:s");
-echo $time_out;
 
 $name_array = explode(',', $name);
 
@@ -28,9 +22,6 @@ if (!conn) {
 	die('Could not connect: ' . mysql_error());
 }
 
-//$sql = "";
-
-//echo $sql;
 
 mysql_select_db('signoutdb');
 
