@@ -126,7 +126,8 @@ input{
 	text-decoration: none;
 	color: #ffffff;
 	background-color: #ff0000;
-	border-radius: 2px;
+	border-radius: 2px
+	margin-left: 5px;
 }
 
 #button{
