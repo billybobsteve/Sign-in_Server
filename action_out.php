@@ -24,10 +24,12 @@ $legal_name_array = explode("\r", $name_list);
 echo $legal_name_array;
 die();
 
-array_map(function x($var) {
+function x($var) {
 	$new_var = explode(',', $var);
 	return $new_var[0] + $new_var[1];
-}, $legal_name_array); 
+}
+
+array_map("x", $legal_name_array); 
 
 echo $legal_name_array;
 
