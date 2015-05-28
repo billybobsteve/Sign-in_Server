@@ -11,7 +11,7 @@ $time_out = new DateTime($time);
 $time_out_str = $time_out->format("Y-m-d H:i:s");
 
 $server_time_out = date("Y-m-d H:i:s");
-
+//
 $name_array = explode(',', $name);
 
 ///////////////
