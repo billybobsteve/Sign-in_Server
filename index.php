@@ -6,7 +6,6 @@
 		<link href="jquery-ui.min.css" type="text/css">
 		<link href="jquery-ui.structure.min.css" type="text/css">
 		<link href="jquery-ui.theme.min.css" type="text/css">
-		<link rel="stylesheet" href="handheld.css" type="text/css" media="only screen and (max-device-width: 480)"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 	</head>
@@ -53,17 +52,17 @@
 
 				<div id = "dataInput">
 					<div class = "form_text">
-						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "null" autocomplete = "off"/> 
+						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "null" autocomplete = "off" autocorrect = "off"/> 
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
 					
 					<div class = "form_text" id="dest-div">
-						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off"/>
+						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off" autocorrect = "off"/>
 					</div>
 
 					<div class = "form_text">
 						<label for = "time" id="time-label">Time Out: </label>
-						<input type="text" class = "in" id="time" autocomplete = "off"/>
+						<input type="text" class = "in" id="time" autocomplete = "off" autocorrect = "off"/>
 					</div>
 
 					<div id="arrows_sections">
@@ -103,7 +102,6 @@
 		 Chase Goddard, Thomas Ragucci, Nathan Spring, and Harrison Lee in 2015 </span>
 	</body>
 	
-	
 	<script src="jquery-2.1.4.min.js"> </script>
 
 	<!--<script src="globalize.min.js"> </script>-->
@@ -113,5 +111,9 @@
 	<script src="async_post_index.js"> </script>
 	<script src="typeahead_implementation.js"> </script>
 	<!--<script src="script-front-tomerge.js"> </script> -->
+
+	<div id="class_data" style="display: none;"> 
+		<?php echo file_get_contents('class_list_full.csv'); ?>
+	</div>
 
 </html>

@@ -22,7 +22,7 @@ body {
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
 	body{
-		font-size: 12px !important
+		font-size: 4px !important;
 	}
 
 	input[type="text"] {
@@ -156,6 +156,7 @@ input{
 	padding-bottom: 3px;
 	padding-top: 1px;
 
+	margin-top: 1px;
 	margin-right: 5px;
 	margin-left: -5px;
 }
@@ -206,14 +207,6 @@ input{
 	cursor: pointer;
 }
 
-#upHRbutton{
-	
-}
-
-#downHRbutton{
-	
-}
-
 .tab-box { 
 	padding-bottom:5px;
 	margin-left: 3px;
@@ -241,18 +234,28 @@ input{
 
 .hide { display: none;}
 
+.twitter-typeahead {
+	display: inline !important;	
+	background-color: #FFFFFF;
+}
+
+.tt-hint {
+	display: none !important;
+}
+
 .tt-dropdown-menu {
 	background-color: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 8px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
+	opacity: .9;
 	padding: 8px 0;
-	width: 422px;
+	width: 200px;
 }
 .tt-suggestion {
-	font-size: 24px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 14px;
 	padding: 3px 20px;
 }
 .tt-suggestion.tt-is-under-cursor {
