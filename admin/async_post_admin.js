@@ -19,8 +19,8 @@ function postUpdate(obj, name_old) {
 	//var text_forms = $("span", obj);
 	//var text_forms = document.getElementsByClassName("text-box");
 	//console.log(text_forms);
-	console.log(obj);
-	console.log(form_data);
+	//console.log(obj);
+	//console.log(form_data);
 	var post_url = 'update_admin.php';
 	//}
 	var ajax_post = $.ajax({
@@ -40,7 +40,7 @@ var edit = function(obj){
 	$(obj).append("<input type='button' value='Apply' id='apply'>");
 	$("#apply").click(function(){
 		var vals = [];
-		console.log()
+		//console.log()
 		for (var i = 0; i<$(".text-box", obj).length;i++){
 			vals[i] = $($(".text-box", obj)[i]).val();
 		}
