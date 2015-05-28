@@ -62,7 +62,7 @@ function post() {
 		form_data = form_data.toLowerCase().trim();
 
 		//console.log(global);
-		//console.log(form_data);
+		console.log(form_data);
 		//console.log("test2");
 
 
