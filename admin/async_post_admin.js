@@ -13,13 +13,15 @@ function post() {
 }
 
 var edit = function(obj){
+	$(".edit-button", obj).remove();
 	for (var i = 0; i<$("span", obj).length;i++){
 		$($("span", obj)[i]).html("<input class='text-box' type='text' value='"+$($("span", obj)[i]).text()+"'>")
 	}
 	$(obj).append("<input type='button' value='Apply' id='apply'>");
 	$("#apply").click(function(){
 		for (var i = 0; i<$(".text-box", obj).length;i++){
-			$($("span", obj)[i]).html("<span>"+$($(".text-box", obj)[i]).val()+"</span>");
+			console.log($($(".text-box", obj)[i]).val());
+			$($("span", obj)[i]).html($($(".text-box", obj)[i]).val());
 		}
 		$("#apply").remove();
 	});
@@ -32,5 +34,6 @@ function return_data(data, textStatus, jqXHR) {
 		$(".edit-button").click(function(){
 			edit($(this).parent());
 		});
+		$("div ul li span").addClass("text-holder");
 	//}
 }
