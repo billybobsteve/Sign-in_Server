@@ -16,7 +16,7 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
-$sql = "UPDATE Students SET " . $time_out ? ("TimeIn='{$time_in}'" . $time_in ? "," : "") : "" . $time_in ? "TimeOut='{$TimeOut}'" : "" . "WHERE name='{$name}';";
+$sql = "UPDATE Students SET " . ($time_out) ? ("TimeIn='{$time_in}'" . ($time_in) ? "," : "") : "" . $time_in ? "TimeOut='{$TimeOut}'" : "" . "WHERE name='{$name}';";
 echo $sql;
 
 
