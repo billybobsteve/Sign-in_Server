@@ -77,6 +77,11 @@ $(document).ready(function(){
 
 	$('body').on('keypress', '#name', function(args) {
 		if (args.keyCode === 13) {
+			if($(".tt-suggestion p").length > 0){
+				$("#name").val(
+					$(".tt-suggestion p").text();
+				);
+			}
 			$('#plus').click();
 			return false;
 		}
