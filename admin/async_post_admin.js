@@ -48,7 +48,7 @@ var edit = function(obj){
 		}
 		$("#apply").remove();
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
-		postUpdate(vals, $($("span", obj)[i]).text());
+		postUpdate(vals, $($("span", obj)[0]).text());
 	});
 }
 
