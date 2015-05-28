@@ -136,8 +136,8 @@ function return_data_out(data, textStatus, jqXHR) {
 	signed_out.pop();
 	var message = "";
 	var message_error = "";
-	console.log(signed_out);
-	console.log(signed_out.length);
+	//console.log(signed_out);
+	//console.log(signed_out.length);
 
 	var signed_out_success = 0;
 	var signed_out_failure = 0;
