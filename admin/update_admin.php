@@ -16,14 +16,16 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
+$sql = "UPDATE Students SET Location='{$dest}', ";
+
 if ($time_out) {
 	if ($time_in) {
-		$sql = "UPDATE Students SET TimeIn='{$time_in}', TimeOut='{$time_out}' WHERE name='{$name}';";
+		$sql .= "TimeIn='{$time_in}', TimeOut='{$time_out}' WHERE name='{$name}';";
 	}
-	$sql = "UPDATE Students SET TimeOut='{$time_out}' WHERE name='{$name}';";
+	$sql .= "TimeOut='{$time_out}' WHERE name='{$name}';";
 }
 else if ($time_in) {
-	$sql = "UPDATE Students SET TimeIn='{$time_in}' WHERE name='{$name}';";
+	$sql .= "TimeIn='{$time_in}' WHERE name='{$name}';";
 }
 
 $retval = mysql_query($sql, $conn);
