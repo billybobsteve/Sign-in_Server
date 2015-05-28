@@ -19,7 +19,7 @@ body {
     color: #000080;
 }
 
-@media only screen (max-device-width : 480px){	
+@media (max-width: 600px){	
 	body{
 		background: #000080;
 		font-size: 64px;
