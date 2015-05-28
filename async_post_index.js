@@ -18,7 +18,7 @@ function post() {
 				//global += ",";
 			}
 			form_data += serialize_string(list[i].innerText);
-			console.log(form_data);
+			//console.log(form_data);
 		}
 
 
@@ -61,8 +61,8 @@ function post() {
 
 		form_data = form_data.toLowerCase().trim();
 
-		console.log(global);
-		console.log(form_data);
+		//console.log(global);
+		//console.log(form_data);
 		//console.log("test2");
 
 
@@ -129,7 +129,7 @@ function return_data_in(data, textStatus, jqXHR) {
 function return_data_out(data, textStatus, jqXHR) {
 	//global = global.split(',');
 	//alert("test");
-	console.log("log" + data);
+	console.log("data:" + data);
 	//return;
 	//console.log(data);
 	var signed_out = data.trim().split(',');
