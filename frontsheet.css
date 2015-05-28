@@ -36,6 +36,11 @@ body {
 		float:left !important;
 	}
 
+	#plus{
+		padding-right: 5px !important;
+		padding-top: 1px !important;
+	}
+
 }
 
 
