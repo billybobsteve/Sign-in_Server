@@ -57,7 +57,7 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
-		$myfile = fopen("home/ubuntu/Sign-in_Server/admin/database.txt", "w") or die('Cannot open file: database.txt');
+		$myfile = fopen("database.txt", "w") or die('Cannot open file: database.txt');
 		while($row = mysql_fetch_assoc($retval)) {
 			$text = "Student name: {$row['Name']} \n";
 			fwrite($myfile, $text);
