@@ -25,7 +25,7 @@ body {
 
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
-	body{
+	body{ 
 		font-size: 12em !important;
 	}
 
@@ -171,7 +171,7 @@ input{
 	padding-bottom: 3px;
 	padding-top: 1px;
 
-	margin-top: 1px;
+	margin-top: 3px;
 	margin-right: 5px;
 	margin-left: -5px;
 }
