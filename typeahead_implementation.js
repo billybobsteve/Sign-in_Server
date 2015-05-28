@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var data = $("#class_data").html().split('\n');
 	data = $.grep(data, function(val){
 		if(val.indexOf("12") > -1){
-			return val;
+			return val.split(",")[0] + val.split(",")[1];
 		}
 	});
 	console.log(data);
