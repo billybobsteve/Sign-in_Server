@@ -108,7 +108,8 @@
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
 	<script src="typeahead.min.js"> </script>
-	<script> var data = function() {return "<?php echo file_get_contents('class_list_full.csv'); ?>"; }; </script>
+	<script> var data = function() {return "<?php echo trim(preg_replace('/\s+/', ' ',(file_get_contents('class_list_full.csv'))); ?>"; }; </script>
+
 	<script> console.log(data); </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
