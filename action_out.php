@@ -1,6 +1,4 @@
 <?php 
-echo "test";
-die();
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time = htmlspecialchars($_POST['datetime']);
@@ -16,13 +14,11 @@ $server_time_out = date("Y-m-d H:i:s");
 $name_array = explode(',', $name);
 
 ///////////////
-die();
 $name_list = file_get_contents('class_list_full.csv');
-die(); //PHP
+//die(); //PHP
 $legal_name_array = explode("\r", $name_list);
 
 echo $legal_name_array;
-die();
 
 function x($var) {
 	$new_var = explode(',', $var);
