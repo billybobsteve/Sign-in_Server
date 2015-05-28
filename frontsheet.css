@@ -37,8 +37,12 @@ body {
 	}
 
 	#plus{
-		margin-right: 5px !important;
-		margin-top: 1px !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+
+	#arrows_sections {
+		display: block !important;
 	}
 
 }
