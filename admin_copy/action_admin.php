@@ -35,7 +35,7 @@ switch ($option) {
 
 		$fields_num = mysql_num_fields($retval);
 
-		echo "<h1>Table: {$table}</h1>";
+		//echo "<h1>Students</h1>";
 		echo "<table border='1'>";
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval))
