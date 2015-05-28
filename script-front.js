@@ -72,6 +72,9 @@ $(document).ready(function(){
 	});
 
 	var arr_contains = function(arr, val){
+		if(val == ""){
+			reutrn false;
+		}
 		for(var i = 0; i < arr.length;i++){
 			if(arr[i].trim().toLowerCase() === val.trim().toLowerCase())
 				return true;
