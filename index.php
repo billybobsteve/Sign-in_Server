@@ -108,7 +108,7 @@
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
 	<script src="typeahead.min.js"> </script>
-	<script> var data = function() {return "<?php $var = file_get_contents('class_list_full.csv'); echo str_replace(PHP_EOL, '', $var); ?>"; }; </script>
+	<script> var data = function() {return "<?php $var = file_get_contents('class_list_full.csv'); echo str_replace(PHP_EOL, null, $var); ?>"; }; </script>
 
 	<script> console.log(data); </script>
 	<script src="script-front.js"> </script>
