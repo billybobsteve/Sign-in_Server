@@ -85,8 +85,8 @@ input[type="text"] {
 #confirmation {
 	color:#3399cc;
 	font-size:24px;
-	/*width: 300px;
-    height: 95px; */
+	width: 350px; 
+    /*height: 95px; */
     line-height: 200px;
     position: fixed;
     top: 50%; 
