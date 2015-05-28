@@ -22,8 +22,7 @@ body {
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
 	body{
-		font-size: 12px !important;
-		background-color: #0000ff;
+		font-size: 200px !important;
 	}
 
 	input[type="text"] {
