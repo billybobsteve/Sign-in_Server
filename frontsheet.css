@@ -26,6 +26,7 @@ body {
 
 	input[type="text"] {
 		width: 50% !important;
+		height: 80% !important;
 	}
 
 	.form_text {
@@ -37,8 +38,8 @@ body {
 	}
 
 	#plus{
-		padding-right: 5px !important;
-		padding-top: 1px !important;
+		margin-right: 5px !important;
+		margin-top: 1px !important;
 	}
 
 }
