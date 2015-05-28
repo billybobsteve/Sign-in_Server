@@ -157,6 +157,7 @@ input{
 	padding-bottom: 3px;
 	padding-top: 1px;
 
+	margin-top: 1px;
 	margin-right: 5px;
 	margin-left: -5px;
 }
@@ -250,10 +251,11 @@ input{
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
 	padding: 8px 0;
-	width: 250px;
+	width: 200px;
 }
 .tt-suggestion {
 	font-size: 14px;
+	opacity: .6;
 	line-height: 14px;
 	padding: 3px 20px;
 }
