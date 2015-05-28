@@ -1,6 +1,9 @@
 <?php 
 
 $option = htmlspecialchars($_POST['list']);
+$name = htmlspecialchars($_POST['name']);
+$dest = htmlspecialchars($_POST['destination']);
+$time_out = htmlspecialchars($_POST['time_out']);
 //echo $option;
 
 $dbhost = 'localhost';
