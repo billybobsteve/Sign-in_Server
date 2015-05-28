@@ -32,11 +32,30 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
-		$test = mysql_fetch_array($retval);
-		for ($z = 0; $z < count($test); $z++) {
-			echo $test[$z];
+
+		$fields_num = mysql_num_fields($retval);
+
+		echo "<h1>Table: {$table}</h1>";
+		echo "<table border='1'>";
+		// printing table rows
+		while($row = mysql_fetch_assoc($retval))
+		{
+		    echo "<tr>";
+
+		    // $row is array... foreach( .. ) puts every element
+		    // of $row to $cell variable
+		    foreach($row as $key => $cell){
+		        echo "<td>$cell</td>";
+		    }
+
+
+		    echo "</tr>\n";
 		}
-		//echo var_dump($retval);
+		echo '</table>';
+
+
+
+
 		break;
 	case "edit_student" :
 		//TODO
