@@ -56,8 +56,9 @@ for ($i = 0; $i < count($name_array); $i++) {
 		}
 	}
 	if (!$legal) {
-		echo "fuck you and your bullshit";
-		echo '-1' . ',';
+		echo "fuck you and your bullshit	";
+		header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
+		die();
 	}
 
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
