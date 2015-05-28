@@ -14,17 +14,20 @@ $server_time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
 
-$name_list = file_get_contents('class_list_full.csv');
-echo $name_list;
-$legal_name_array = explode(PHP_EOL, $name_list);
-echo "num:" . count($legal_name_array);
+///////////////
 
-$pattern = array(',');
-$replace = array(' '); 
-for ($i = 0; $i < count($legal_name_array); $i++) {
-	echo $legal_name_array[i];
-	$legal_name_array[i] = preg_replace($pattern, $replace, $legal_name_array[i]);
-}
+$name_list = file_get_contents('class_list_full.csv');
+
+$legal_name_array = explode(PHP_EOL, $name_list);
+
+echo $legal_name_array;
+
+array_map(function x($var) {
+	$new_var = explode(',', $var);
+	return $new_var[0] + $new_var[1];
+}, $legal_name_array);
+
+echo $legal_name_array;
 
 $dbhost = 'localhost';
 $dbuser = 'root';
