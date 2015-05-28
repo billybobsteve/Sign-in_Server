@@ -109,8 +109,6 @@
 	<script src="typeahead.min.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
-	<script src="typeahead_implementation.js"> </script>
-	<!--<script src="script-front-tomerge.js"> </script> -->
 
 	<div id="class_data" style="display: none;"> 
 		<?php echo file_get_contents('class_list_full.csv'); ?>
