@@ -39,8 +39,6 @@ $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 if (!$conn) {
 	die('Could not connect: ' . mysql_error());
-	echo mysql_error();
-
 }
 
 mysql_select_db('signoutdb');

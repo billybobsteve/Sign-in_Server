@@ -2,7 +2,7 @@ var global = "";
 function post() {
 	var interim = $('#sign_out_form').serializeArray();
 	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
-	var form_data = "name=" + serialize_string(interim[0].value); // + ",";
+	var form_data = "name=" + interim[0].value; // + ",";
 
 	var time = document.getElementById('time').value;
 	var hour = parseInt(time.substring(0, 2));
@@ -17,7 +17,7 @@ function post() {
 				form_data += ",";
 				//global += ",";
 			}
-			form_data += serialize_string(list[i].innerText);
+			form_data += list[i].innerText;
 			//console.log(form_data);
 		}
 
@@ -55,11 +55,11 @@ function post() {
 			form_data += serialize_string(list[i].innerText);
 		} */
 
-		form_data += "&destination=" + serialize_string(interim[1].value);
+		form_data += "&destination=" + interim[1].value;
 
 		//form_data += "&datetime=" + datetime;
 
-		form_data = form_data.toLowerCase().trim();
+		form_data = serialize_string(form_data.toLowerCase().trim());
 
 		//console.log(global);
 		console.log(form_data);
