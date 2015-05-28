@@ -12,6 +12,12 @@
 	</head>
 
 	<body>
+
+		<div id="the-basics">
+			<input class="typeahead" type="text" placeholder="States of USA">
+		</div>
+
+
 		<div class="tab-box"> 
 			<a href="#" class="tabLink activeLink" id="out-tab">Sign Out</a>
 			<a href="#" class="tabLink" id="in-tab">Sign In</a>
@@ -25,9 +31,6 @@
 				<div id = "instructions">
 					<h3 style = "text-align: center"> Instructions: </h3>
 					
-				<div id="the-basics">
-  				<input class="typeahead" type="text" placeholder="States of USA">
-				</div>
 
 					<div id="sign-out-instructions">
 						<p> To sign out: </p>
@@ -103,7 +106,7 @@
 		</div>
 
 		<span id="credits" style="float:right; font-size:12px"> This sign-out system was made as a Senior Term Project by:
-		 Chase Goddard, Thomas Ragguci, Nathan Spring, and Harrison Lee in 2015 </span>
+		 Chase Goddard, Thomas Ragucci, Nathan Spring, and Harrison Lee in 2015 </span>
 	</body>
 	
 	
@@ -111,7 +114,7 @@
 
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
-	<script src = "typeahead.js"> </script>
+	<script src="typeahead.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
 	<script src="typeahead_implementation.js"> </script>
