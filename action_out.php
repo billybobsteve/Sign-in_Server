@@ -12,7 +12,7 @@ $time_out_str = $time_out->format("Y-m-d H:i:s");
 
 $server_time_out = date("Y-m-d H:i:s");
 
-$name_array = explode(',', $name);
+//$name_array = explode(',', $name);
 
 $name_list = file_get_contents('class_list_full.csv');
 echo $name_list;
