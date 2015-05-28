@@ -8,7 +8,7 @@ $time = $current_date->format('Y-m-d ') . $time;
 
 //$time_out = new DateTime($time);
 
-$time_out = 0;
+$time_out = new DateTime();
 
 $server_time_out = date("Y-m-d H:i:s");
 
