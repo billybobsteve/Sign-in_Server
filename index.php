@@ -108,7 +108,7 @@
 
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
-	<script src="typeahead.js"> </script>
+	<script src="typeahead.min.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
 	<script src="typeahead_implementation.js"> </script>
