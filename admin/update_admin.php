@@ -16,8 +16,17 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
-$sql = "UPDATE Students SET " . ($time_out) ? ("TimeIn='{$time_in}'" . ($time_in) ? "," : "") : "" . $time_in ? "TimeOut='{$TimeOut}'" : "" . "WHERE name='{$name}';";
-echo $sql;
+if ($time_out) {
+	if ($time_in) {
+		$sql = "UPDATE Students SET TimeIn='{$time_in}', TimeOut='{$time_out}' WHERE name='{$name}';";
+	}
+	$sql = "UPDATE Students SET TimeOut='{$time_out}' WHERE name='{$name}';";
+}
+else if ($time_in) {
+	$sql = "UPDATE Students SET TimeIn='{$time_in}' WHERE name='{$name}';";
+}
+
+echo $sql; 
 
 
 mysql_close($conn);
