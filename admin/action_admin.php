@@ -44,6 +44,8 @@ switch ($option) {
 	case "edit_student" :
 		//TODO
 		break;
+	case "clear_db" :
+		
 }
 
 
