@@ -22,7 +22,9 @@ var edit = function(obj){
 		var vals = [];
 		for (var i = 0; i<$(".text-box", obj).length;i++){
 			vals[i] = $($(".text-box", obj)[i]).val();
-			$($("span", obj)[i]).html($($(".text-box", obj)[i]).val());
+		}
+		for(var i = 0; i<$(".text-box", obj).length;i++){
+			$($(".text-holder", obj)[i]).html(vals[i]);
 		}
 		$("#apply").remove();
 	});
