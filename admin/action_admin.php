@@ -51,6 +51,26 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		echo "Database has been cleared";
+	case "print_students":
+		$sql = 'SELECT * FROM Students';
+		$retval = mysql_query($sql, $conn);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysql_error());
+		}
+		$file = fopen("database.txt", "w");
+		while($row = mysql_fetch_assoc($retval)) {
+			$text = "Student name: {$row['Name']} \n";
+			fwrite($file, $text);
+			$text = "Location: {$row['Location']} \n";
+			fwrite($file, $text);
+			$text = "Time out: {$row['TimeOut']} \n";
+			fwrite($file, $text);
+			$text = "Time in: {$row['TimeIn']} \n";
+			fwrite($file, $text);
+		}
+		fclose($file);
+		break;
+		
 }
 
 
