@@ -44,9 +44,10 @@ body {
 	}
 
 	#arrows_sections {
-		display: inline-block !important;/*
-		margin-top: 20px !important;
-		margin-right: 20px !important;*/
+		display: inline-block !important;
+
+		margin-top: 200px !important;
+		margin-right: 200px !important;
 	}
 
 }
