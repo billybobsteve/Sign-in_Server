@@ -90,7 +90,7 @@ input[type="text"] {
 .form_text {
 	display: inline-block;/*
 	width: 250px; for greater compatibility stuff*/
-	width: 40%;
+	width: 35%;
 
 	margin-top: 10px;
 	margin-right: auto;
