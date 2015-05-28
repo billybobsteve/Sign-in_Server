@@ -30,7 +30,7 @@ var states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
   'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
   'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
 ];
-	 
+$(document).ready(function(){	 
 $('#the-basics .typeahead').typeahead({
 	hint: true,
 	highlight: true,
@@ -40,3 +40,4 @@ $('#the-basics .typeahead').typeahead({
   	name: 'states',
   	source: substringMatcher(states)
 });
+};

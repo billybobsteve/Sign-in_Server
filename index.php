@@ -13,22 +13,9 @@
 
 	<body>
 
-		<form>
-    	<div class="typeahead-container">
-        <div class="typeahead-field">
- 
-            <span class="typeahead-query">
-                <input id="q" name="q" type="search" autocomplete="off">
-            </span>
-            <span class="typeahead-button">
-                <button type="submit">
-                    <span class="typeahead-search-icon"></span>
-                </button>
-            </span>
- 
-        	</div>
-    		</div>
-			</form>
+		<div id="the-basics">
+			<input class="typeahead" type="text" placeholder="States of USA">
+		</div>
 
 
 		<div class="tab-box"> 
@@ -127,10 +114,10 @@
 
 	<!--<script src="globalize.min.js"> </script>-->
 	<script src="jquery-ui.min.js"> </script>
-	<script src="typeahead_implementation.js"> </script>
 	<script src="typeahead.js"> </script>
 	<script src="script-front.js"> </script>
 	<script src="async_post_index.js"> </script>
+	<script src="typeahead_implementation.js"> </script>
 
 	<!--<script src="script-front-tomerge.js"> </script> -->
 
