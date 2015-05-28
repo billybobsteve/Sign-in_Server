@@ -16,7 +16,7 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
-$sql = "UPDATE Students SET Location='{$dest}', ";
+$sql = "UPDATE Students SET Location='{$dest}', Name='{$name}', ";
 
 if ($time_out) {
 	if ($time_in) {
