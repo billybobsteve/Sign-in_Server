@@ -22,7 +22,7 @@ $replace = array(' ');
 for ($i = 0; $i < count($legal_name_array); $i++) {
 	$legal_name_array[i] = preg_replace($pattern, $replace, $legal_name_array[i]);
 }
-//echo count($name_array);
+echo count($legal_name_array);
 
 $dbhost = 'localhost';
 $dbuser = 'root';
