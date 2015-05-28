@@ -22,7 +22,7 @@ body {
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
 	body{
-		font-size: 200px;
+		font-size: 4px !important;
 	}
 
 	input[type="text"] {
