@@ -6,9 +6,9 @@ $time = htmlspecialchars($_POST['datetime']);
 $current_date = new DateTime();
 $time = $current_date->format('Y-m-d ') . $time;
 
-//$time_out = new DateTime($time);
+$time_out = new DateTime($time);
 
-$time_out = new DateTime();
+$time_out_str = $time_out->format("Y-m-d H:i:s");
 
 $server_time_out = date("Y-m-d H:i:s");
 
@@ -40,7 +40,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		echo '-1' . ',';
 		continue;
 	}
-	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}');";
+	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out_str}', '{$server_time_out}');";
 	//$retval = mysql_query($sql, $conn);
 	die();
 	echo $sql;
