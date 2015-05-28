@@ -20,10 +20,11 @@ var edit = function(obj){
 	$(obj).append("<input type='button' value='Apply' id='apply'>");
 	$("#apply").click(function(){
 		var vals = [];
+		console.log()
 		for (var i = 0; i<$(".text-box", obj).length;i++){
 			vals[i] = $($(".text-box", obj)[i]).val();
 		}
-		for(var i = 0; i<$(".text-box", obj).length;i++){
+		for(var i = 0; i<$(".text-holder", obj).length;i++){
 			$($(".text-holder", obj)[i]).html(vals[i]);
 		}
 		$("#apply").remove();
