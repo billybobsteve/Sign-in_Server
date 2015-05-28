@@ -29,6 +29,8 @@ array_map("x", $legal_name_array);
 
 echo $legal_name_array;
 
+die();
+
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
