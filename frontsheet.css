@@ -32,6 +32,9 @@ body {
 		display: block !important;
 	}
 
+	label{
+		float:left !important;
+	}
 
 }
 
