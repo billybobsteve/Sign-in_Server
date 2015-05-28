@@ -34,7 +34,7 @@ switch ($option) {
 		}
 		$test = mysql_fetch_array($retval);
 		for ($z = 0; $z < count($test); $z++) {
-			echo $test[z];
+			echo $test[$z];
 		}
 		//echo var_dump($retval);
 		break;
