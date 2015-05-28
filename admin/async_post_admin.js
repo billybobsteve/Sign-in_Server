@@ -33,6 +33,7 @@ function postUpdate(obj, name_old) {
 
 var edit = function(obj){
 	$(".edit-button").remove();
+	var x = $($("span", obj)[0]).text();
 	for (var i = 0; i<$("span", obj).length;i++){
 		$($("span", obj)[i]).html("<input class='text-box' type='text' value='"+$($("span", obj)[i]).text()+"'>");
 	}
@@ -48,7 +49,7 @@ var edit = function(obj){
 		}
 		$("#apply").remove();
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
-		postUpdate(vals, $($("span", obj)[0]).text());
+		postUpdate(vals, x);
 	});
 }
 
