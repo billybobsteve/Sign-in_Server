@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Example of Twitter Typeahead</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script  type="text/javascript" src="../js/typeahead.min.js"></script>
+<script  type="text/javascript" src="typeahead.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('input.typeahead').typeahead({
