@@ -78,9 +78,7 @@ $(document).ready(function(){
 	$('body').on('keypress', '#name', function(args) {
 		if (args.keyCode === 13) {
 			if($(".tt-suggestion p").length > 0){
-				$("#name").val(
-					$($(".tt-suggestion p")[0]).text()
-				);
+				$($(".tt-suggestion p")[0]).click();
 			}
 			$('#plus').click();
 			return false;
@@ -96,10 +94,6 @@ $(document).ready(function(){
 			$('#button').click();
 			return false;
 		}
-	});
-
-	$("#name").focusout(function(){
-		$("#name").val("");
 	});
 
 	$("#in-tab").click(function(){
