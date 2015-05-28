@@ -53,17 +53,17 @@
 
 				<div id = "dataInput">
 					<div class = "form_text">
-						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "null" autocomplete = "off"/> 
+						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "null" autocomplete = "off" autocorrect = "off"/> 
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
 					
 					<div class = "form_text" id="dest-div">
-						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off"/>
+						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off" autocorrect = "off"/>
 					</div>
 
 					<div class = "form_text">
 						<label for = "time" id="time-label">Time Out: </label>
-						<input type="text" class = "in" id="time" autocomplete = "off"/>
+						<input type="text" class = "in" id="time" autocomplete = "off" autocorrect = "off"/>
 					</div>
 
 					<div id="arrows_sections">
