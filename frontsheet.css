@@ -72,11 +72,11 @@ input[type="text"] {
 }
 
 #name{
-	background:#fff ;
-	border:1px solid #ccc;
-	color:#555;
-	margin-left: auto;
-	margin-right: auto;
+	background:#fff !important;
+	border:1px solid #ccc !important;
+	color:#555 !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .form_text {
