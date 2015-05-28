@@ -18,6 +18,7 @@ function postUpdate(obj) {
 	var form_data = "list=edit_student&"; // $('#selection_form').serialize();
 	var text_forms = $("span", obj);
 	form_data += "name=" + text_forms[0].value + "&destination=" + text_forms[1].value + "&time_out=" + text_forms[1].value;
+	console.log(obj);
 	console.log(form_data);
 	var post_url = 'update_admin.php';
 	//}
