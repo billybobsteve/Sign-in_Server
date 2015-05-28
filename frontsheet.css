@@ -21,14 +21,18 @@ body {
 
 @media (max-width: 600px){	
 	body{
-		background: #000080;
-		font-size: 64px;
+		font-size: 12px !important
+	}
 
+	input[type="text"] {
+		width: 50% !important;
 	}
 
 	.form_text {
-		display: block;
+		display: block !important;
 	}
+
+
 }
 
 
@@ -52,7 +56,7 @@ input[type="text"] {
 }
 
 .form_text {
-	display: block;
+	display: inline-block;
 	width: 250px;
 	margin-top: 10px;
 	margin-right: auto;
@@ -129,11 +133,11 @@ input{
 	background-color: #9BE466;
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 3%;
-	padding-top: 1%;
-	margin-right: 5%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	padding-top: 1px;
+	margin-right: 5px;
 }
 
 .delete-buttons{
