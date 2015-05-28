@@ -60,15 +60,15 @@ switch ($option) {
 		$myfile = fopen("home/ubuntu/Sign-in_Server/admin/database.txt", "w") or die('Cannot open file: database.txt');
 		while($row = mysql_fetch_assoc($retval)) {
 			$text = "Student name: {$row['Name']} \n";
-			fwrite($file, $text);
+			fwrite($myfile, $text);
 			$text = "Location: {$row['Location']} \n";
-			fwrite($file, $text);
+			fwrite($myfile, $text);
 			$text = "Time out: {$row['TimeOut']} \n";
-			fwrite($file, $text);
+			fwrite($myfile, $text);
 			$text = "Time in: {$row['TimeIn']} \n";
-			fwrite($file, $text);
+			fwrite($myfile, $text);
 		}
-		fclose($file);
+		fclose($myfile);
 		break;
 		
 }
