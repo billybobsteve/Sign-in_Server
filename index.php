@@ -102,10 +102,6 @@
 		 Chase Goddard, Thomas Ragucci, Nathan Spring, and Harrison Lee in 2015 </span>
 	</body>
 	
-	<div id="class_data" style="display: none;"> 
-		<?php $var = file_get_contents('class_list_full.csv'); echo str_replace(PHP_EOL, null, $var); ?>
-	</div>
-	
 	<script src="jquery-2.1.4.min.js"> </script>
 
 	<!--<script src="globalize.min.js"> </script>-->
@@ -116,5 +112,9 @@
 	<script src="async_post_index.js"> </script>
 	<script src="typeahead_implementation.js"> </script>
 	<!--<script src="script-front-tomerge.js"> </script> -->
+
+	<div id="class_data" style="display: none;"> 
+		<?php $var = file_get_contents('class_list_full.csv'); echo str_replace(PHP_EOL, null, $var); ?>
+	</div>
 
 </html>
