@@ -234,7 +234,11 @@ input{
 .hide { display: none;}
 
 .twitter-typeahead {
-	display: inline !important;
+	display: inline !important;	
+}
+
+.tt-hint {
+	display: none !important;
 }
 
 .tt-dropdown-menu {
