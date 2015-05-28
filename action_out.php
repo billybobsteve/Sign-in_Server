@@ -16,13 +16,13 @@ $name_array = explode(',', $name);
 
 $name_list = file_get_contents('class_list_full.csv');
 $legal_name_array = explode("\n", $name_list);
+echo "num:" . count($legal_name_array);
 
 $pattern = array(',');
 $replace = array(' '); 
 for ($i = 0; $i < count($legal_name_array); $i++) {
 	$legal_name_array[i] = preg_replace($pattern, $replace, $legal_name_array[i]);
 }
-echo count($legal_name_array);
 
 $dbhost = 'localhost';
 $dbuser = 'root';
