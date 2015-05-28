@@ -4,8 +4,8 @@ function post() {
 	var form_data = $('#selection_form').serialize();
 	if (form_data.includes("clear_db")) {
 		console.log("test");
-		var confirm = confirm("This will erase any existing data.");
-		if (!confirm) {
+		var confirmation = confirm("This will erase any existing data.");
+		if (!confirmation) {
 			return;
 		}
 	}
