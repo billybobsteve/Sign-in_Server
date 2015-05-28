@@ -45,6 +45,9 @@ body {
 	#plus{
 		margin-right: 30px !important;
 		padding-bottom: 10px !important;
+
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
 	}
 
 	#arrows_sections {
