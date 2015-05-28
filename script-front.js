@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 	var arr_contains = function(arr, val){
 		if(val == ""){
-			return false;
+			return true;
 		}
 		for(var i = 0; i < arr.length;i++){
 			if(arr[i].trim().toLowerCase() === val.trim().toLowerCase())
@@ -117,10 +117,6 @@ $(document).ready(function(){
 
 	$('body').on('keypress', '#destination', function(args) {
 		if (args.keyCode === 13) {
-			if(!arr_contains(data, $("#name").val())){
-				insert_overlay("THIS NAME IS NOT IN THE DATABASE");
-				return false;
-			}
 			$('#button').click();
 			return false;
 		}
