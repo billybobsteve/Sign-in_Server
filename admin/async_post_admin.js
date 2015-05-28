@@ -3,9 +3,11 @@ function post() {
 	//if (window.location.pathname.includes("admin.php")){
 	var form_data = $('#selection_form').serialize();
 	if (form_data.includes("clear_db")) {
+		cosnole.log("test");
 		var confirm = confirm("This will erase any existing data.");
-		if (!confirm)
+		if (!confirm) {
 			return;
+		}
 	}
 	var post_url = 'action_admin.php';
 	var ajax_post = $.ajax({
