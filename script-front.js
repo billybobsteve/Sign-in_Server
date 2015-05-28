@@ -123,6 +123,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$('#button').click(function(){
+		if(!arr_contains(data, $("#name").val())){
+			insert_overlay("THIS NAME IS NOT IN THE DATABASE");
+			return false;
+		}
+	});
+
 	$("#in-tab").click(function(){
 		$("#in-tab").addClass("activeLink");
 		$("#out-tab").removeClass("activeLink");
