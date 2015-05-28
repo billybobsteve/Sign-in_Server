@@ -69,6 +69,7 @@ switch ($option) {
 			fwrite($myfile, $text);
 		}
 		fclose($myfile);
+		echo "Database has been cleared";
 		break;
 		
 }
