@@ -240,7 +240,11 @@ input{
 .tabcontent { }
 
 .hide { display: none;}
-/*
+
+.twitter-typeahead {
+	margin-bottom: 15px;
+}
+
 .tt-dropdown-menu {
 	background-color: #FFFFFF;
 	border: 1px solid rgba(0, 0, 0, 0.2);
@@ -263,4 +267,3 @@ input{
 	margin: 0;
 }
 
-*/
