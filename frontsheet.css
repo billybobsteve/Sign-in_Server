@@ -25,6 +25,10 @@ body {
 		font-size: 12px !important;
 	}
 
+	#instructions {
+		font-size: 6px !important;
+	}
+
 	input[type="text"] {
 		width: 50% !important;
 	}
