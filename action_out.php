@@ -14,7 +14,14 @@ $server_time_out = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
 
+$name_list = file_get_contents('class_list_full.csv');
+$legal_name_array = explode("\n", $name_list);
 
+$pattern = array(',');
+$replace = array(' '); 
+for ($i = 0; $i < count($legal_name_array); $i++) {
+	$legal_name_array[i] = preg_replace($pattern, $replace, $legal_name_array[i]);
+}
 //echo count($name_array);
 
 $dbhost = 'localhost';
@@ -33,12 +40,22 @@ mysql_select_db('signoutdb');
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
+	$legal = false;
+	for ($x = 0; $x < count($legal_name_array); $x++) {
+		if (strpos($current_name, $legal_name_array[i])) {
+			$legal = true;
+		}
+	}
+	if (!$legal)
+		die();
+
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
 	$name_check = mysql_query($sql_name_check, $conn);
 	if (mysql_num_rows($name_check) > 0) {
 		echo '-1' . ',';
 		continue;
 	}
+
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out_str}', '{$server_time_out}');";
 	$retval = mysql_query($sql, $conn);
 	//echo $sql;

@@ -50,7 +50,7 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
-		echo "Database has been cleared.";
+		echo "Database has been cleared";
 }
 
 
