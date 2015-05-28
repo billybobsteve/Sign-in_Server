@@ -26,8 +26,13 @@ else if ($time_in) {
 	$sql = "UPDATE Students SET TimeIn='{$time_in}' WHERE name='{$name}';";
 }
 
+$retval = mysql_query($sql, $conn);
+
 echo $sql; 
 
+if(! $retval ) {
+	die('Could not enter data: ' . mysql_error());
+}
 
 mysql_close($conn);
 
