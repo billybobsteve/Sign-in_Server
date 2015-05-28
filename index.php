@@ -17,8 +17,7 @@
 			<a href="#" class="tabLink" id="in-tab">Sign In</a>
 		</div>
 		<div id="sign-out-tab">
-			<div id = "overlay"> </div>
-			<div id = "confirmation"> </div>
+			<div id = "overlay"> <div id = "confirmation"> </div> </div>
 			<h1 id="title">
 				Sign Out of Campus
 			</h1>
