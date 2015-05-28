@@ -2,7 +2,7 @@ function post() {
 	//var option = document.getElementById("options").value;
 	//if (window.location.pathname.includes("admin.php")){
 	var form_data = $('#selection_form').serialize();
-	if (form_data.includes("clear_db")) {
+	if (form_data.indexOf("clear_db") > -1) {
 		var confirmation = confirm("This will erase any existing data.");
 		if (!confirmation) {
 			console.log("aborting");
