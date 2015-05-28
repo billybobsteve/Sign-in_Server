@@ -82,6 +82,9 @@ $(document).ready(function(){
 	});
 
 	var arr_contains = function(arr, val){
+		if($("#in-tab").hasClass("activeLink")){
+			return true;
+		}
 		if(val == ""){
 			return true;
 		}
@@ -95,12 +98,12 @@ $(document).ready(function(){
 	$("#plus").click(function(){
 		var index = ++counter;
 		if($("#name").val() !== "" ){
-			/*
+			
 			if(!arr_contains(data, $("#name").val())){
 				insert_overlay("THIS NAME IS NOT IN THE DATABASE");
 				return;
 			}
-			*/
+			
 			$("#nameList").append(
 				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+ $("#name").val() + "</span>" +
 				"<a href='#' id='name-button-"+index+"' class='delete-buttons'>  -  </a>" +
