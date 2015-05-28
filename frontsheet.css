@@ -38,8 +38,8 @@ body {
 	}
 
 	label{
-		float:left !important;
-		margin-right: 5px !important;
+		float:left !important;/*
+		margin-right: 5px !important;*/
 	}
 
 	#plus{
