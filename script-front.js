@@ -98,6 +98,10 @@ $(document).ready(function(){
 		}
 	});
 
+	$("#name").focusout(function(){
+		$("#name").val("");
+	});
+
 	$("#in-tab").click(function(){
 		$("#in-tab").addClass("activeLink");
 		$("#out-tab").removeClass("activeLink");
