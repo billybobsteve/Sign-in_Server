@@ -60,11 +60,34 @@ $(document).ready(function(){
 		$("#time").val(format(sec_since_midnight));
 	});
 
+	var data = $("#class_data").html().split('\n');
+	data = $.grep(data, function(val){
+		return val.indexOf("12") > -1;
+	});
+	data = $.map(data, function(val){
+		return val.split(",")[0] + " " + val.split(",")[1];
+	});
+	console.log(data);
+	$("#name").typeahead({
+		name: 'names',
+		local: data
+	});
+
+	var arr_contains = function(arr, val){
+		for(var i = 0; i < arr.length;i++){
+			if(arr[i].trim().toLowerCase() === val.trim().toLowerCase())
+				return true;
+		}
+		return false;
+	}
+
 	$("#plus").click(function(){
 		var index = ++counter;
 		if($("#name").val() !== "" ){
+			if(!arr_contains(data, $("#name").val()))
+				console.log("THIS NAME IS NOT IN THE DATABASE");
 			$("#nameList").append(
-				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+$("#name").val() + "</span>" +
+				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+ $("#name").val() + "</span>" +
 				"<a href='#' id='name-button-"+index+"' class='delete-buttons'>  -  </a>" +
 				"</li>" 
 			);
