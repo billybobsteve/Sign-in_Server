@@ -16,7 +16,7 @@ mysql_select_db('signoutdb');
 switch ($option) {
 	case "out_students" :
 		//echo "out_students";
-		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL';
+		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
 		$retval = mysql_query($sql, $conn);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
@@ -45,7 +45,12 @@ switch ($option) {
 		//TODO
 		break;
 	case "clear_db" :
-		
+		$sql = "TRUNCATE TABLE Students;";
+		$retval = mysql_query($sql, $conn);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysql_error());
+		}
+		echo "1";
 }
 
 
