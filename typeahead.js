@@ -47,7 +47,7 @@
         display: ["display"],   // -> Improved feature, allows search in multiple item keys ["display1", "display2"]
         template: null,
         emptyTemplate: false,   // -> New feature, display an empty template if no result
-        source: null,           // -> Modified feature, source.ignore is now a regex; item.group is a reserved word; Ajax callbacks: onDone, onFail, onComplete
+        source: states,           // -> Modified feature, source.ignore is now a regex; item.group is a reserved word; Ajax callbacks: onDone, onFail, onComplete
         callback: {
             onInit: null,
             onReady: null,      // -> New callback, when the Typeahead initial preparation is completed
