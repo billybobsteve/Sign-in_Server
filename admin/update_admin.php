@@ -40,5 +40,9 @@ if(! $retval ) {
 }
 
 mysql_close($conn);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> parent of 95e171d... sd
 ?>
