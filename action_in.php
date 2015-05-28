@@ -7,7 +7,7 @@ $time = $current_date->format('Y-m-d ') . $time;
 
 $time_in = new DateTime($time);
 
-$time_in_str = $time_out->format("Y-m-d H:i:s");
+$time_in_str = $time_in->format("Y-m-d H:i:s");
 
 $server_time_in = date("Y-m-d H:i:s");
 
