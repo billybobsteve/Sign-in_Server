@@ -32,7 +32,8 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
-		echo var_dump($retval);
+		echo $retval;
+		//echo var_dump($retval);
 		break;
 	case "edit_student" :
 		//TODO
