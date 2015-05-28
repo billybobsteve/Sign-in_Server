@@ -40,4 +40,4 @@ $('#the-basics .typeahead').typeahead({
   	name: 'states',
   	source: substringMatcher(states)
 });
-};
+});
