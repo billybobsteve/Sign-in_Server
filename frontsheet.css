@@ -22,7 +22,7 @@ body {
 @media only screen (max-device-width : 480px){	
 	body{
 		background: #000080;
-		
+		font-size: 64px;
 
 	}
 
