@@ -64,7 +64,15 @@ input[type="submit"]:hover{
 }
 
 input[type="text"] {
-	background:#fff;
+	background:#fff ;
+	border:1px solid #ccc;
+	color:#555;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#name{
+	background:#fff ;
 	border:1px solid #ccc;
 	color:#555;
 	margin-left: auto;
