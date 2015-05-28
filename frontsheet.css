@@ -84,7 +84,7 @@ input[type="text"] {
 	color:#555;
 	margin-left: auto;
 	margin-right: auto;
-	
+	width: 200px;
 }
 
 .form_text {
