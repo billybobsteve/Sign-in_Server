@@ -22,7 +22,7 @@ body {
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
 	body{
-		font-size: 12px !important;
+		font-size: 12em !important;
 	}
 
 	#instructions {
