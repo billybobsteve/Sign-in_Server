@@ -111,7 +111,7 @@
 	<script src="async_post_index.js"> </script>
 
 	<div id="class_data" style="display: none;"> 
-		<?php echo file_get_contents('class_list_full.csv'); ?>
+		<!--<?php echo file_get_contents('class_list_full.csv'); ?> -->
 	</div>
 
 </html>
