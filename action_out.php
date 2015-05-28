@@ -21,7 +21,7 @@ $name_list = file_get_contents('class_list_full.csv');
 $legal_name_array = explode("\r", $name_list);
 
 echo $legal_name_array;
-
+die();
 array_map(function x($var) {
 	$new_var = explode(',', $var);
 	return $new_var[0] + $new_var[1];
