@@ -107,6 +107,7 @@ input[type="text"] {
 	color:#3399cc;
 	font-size:24px;
 	width: 350px; 
+	overflow: hidden;
     /*height: 95px; */
     line-height: 200px;
     position: fixed;
