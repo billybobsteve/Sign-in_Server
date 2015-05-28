@@ -19,10 +19,14 @@ body {
     color: #000080;
 }
 
-@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {	
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){	
 	body{
 		background: #FAFAFA;
 		color: #BBBBBB;
+	}
+
+	.form_text {
+		display: block;
 	}
 }
 
