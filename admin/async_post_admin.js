@@ -19,8 +19,9 @@ var edit = function(obj){
 	}
 	$(obj).append("<input type='button' value='Apply' id='apply'>");
 	$("#apply").click(function(){
+		var vals = [];
 		for (var i = 0; i<$(".text-box", obj).length;i++){
-			console.log($($(".text-box", obj)[i]).val());
+			vals[i] = $($(".text-box", obj)[i]).val();
 			$($("span", obj)[i]).html($($(".text-box", obj)[i]).val());
 		}
 		$("#apply").remove();
