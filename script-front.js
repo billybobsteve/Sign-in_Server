@@ -86,7 +86,6 @@ $(document).ready(function(){
 				insert_overlay("THIS NAME IS NOT IN THE DATABASE");
 				return;
 			}
-			}
 			$("#nameList").append(
 				"<li  id='name-item-"+index+"'>" + "<span class='name-item'>"+ $("#name").val() + "</span>" +
 				"<a href='#' id='name-button-"+index+"' class='delete-buttons'>  -  </a>" +
