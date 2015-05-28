@@ -89,10 +89,6 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#name").focusout(function(){
-		$("#name").typeahead("setQuery", "");
-	});
-
 	$('body').on('keypress', '#destination', function(args) {
 		if (args.keyCode === 13) {
 			$('#button').click();
