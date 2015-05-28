@@ -18,6 +18,7 @@ $name_list = file_get_contents('class_list_full.csv');
 echo $name_list;
 $legal_name_array = explode("\n", $name_list);
 echo "num:" . count($legal_name_array);
+echo $legal_name_array;
 
 $pattern = array(',');
 $replace = array(' '); 
