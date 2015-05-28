@@ -51,7 +51,7 @@
 
 				<div id = "dataInput">
 					<div class = "form_text">
-						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "typeahead" autocomplete = "off"/>
+						<label for = "name">Full Name: </label> <span> <div id="the-basics"> <input type="text" name = "name" id="name" class = "typeahead" autocomplete = "off"/> </div>
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
 					
