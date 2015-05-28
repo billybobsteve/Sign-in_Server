@@ -12,6 +12,20 @@ function post() {
 	ajax_post.done(return_data);
 }
 
+function postUpdate(obj) {
+	//var option = document.getElementById("options").value;
+	//if (window.location.pathname.includes("admin.php")){
+	var form_data = $('#selection_form').serialize();
+	var post_url = 'update_admin.php';
+	//}
+	var ajax_post = $.ajax({
+		url:post_url,
+		type:'post',
+		data:form_data
+	});
+	ajax_post.done(return_data);
+}
+
 var edit = function(obj){
 	$(".edit-button").remove();
 	for (var i = 0; i<$("span", obj).length;i++){
@@ -29,6 +43,7 @@ var edit = function(obj){
 		}
 		$("#apply").remove();
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
+		postUpdate(obj);
 	});
 }
 
