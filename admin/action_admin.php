@@ -4,6 +4,7 @@ $option = htmlspecialchars($_POST['list']);
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time_out = htmlspecialchars($_POST['time_out']);
+$time_in = htmlspecialchars($_POST['time_in']);
 //echo $option;
 
 $dbhost = 'localhost';
@@ -46,7 +47,8 @@ switch ($option) {
 		} 
 		break;
 	case "edit_student" :
-		//TODO
+		$sql = "UPDATE Students SET " . $time_out ? ("TimeIn='{$time_in}'" . $time_in ? "," : "") : "" . $time_in ? "TimeOut='{$TimeOut}'" : "" . "WHERE name='{$name}';";
+		echo $sql;
 		break;
 }
 
