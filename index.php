@@ -97,9 +97,8 @@
 		
 		<div id="sign-in-tab">
 		</div>
-<span style="position:relative;"> 
 		<span id="credits" style="font-size:12px; position:absolute; bottom:0;"> This sign-out system was made as a Senior Term Project by:
-		 Chase Goddard, Thomas Ragucci, Nathan Spring, and Harrison Lee in 2015 </span></span>
+		 Chase Goddard, Thomas Ragucci, Nathan Spring, and Harrison Lee in 2015 </span>
 	</body>
 	
 	<script src="jquery-2.1.4.min.js"> </script>
