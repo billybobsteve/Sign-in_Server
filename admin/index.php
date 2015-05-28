@@ -13,7 +13,6 @@
 			<select required id = "options"  name = "list">
 				<option value = "out_students">Get Out Students</option>
 				<option value = "all_students">Get All Students</option>
-				<option value = "edit_student">Edit Student</option>  	
 				<option value = "print_students">Print Database to File</option>
 				<option value = "clear_db">Clear Database</option>
 			</select>

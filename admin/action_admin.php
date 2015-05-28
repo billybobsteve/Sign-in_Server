@@ -65,7 +65,7 @@ switch ($option) {
 			fwrite($myfile, $text);
 			$text = "Time out: {$row['TimeOut']} \n";
 			fwrite($myfile, $text);
-			$text = "Time in: {$row['TimeIn']} \n";
+			$text = "Time in: {$row['TimeIn']} \n \n";
 			fwrite($myfile, $text);
 		}
 		fclose($myfile);
