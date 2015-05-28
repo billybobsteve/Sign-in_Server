@@ -21,9 +21,14 @@ $legal_name_array = explode("\r", $name_list);
 //echo $legal_name_array[1];
 
 function x($var) {
-	$new_var = explode(',', $var);
+	$new_var = explode(",", $var);
 	return $new_var[0] . $new_var[1];
 }
+
+echo $legal_name_array[0] . " ";
+echo $legal_name_array[1] . " ";
+echo $legal_name_array[2] . " ";
+echo $legal_name_array[3] . " ";
 
 array_map("x", $legal_name_array); 
 
