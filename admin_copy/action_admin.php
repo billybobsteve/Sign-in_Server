@@ -37,6 +37,7 @@ switch ($option) {
 
 		//echo "<h1>Students</h1>";
 		echo "<table border='1'>";
+		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>"
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval))
 		{
