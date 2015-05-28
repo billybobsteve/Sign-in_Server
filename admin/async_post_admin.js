@@ -15,11 +15,10 @@ function post() {
 function postUpdate(obj) {
 	//var option = document.getElementById("options").value;
 	//if (window.location.pathname.includes("admin.php")){
-	var form_data = "list=edit_student&"; // $('#selection_form').serialize();
+	var form_data = "list=edit_student&name=" + obj[0].value + "&destination=" + obj[1].value + "&time_out=" + obj[2].value; //+ (obj.length > 3) ? ; // $('#selection_form').serialize();
 	//var text_forms = $("span", obj);
-	var text_forms = document.getElementsByClassName("text-box");
-	console.log(text_forms);
-	form_data += "name=" + text_forms[0].value + "&destination=" + text_forms[1].value + "&time_out=" + text_forms[1].value;
+	//var text_forms = document.getElementsByClassName("text-box");
+	//console.log(text_forms);
 	console.log(obj);
 	console.log(form_data);
 	var post_url = 'update_admin.php';
@@ -49,7 +48,7 @@ var edit = function(obj){
 		}
 		$("#apply").remove();
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
-		postUpdate(obj);
+		postUpdate(vals);
 	});
 }
 
