@@ -13,6 +13,7 @@ function post() {
 }
 
 var edit = function(obj){
+	$(".edit-button").remove();
 	for (var i = 0; i<$("span", obj).length;i++){
 		$($("span", obj)[i]).html("<input class='text-box' type='text' value='"+$($("span", obj)[i]).text()+"'>")
 	}
@@ -36,7 +37,6 @@ function return_data(data, textStatus, jqXHR) {
 		$("#table").html(data);
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 		$(".edit-button").click(function(){
-			$(".edit-button").remove();
 			edit($(this).parent());
 		});
 		$("div ul li span").addClass("text-holder");
