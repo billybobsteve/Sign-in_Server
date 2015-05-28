@@ -26,19 +26,11 @@ function x($var) {
 	return $new_var[0] . " " . $new_var[1];
 }
 
-echo $legal_name_array[0] . " ";
-echo $legal_name_array[1] . " ";
-echo $legal_name_array[2] . " ";
-echo $legal_name_array[3] . " "; 
 
 $legal_name_array = array_map("x", $legal_name_array); 
 
-echo $legal_name_array[0] . " ";
-echo $legal_name_array[1] . " ";
-echo $legal_name_array[2] . " ";
-echo $legal_name_array[3] . " ";
 
-die();
+//die();
 
 $dbhost = 'localhost';
 $dbuser = 'root';
