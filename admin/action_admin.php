@@ -51,6 +51,7 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		echo "Database has been cleared";
+		break;
 	case "print_students":
 		$sql = 'SELECT * FROM Students';
 		$retval = mysql_query($sql, $conn);
