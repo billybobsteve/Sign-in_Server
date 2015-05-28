@@ -20,7 +20,7 @@ $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
-if (!conn) {
+if (!$conn) {
 	die('Could not connect: ' . mysql_error());
 }
 
