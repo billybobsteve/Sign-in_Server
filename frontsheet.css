@@ -234,7 +234,7 @@ input{
 .hide { display: none;}
 
 .twitter-typeahead {
-	display: block !important;
+	display: none !important;
 }
 
 .tt-dropdown-menu {
