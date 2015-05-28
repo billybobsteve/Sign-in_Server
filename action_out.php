@@ -52,7 +52,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 	for ($x = 0; $x < count($legal_name_array); $x++) {
 		//echo $current_name;
 		//echo $legal_name_array[$x];
-		if (strpos($current_name, $legal_name_array[$x])) {
+		if ($current_name == $legal_name_array[$x]) {
 			echo "It worked!";
 			$legal = true;
 		}
