@@ -54,6 +54,7 @@ var edit = function(obj){
 
 function return_data(data, textStatus, jqXHR) {
 	//if (location.pathname.includes("admin.php")) {
+		console.log(data);
 		$("#table").html(data);
 		$(".table-entry").append("<a href='#' class='edit-button'>Edit</a>");
 		$(".edit-button").click(function(){
