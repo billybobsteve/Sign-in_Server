@@ -18,16 +18,16 @@ $name_array = explode(',', $name);
 
 $name_list = file_get_contents('class_list_full.csv');
 
-$legal_name_array = explode(PHP_EOL, $name_list);
+$legal_name_array = explode("\r", $name_list);
 
-//echo $legal_name_array;
+echo $legal_name_array;
 
 array_map(function x($var) {
 	$new_var = explode(',', $var);
 	return $new_var[0] + $new_var[1];
 }, $legal_name_array);
 
-//echo $legal_name_array;
+echo $legal_name_array;
 
 $dbhost = 'localhost';
 $dbuser = 'root';
