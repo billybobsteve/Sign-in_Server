@@ -32,7 +32,7 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
-		var $test = mysql_fetch_array($retval)[0];
+		var $test = mysql_fetch_array($retval);
 		for ($z = 0; $z < count($test); $z++) {
 			echo $test[z];
 		}
