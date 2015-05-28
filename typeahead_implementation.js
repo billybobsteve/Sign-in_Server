@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('input.typeahead').typeahead({
+	$("#name").typeahead({
 		name: 'accounts',
-		local: ['Audi', 'BMW', 'Bugatti', 'Ferrari', 'Ford', 'Lamborghini', 'Mercedes Benz', 'Porsche', 'Rolls-Royce', 'Volkswagen']
-	});
+		local: ['Chase Goddard', 'Thomas Ragucci', 'Nathan Spring', 'Harrison Lee', 'Some Random Bum']
+	})
 });

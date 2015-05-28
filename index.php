@@ -12,12 +12,6 @@
 	</head>
 
 	<body>
-
-		<div class="bs-example">
-        	<input type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
-    	</div>
-
-
 		<div class="tab-box"> 
 			<a href="#" class="tabLink activeLink" id="out-tab">Sign Out</a>
 			<a href="#" class="tabLink" id="in-tab">Sign In</a>
