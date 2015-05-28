@@ -18,6 +18,7 @@ function post() {
 				//global += ",";
 			}
 			form_data += serialize_string(list[i].innerText);
+			console.log(form_data);
 		}
 
 
