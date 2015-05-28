@@ -27,7 +27,10 @@ function x($var) {
 
 array_map("x", $legal_name_array); 
 
+echo $legal_name_array[0];
 echo $legal_name_array[1];
+echo $legal_name_array[2];
+echo $legal_name_array[3];
 
 die();
 
