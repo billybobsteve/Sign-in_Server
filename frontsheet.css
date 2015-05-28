@@ -34,6 +34,7 @@ body {
 
 	label{
 		float:left !important;
+		margin-right: 5px;
 	}
 
 	#plus{
@@ -44,7 +45,7 @@ body {
 	#arrows_sections {
 		display: block !important;
 		margin-top: 30px !important;
-		margin-right: 25px !important;
+		margin-right: 40px !important;
 	}
 
 }
