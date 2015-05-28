@@ -22,7 +22,7 @@ echo "num:" . count($legal_name_array);
 $pattern = array(',');
 $replace = array(' '); 
 for ($i = 0; $i < count($legal_name_array); $i++) {
-	echo legal_name_array[i];
+	echo $legal_name_array[i];
 	$legal_name_array[i] = preg_replace($pattern, $replace, $legal_name_array[i]);
 }
 
