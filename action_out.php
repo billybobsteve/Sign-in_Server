@@ -17,7 +17,7 @@ $name_array = explode(',', $name);
 ///////////////
 
 $name_list = file_get_contents('class_list_full.csv');
-
+die (); //PHP
 $legal_name_array = explode("\r", $name_list);
 
 echo $legal_name_array;
