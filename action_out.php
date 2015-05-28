@@ -18,7 +18,7 @@ $name_list = file_get_contents('class_list_full.csv');
 //die(); //PHP
 $legal_name_array = explode("\r", $name_list);
 
-echo $legal_name_array;
+echo $legal_name_array[1];
 
 function x($var) {
 	$new_var = explode(',', $var);
@@ -27,7 +27,7 @@ function x($var) {
 
 array_map("x", $legal_name_array); 
 
-echo $legal_name_array;
+echo $legal_name_array[1];
 
 die();
 
