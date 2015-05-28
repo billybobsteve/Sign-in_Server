@@ -56,8 +56,8 @@ for ($i = 0; $i < count($name_array); $i++) {
 		}
 	}
 	if (!$legal) {
-		echo "fuck you";
-		die();
+		echo "fuck you and your bullshit";
+		echo '-1' . ',';
 	}
 
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
