@@ -89,7 +89,7 @@ function post() {
 };
 
 function return_data_in(data, textStatus, jqXHR) {
-	console.log("data: " data);
+	console.log("data: " + data);
 	var signed_in = data.trim().split(',');
 	signed_in.pop();
 	var message = "";
