@@ -5,7 +5,11 @@ $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time_out = htmlspecialchars($_POST['time_out']);
 $time_in = htmlspecialchars($_POST['time_in']);
-//echo $option;
+echo $option;
+echo $name;
+echo $dest;
+echo $time_out;
+echo $time_in;
 
 $dbhost = 'localhost';
 $dbuser = 'root';
