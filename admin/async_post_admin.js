@@ -15,7 +15,7 @@ function post() {
 function postUpdate(obj) {
 	//var option = document.getElementById("options").value;
 	//if (window.location.pathname.includes("admin.php")){
-	var form_data = "list=edit_student&name=" + obj[0] + "&destination=" + obj[1] + "&time_out=" + obj[2]; //+ (obj.length > 3) ? ; // $('#selection_form').serialize();
+	var form_data = "name=" + obj[0] + "&destination=" + obj[1] + "&time_out=" + obj[2]; //+ (obj.length > 3) ? ; // $('#selection_form').serialize();
 	//var text_forms = $("span", obj);
 	//var text_forms = document.getElementsByClassName("text-box");
 	//console.log(text_forms);
