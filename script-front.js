@@ -79,7 +79,7 @@ $(document).ready(function(){
 		if (args.keyCode === 13) {
 			if($(".tt-suggestion p").length > 0){
 				$("#name").val(
-					$(".tt-suggestion p")[0].text()
+					$($(".tt-suggestion p")[0]).text()
 				);
 			}
 			$('#plus').click();
