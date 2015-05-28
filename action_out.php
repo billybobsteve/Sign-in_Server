@@ -47,6 +47,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		}
 	}
 	if (!$legal) {
+		echo "fuck you";
 		die();
 	}
 
