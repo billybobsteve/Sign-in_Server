@@ -1,5 +1,5 @@
 <?php 
-die();
+return;
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time = htmlspecialchars($_POST['datetime']);

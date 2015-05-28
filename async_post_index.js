@@ -183,15 +183,6 @@ function return_data_out(data, textStatus, jqXHR) {
 	insert_overlay(message);
 };
 
-var includes_char = function(str, search_char){
-	for(var i = 0;i<str.length;i++){
-		if(str.charAt(i) === search_char){
-			return true;
-		}
-		return false;
-	}
-};
-
 function serialize_string(string) {
 	string.trim();
 	//while (string.includes(' ')) { // Goddamn Safari bullshit
