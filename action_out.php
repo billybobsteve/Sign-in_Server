@@ -39,8 +39,8 @@ for ($i = 0; $i < count($name_array); $i++) {
 		continue;
 	}
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}');";
-	$retval = mysql_query($sql, $conn);
-
+	//$retval = mysql_query($sql, $conn);
+	echo $sql;
 	die();
 
 	if(! $retval ) {
