@@ -133,11 +133,14 @@ input{
 	background-color: #9BE466;
 	border-bottom-right-radius: 5px;
 	border-top-right-radius: 5px;
+	
 	padding-left: 5px;
 	padding-right: 5px;
 	padding-bottom: 3px;
 	padding-top: 1px;
+
 	margin-right: 5px;
+	margin-left: -5px;
 }
 
 .delete-buttons{
