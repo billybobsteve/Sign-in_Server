@@ -175,6 +175,8 @@ input{
 	margin-top: 3px;
 	margin-right: 5px;
 	margin-left: -5px;
+
+	float: right;
 }
 
 .delete-buttons{
