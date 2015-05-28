@@ -1,4 +1,5 @@
 <?php 
+
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
 $time = htmlspecialchars($_POST['datetime']);
@@ -21,6 +22,8 @@ $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
 if (!conn) {
 	die('Could not connect: ' . mysql_error());
+	echo mysql_error();
+
 }
 
 mysql_select_db('signoutdb');
@@ -35,11 +38,12 @@ for ($i = 0; $i < count($name_array); $i++) {
 		echo '-1' . ',';
 		continue;
 	}
-	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}'); ";
+	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}');";
 	$retval = mysql_query($sql, $conn);
 
 	if(! $retval ) {
-	  die('Could not enter data: ' . mysql_error());
+		echo mysql_error();
+	  	die('Could not enter data: ' . mysql_error());
 	}
 	//echo $current_name . ','; //"\r\n"; 
 	echo '1' . ',';
