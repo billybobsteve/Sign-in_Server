@@ -1,7 +1,9 @@
 <?php 
 
 $name = htmlspecialchars($_POST['name']);
+$name = mysqli_real_escape_string($name);
 $time = htmlspecialchars($_POST['datetime']);
+$time = mysqli_real_escape_string($time);
 $current_date = new DateTime();
 $time = $current_date->format('Y-m-d ') . $time;
 

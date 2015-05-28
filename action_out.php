@@ -1,7 +1,10 @@
 <?php 
 $name = htmlspecialchars($_POST['name']);
+$name = mysqli_real_escape_string($name);
 $dest = htmlspecialchars($_POST['destination']);
+$dest = mysqli_real_escape_string($dest);
 $time = htmlspecialchars($_POST['datetime']);
+$time = mysqli_real_escape_string($time);
 $current_date = new DateTime();
 $time = $current_date->format('Y-m-d ') . $time;
 
@@ -56,7 +59,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		}
 	}
 	if (!$legal) {
-		echo "fuck you and your bullshit";
+		echo "please input a proper name";
 		header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
 		die();
 	}
