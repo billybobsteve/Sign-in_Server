@@ -1,4 +1,5 @@
 <?php 
+echo "test";
 die();
 $name = htmlspecialchars($_POST['name']);
 $dest = htmlspecialchars($_POST['destination']);
