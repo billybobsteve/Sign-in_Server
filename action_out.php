@@ -41,8 +41,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}');";
 	$retval = mysql_query($sql, $conn);
 
-	echo $retval;
-
+	die();
 	if(! $retval ) {
 		echo mysql_error();
 	  	die('Could not enter data: ' . mysql_error());
