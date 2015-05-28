@@ -7,7 +7,8 @@
 		<link href="jquery-ui.structure.min.css" type="text/css">
 		<link href="jquery-ui.theme.min.css" type="text/css">
 		<link rel="stylesheet" href="handheld.css" type="text/css" media="only screen and (max-device-width: 480)"/>
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 	</head>
 
 	<body>
