@@ -11,6 +11,16 @@ $(document).ready(function(){
 	var sec_since_midnight = hours*3600+mins*60;
 	var counter = 0;
 
+	var repeat = function(){
+		now = new Date();
+		hours = now.getHours();
+		mins = now.getMinutes();
+		sec_since_midnight = hours*3600+mins*60;
+		$("#time").val(format(sec_since_midnight));
+	}
+
+	setInterval(repeat, 60000);
+
 	var format = function (v) {
 		console.log(v);
 		v = Number(v);
