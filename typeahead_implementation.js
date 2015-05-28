@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var data = $("#class_data").html().split('\n');
-	$.grep(data, function(val){
+	data = $.grep(data, function(val){
 		if(val.indexOf("12") > -1){
 			return val;
 		}
