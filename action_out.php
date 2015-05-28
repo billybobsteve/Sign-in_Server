@@ -46,8 +46,9 @@ for ($i = 0; $i < count($name_array); $i++) {
 			$legal = true;
 		}
 	}
-	if (!$legal)
+	if (!$legal) {
 		die();
+	}
 
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
 	$name_check = mysql_query($sql_name_check, $conn);
