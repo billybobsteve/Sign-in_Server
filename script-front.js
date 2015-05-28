@@ -68,7 +68,7 @@ $(document).ready(function(){
 				"<a href='#' id='name-button-"+index+"' class='delete-buttons'>  -  </a>" +
 				"</li>" 
 			);
-			$("#name").val("");
+			$("#name").typeahead("setQuery", "");
 			$("#name-button-"+index).click(function(){
 				$("#name-item-"+index).remove();
 			});
@@ -78,7 +78,7 @@ $(document).ready(function(){
 	$('body').on('keypress', '#name', function(args) {
 		if (args.keyCode === 13) {
 			if($(".tt-suggestion p").length > 0){
-				$("#name").typeahead("setQuery", $($(".tt-suggestion p")[0]).text());
+				$($(".tt-suggestion p")[0]).click();
 			}
 			$('#plus').click();
 			return false;
@@ -87,6 +87,10 @@ $(document).ready(function(){
 			$('#destination').focus();
 			return false;
 		}
+	});
+
+	$("#name").focusout(function(){
+		$("#name").typeahead("setQuery", "");
 	});
 
 	$('body').on('keypress', '#destination', function(args) {
