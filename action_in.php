@@ -1,9 +1,14 @@
 <?php 
 
 $name = htmlspecialchars($_POST['name']);
-$time_in = htmlspecialchars($_POST['datetime']);
-$time_in = date("Y-m-d ") . $time_in;
-$time_in = datetime::createfromformat('Y-m-d H:i:s',$time_in);
+$time = htmlspecialchars($_POST['datetime']);
+$current_date = new DateTime();
+$time = $current_date->format('Y-m-d ') . $time;
+
+$time_in = new DateTime($time);
+
+$time_in_str = $time_out->format("Y-m-d H:i:s");
+
 $server_time_in = date("Y-m-d H:i:s");
 
 $name_array = explode(',', $name);
@@ -33,7 +38,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		echo '-1' . ',';
 		continue;
 	}
-	$sql = "UPDATE Students SET TimeIn='{$time_in}', ServerTimeIn='{$server_time_in}' WHERE name='{$current_name}';";
+	$sql = "UPDATE Students SET TimeIn='{$time_in_str}', ServerTimeIn='{$server_time_in}' WHERE name='{$current_name}';";
 	$retval = mysql_query($sql, $conn);
 
 	if(! $retval ) {
