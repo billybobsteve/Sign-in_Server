@@ -47,11 +47,15 @@
 				</div>
 			</p>
 
+			<div id="the-basics">
+  			<input class="typeahead" type="text" placeholder="States of USA">
+			</div>
+
 			<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 
 				<div id = "dataInput">
 					<div class = "form_text">
-						<label for = "name">Full Name: </label> <span> <div id="the-basics"> <input type="text" name = "name" id="name" class = "typeahead" autocomplete = "off"/> </div>
+						<label for = "name">Full Name: </label> <span> <input type="text" name = "name" id="name" class = "null" autocomplete = "off"/> 
 						<a id="plus" href="#"> <strong> + </strong> </a> </span>
 					</div>
 					
