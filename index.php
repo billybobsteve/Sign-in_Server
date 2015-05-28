@@ -1,3 +1,7 @@
+<?php
+$data = file_get_contents('class_list_full.csv');
+echo $data;
+?>
 <!doctype = html>
 <html>
 	<head>
