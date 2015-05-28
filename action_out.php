@@ -34,13 +34,14 @@ for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
 	$name_check = mysql_query($sql_name_check, $conn);
-	die();
 	if (mysql_num_rows($name_check) > 0) {
 		echo '-1' . ',';
 		continue;
 	}
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out}', '{$server_time_out}');";
 	$retval = mysql_query($sql, $conn);
+
+	die();
 
 	if(! $retval ) {
 		echo mysql_error();
