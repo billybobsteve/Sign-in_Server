@@ -61,7 +61,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 		die();
 	}
 
-	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
+	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}' AND TimeIn IS NULL;";
 	$name_check = mysql_query($sql_name_check, $conn);
 	if (mysql_num_rows($name_check) > 0) {
 		echo '-1' . ',';
