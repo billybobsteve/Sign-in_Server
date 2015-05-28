@@ -13,9 +13,22 @@
 
 	<body>
 
-		<div id="the-basics">
-			<input class="typeahead" type="text" placeholder="States of USA">
-		</div>
+		<form>
+    	<div class="typeahead-container">
+        <div class="typeahead-field">
+ 
+            <span class="typeahead-query">
+                <input id="q" name="q" type="search" autocomplete="off">
+            </span>
+            <span class="typeahead-button">
+                <button type="submit">
+                    <span class="typeahead-search-icon"></span>
+                </button>
+            </span>
+ 
+        	</div>
+    		</div>
+			</form>
 
 
 		<div class="tab-box"> 

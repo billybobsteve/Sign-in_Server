@@ -22,8 +22,8 @@
      */
     var _options = {
         input: null,
-        minLength: 0,           // Modified feature, now accepts 0 to search on focus
-        maxItem: 0,             // Modified feature, now accepts 0 as "Infinity" meaning all the results will be displayed
+        minLength: 2,           // Modified feature, now accepts 0 to search on focus
+        maxItem: 8,             // Modified feature, now accepts 0 as "Infinity" meaning all the results will be displayed
         dynamic: false,
         delay: 300,
         order: null,            // ONLY sorts the first "display" key
@@ -78,7 +78,7 @@
             backdrop: "typeahead-backdrop",
             hint: "typeahead-hint"
         },
-        debug: true
+        debug: false
     };
 
     /**
