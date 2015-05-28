@@ -183,7 +183,7 @@ function return_data_out(data, textStatus, jqXHR) {
 	insert_overlay(message);
 };
 
-function serialize_string(string) {
+function serialize_string(string) { //TODO serialize apostrophe
 	string.trim();
 	//while (string.includes(' ')) { // Goddamn Safari bullshit
 	while (string.indexOf(' ') > -1) {
