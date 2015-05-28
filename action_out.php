@@ -30,7 +30,6 @@ if (!conn) {
 
 mysql_select_db('signoutdb');
 
-//TODO FIX THIS PIECE OF SHIT
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
@@ -41,9 +40,8 @@ for ($i = 0; $i < count($name_array); $i++) {
 		continue;
 	}
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out_str}', '{$server_time_out}');";
-	//$retval = mysql_query($sql, $conn);
-	die();
-	echo $sql;
+	$retval = mysql_query($sql, $conn);
+	//echo $sql;
 
 	if(! $retval ) {
 		echo mysql_error();
