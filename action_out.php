@@ -37,7 +37,7 @@ $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
 
-if (!conn) {
+if (!$conn) {
 	die('Could not connect: ' . mysql_error());
 	echo mysql_error();
 
@@ -52,7 +52,7 @@ for ($i = 0; $i < count($name_array); $i++) {
 	for ($x = 0; $x < count($legal_name_array); $x++) {
 		echo $current_name;
 		echo $legal_name_array[i];
-		if (strpos($current_name, $legal_name_array[i])) {
+		if (strpos($current_name, $legal_name_array[$i])) {
 			$legal = true;
 		}
 	}
