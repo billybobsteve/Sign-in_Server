@@ -22,7 +22,7 @@ $legal_name_array = explode("\r", $name_list);
 
 function x($var) {
 	$new_var = explode(',', $var);
-	return $new_var[0] + $new_var[1];
+	return $new_var[0] . $new_var[1];
 }
 
 array_map("x", $legal_name_array); 
