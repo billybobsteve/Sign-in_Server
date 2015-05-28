@@ -249,12 +249,12 @@ input{
 	border-radius: 8px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
+	opacity: .6;
 	padding: 8px 0;
 	width: 200px;
 }
 .tt-suggestion {
 	font-size: 14px;
-	opacity: .6;
 	line-height: 14px;
 	padding: 3px 20px;
 }
