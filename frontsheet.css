@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-	background: #000080;
+	background: #F7F7F7;
 	max-width: 800px;
 	margin-left:auto;
     margin-right:auto;
@@ -22,7 +22,8 @@ body {
 @media only screen (max-device-width : 480px){	
 	body{
 		background: #FAFAFA;
-		color: #BBBBBB;
+		font-size: 64px;
+
 	}
 
 	.form_text {
