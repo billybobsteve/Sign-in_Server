@@ -25,6 +25,10 @@
 				<div id = "instructions">
 					<h3 style = "text-align: center"> Instructions: </h3>
 					
+				<div id="the-basics">
+  				<input class="typeahead" type="text" placeholder="States of USA">
+				</div>
+
 					<div id="sign-out-instructions">
 						<p> To sign out: </p>
 						<ol>
@@ -47,9 +51,6 @@
 				</div>
 			</p>
 
-			<div id="the-basics">
-  			<input class="typeahead" type="text" placeholder="States of USA">
-			</div>
 
 			<form id = "sign_out_form" name = "sign_out_form" action="action_out.php" method="post">
 
