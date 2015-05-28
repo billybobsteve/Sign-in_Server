@@ -32,9 +32,9 @@ mysql_select_db('signoutdb');
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
-	die();
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}';";
 	$name_check = mysql_query($sql_name_check, $conn);
+	die();
 	if (mysql_num_rows($name_check) > 0) {
 		echo '-1' . ',';
 		continue;
