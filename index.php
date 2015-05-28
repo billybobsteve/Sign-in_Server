@@ -13,9 +13,9 @@
 
 	<body>
 
-		<div id="the-basics">
-			<input class="typeahead" type="text" placeholder="States of USA">
-		</div>
+		<div class="bs-example">
+        	<input type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
+    	</div>
 
 
 		<div class="tab-box"> 
