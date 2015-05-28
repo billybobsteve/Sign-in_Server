@@ -16,7 +16,8 @@ function postUpdate(obj) {
 	//var option = document.getElementById("options").value;
 	//if (window.location.pathname.includes("admin.php")){
 	var form_data = "list=edit_student&"; // $('#selection_form').serialize();
-	var text_forms = $("span", obj);
+	//var text_forms = $("span", obj);
+	var text_forms = document.getElementsByClassName("text-box");
 	form_data += "name=" + text_forms[0].value + "&destination=" + text_forms[1].value + "&time_out=" + text_forms[1].value;
 	console.log(obj);
 	console.log(form_data);
