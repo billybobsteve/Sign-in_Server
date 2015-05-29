@@ -58,7 +58,9 @@ if(! $retval ) {
 	  	die('Could not enter data: ' . mysqli_error($conn));
 }
 
-if (mysql_fetch_array($retval)[1] == '1') {
+echo mysqli_fetch_array($retval)[1];
+
+if (mysqli_fetch_array($retval)[1] == '1') {
 	echo '-2';
 	die();
 }
