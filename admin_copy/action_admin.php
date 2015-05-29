@@ -24,8 +24,8 @@ switch ($option) {
 		}
 		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		echo "<div style='display:inline-block;'><label>Id: </label> <input class='text-box' id='id' type='text'>";
-		echo "Name: <input class='text-box' id='name' style='width:50px' type='text'>";
+		echo "<div style='display:inline-flex;'><label>Id: </label> <input class='text-box' style='width:50px' id='id' type='text'>";
+		echo "Name: <input class='text-box' id='name' style='width:150px' type='text'>";
 		echo "Location: <input class='text-box' id='dest' style='width:150px' type='text'>";
 		echo "Time Out: <input class='text-box' id='time_out' style='width:150px' type='text'>";
 		echo "Server Time Out: <input class='text-box' id='server_time_out' style='width:150px' type='text'>";
