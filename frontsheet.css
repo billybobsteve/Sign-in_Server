@@ -27,17 +27,16 @@ body {
 	/* Need to make everything !imporant because of specificity issues*/
 
 	input[type="text"] {
-		width: 150px !important;
+		width: 100px !important;
 	}
 
 	.form_text {
 		display: block !important;
-		margin-right: 30px !important;
 	}
 
 	label{
-		float:left !important;/*
-		margin-right: 5px !important;*/
+		float:left !important;
+		margin-right: 5px !important;
 	}
 
 	#plus{
