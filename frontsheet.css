@@ -220,9 +220,8 @@ input{
 }
 
 #arrows_sections{
-	display: inline;
+	display: inline-block;
 	margin-left: -20px;
-	margin-top: 1000px;
 }
 
 #second_arrows{
@@ -234,7 +233,7 @@ input{
 }
 
 .arrow{
-	font-size: 75%;
+	font-size: 60%;
 	cursor: pointer;
 }
 
