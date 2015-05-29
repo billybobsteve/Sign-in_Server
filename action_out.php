@@ -53,14 +53,12 @@ $sql_legal_check = "SELECT * FROM Students WHERE Id = 1;";
 
 $legal_check = mysqli_query($conn, $sql_legal_check);
 
-if(! $retval ) {
+if(! $legal_check ) {
 		echo mysqli_error($conn);
 	  	die('Could not enter data: ' . mysqli_error($conn));
 }
 
-echo mysqli_fetch_array($retval)[1];
-
-if (mysqli_fetch_array($retval)[1] == '1') {
+if (mysqli_fetch_array($legal_check)[1] == '1') {
 	echo '-2';
 	die();
 }
