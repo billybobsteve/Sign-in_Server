@@ -16,6 +16,9 @@ if (!$conn) {
 mysqli_select_db($conn, 'signoutdb');
 
 switch ($option) {
+	case "table_students" :
+
+		break;
 	case "out_students" :
 		//echo "out_students";
 		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
