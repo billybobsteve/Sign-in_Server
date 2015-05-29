@@ -23,7 +23,7 @@ switch ($option) {
 		echo "Server Time Out: <input class='text-box' id='server_time_out' style='width:150px' type='text'>";
 		echo "Time In: <input class='text-box' id='time_in' style='width:150px' type='text'>";
 		echo "Server Time In: <input class='text-box' id='server_time_in' style='width:150px' type='text'> </div>";
-		echo "<div><table border='0'>";
+		echo "<table border='0'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		//echo "out_students";
 		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
@@ -33,6 +33,7 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		$fields_num = mysql_num_fields($retval);
+		echo $field_num;
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval)) {
 		    echo "<tr>";
@@ -43,7 +44,7 @@ switch ($option) {
 		    }
 		    echo "</tr>\n";
 		}
-		echo '</table></div>';
+		echo '</table>';
 		break;
 	case "all_students" :
 		//echo "all_students";
@@ -57,8 +58,7 @@ switch ($option) {
 		echo "<table border='1'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		// printing table rows
-		while($row = mysql_fetch_assoc($retval))
-		{
+		while($row = mysql_fetch_assoc($retval)) {
 		    echo "<tr>";
 		    // $row is array... foreach( .. ) puts every element
 		    // of $row to $cell variable
