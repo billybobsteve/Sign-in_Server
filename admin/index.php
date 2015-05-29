@@ -11,6 +11,7 @@
 		</div>
 		<form id = "selection_form" name = "selection_form" action = "action_admin.php" method = "post">
 			<select required id = "options"  name = "list">
+				<option value = "table_students">Get Student Table</option>
 				<option value = "out_students">Get Out Students</option>
 				<option value = "all_students">Get All Students</option>
 				<option value = "print_students">Print Database to File</option>
