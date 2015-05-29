@@ -39,7 +39,8 @@ switch ($option) {
 		    $table .= "</tr>\n";
 		}
 		$table .= '</table> </div>';
-		$table = str_replace(date("Y-m-d"), "", $table);
+		$current_date = new DateTime();
+		$table = str_replace($current_date->format('Y-m-d'), "", $table);
 		echo $table;
 		break;
 	case "out_students" :
