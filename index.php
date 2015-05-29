@@ -70,8 +70,9 @@
 								<div id="upHRbutton" class="arrow top">&#x25b2;</div>
 								<div id="downHRbutton" class="arrow bottom">&#x25bc;</div>
 							</div>
+							:
 							<div id="third_arrows">
-								<div id="upMINbutton" class="arrow top">&#x25b2;</div> : 
+								<div id="upMINbutton" class="arrow top">&#x25b2;</div>
 								<div id="downMINbutton" class="arrow bottom">&#x25bc;</div>
 							</div>
 						</div>
