@@ -1,1 +1,1 @@
-Student Name   Location   Time Out   Time Inw
+Student Name   Location   Time Out   Time In
