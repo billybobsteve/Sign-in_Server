@@ -60,21 +60,22 @@
 						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off" maxlength = "25" autocorrect = "off"/>
 					</div>
 
-					<div class = "form_text">
-						<label for = "time" id="time-label">Time Out: </label>
-						<input type="text" class = "in" id="time" autocomplete = "off" autocorrect = "off"/>
-					</div>
-
-					<div id="arrows_sections">
-						<div id="second_arrows">
-							<div id="upHRbutton" class="arrow">&#x25b2;</div>
-							<div id="downHRbutton" class="arrow">&#x25bc;</div>
+					<span id = "time_thing">
+						<div class = "form_text">
+							<label for = "time" id="time-label">Time Out: </label>
+							<input type="text" class = "in" id="time" autocomplete = "off" autocorrect = "off"/>
 						</div>
-						<div id="third_arrows">
-							<div id="upMINbutton" class="arrow">&#x25b2;</div>
-							<div id="downMINbutton" class="arrow">&#x25bc;</div>
+						<div id="arrows_sections">
+							<div id="second_arrows">
+								<div id="upHRbutton" class="arrow">&#x25b2;</div>
+								<div id="downHRbutton" class="arrow">&#x25bc;</div>
+							</div>
+							<div id="third_arrows">
+								<div id="upMINbutton" class="arrow">&#x25b2;</div>
+								<div id="downMINbutton" class="arrow">&#x25bc;</div>
+							</div>
 						</div>
-					</div>
+					</span>
 				</div>
 			</form>
 
