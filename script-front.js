@@ -163,7 +163,7 @@ $(document).ready(function(){
 	$("#out-tab").click(function(){
 		$("#out-tab").addClass("activeLink");
 		$("#in-tab").removeClass("activeLink");
-		$("#destination").removeClass("hide");
+		$("#dest-div").removeClass("hide");
 		$("#sign-in-instructions").addClass("hide");
 		$("#sign-out-instructions").removeClass("hide");
 		$("#time-label").html("Time Out: ");
