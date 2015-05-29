@@ -16,7 +16,7 @@ if (!$conn) {
 mysqli_select_db($conn, 'signoutdb');
 switch ($option) {
 	case "table_students" :
-		$sql = 'SELECT * FROM Students;'; #WHERE TimeIn IS NULL;';
+		$sql = 'SELECT * FROM Students WHERE Id > 1;'; #WHERE TimeIn IS NULL;';
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
@@ -44,7 +44,7 @@ switch ($option) {
 		break;
 	case "out_students" :
 		//echo "out_students";
-		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
+		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL AND Id > 1;';
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
@@ -59,7 +59,7 @@ switch ($option) {
 		break;
 	case "all_students" :
 		//echo "all_students";
-		$sql = 'SELECT * FROM Students';
+		$sql = 'SELECT * FROM Students WHERE Id > 1';
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
@@ -73,8 +73,11 @@ switch ($option) {
 		} 
 		echo "</div>";
 		break;
+	case "prevent_signout":
+
+		break;
 	case "clear_db" :
-		$sql = "TRUNCATE TABLE Students;";
+		$sql = "DELETE * FROM Students WHERE Id > 1;";
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
