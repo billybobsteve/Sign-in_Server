@@ -25,12 +25,12 @@ switch ($option) {
 		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
 		echo "<div style='display:inline-block;'><label>Id: </label> <input class='text-box' id='id' type='text'>";
-		echo "Name: <input class='text-box' id='name' type='text'>";
-		echo "Location: <input class='text-box' id='dest' type='text'>";
-		echo "Time Out: <input class='text-box' id='time_out' type='text'>";
-		echo "Server Time Out: <input class='text-box' id='server_time_out' type='text'>";
-		echo "Time In: <input class='text-box' id='time_in' type='text'>";
-		echo "Server Time In: <input class='text-box' id='server_time_in' type='text'> </div>";
+		echo "Name: <input class='text-box' id='name' style='width:50px' type='text'>";
+		echo "Location: <input class='text-box' id='dest' style='width:150px' type='text'>";
+		echo "Time Out: <input class='text-box' id='time_out' style='width:150px' type='text'>";
+		echo "Server Time Out: <input class='text-box' id='server_time_out' style='width:150px' type='text'>";
+		echo "Time In: <input class='text-box' id='time_in' style='width:150px' type='text'>";
+		echo "Server Time In: <input class='text-box' id='server_time_in' style='width:150px' type='text'> </div>";
 		echo "<table border='0'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		// printing table rows
