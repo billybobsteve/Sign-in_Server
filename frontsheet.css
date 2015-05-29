@@ -106,7 +106,7 @@ input[type="text"] {
 
 #instructions{
 	text-align: left;
-	margin: 1% 20% 1% 20%;
+	margin: 1% 30% 1% 30%;
 	padding: 5px 20px 5px 20px;
 	/*border: 1px solid black;*/
 }
@@ -222,7 +222,7 @@ input{
 #arrows_sections{
 	display: inline-block;
 	margin-left: -20px;
-	margin-top: 10px;
+	margin-top: 1000px;
 }
 
 #second_arrows{
