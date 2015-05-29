@@ -169,10 +169,6 @@ $(document).ready(function(){
 		$("#time-label").html("Time Out: ");
 		$("#title").html("Sign Out Of Campus");
 	});
-
-	$('#in-tab').on('click touchstart', function(){
-		$("#dest-div").addClass("hide");
-	});
 		
 });
 
