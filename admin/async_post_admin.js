@@ -36,6 +36,7 @@ function postUpdate(obj, name_old) {
 		data:form_data
 	});
 	ajax_post.done(return_data);
+	post();
 }
 
 var edit = function(obj){
