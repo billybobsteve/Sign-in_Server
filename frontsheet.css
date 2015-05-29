@@ -32,6 +32,7 @@ body {
 
 	.form_text {
 		display: block !important;
+		margin-right: 30px !important;
 	}
 
 	label{
