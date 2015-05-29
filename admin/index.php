@@ -14,6 +14,7 @@
 				<option value = "table_students">Get Student Table</option>
 				<option value = "out_students">Get Out Students</option>
 				<option value = "all_students">Get All Students</option>
+				<option value = "table_students">All Students in Table </option>
 				<option value = "print_students">Print Database to File</option>
 				<option value = "clear_db">Clear Database</option>
 			</select>
