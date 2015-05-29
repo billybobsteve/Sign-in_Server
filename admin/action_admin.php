@@ -92,7 +92,7 @@ switch ($option) {
 	case "clear_db" :
 		$sql = "TRUNCATE TABLE Students;";
 		$retval = mysqli_query($conn, $sql);
-		$sql = "INSERT INTO Students Name='1';";
+		$sql = "INSERT INTO Students (Name) VALUES ('1');";
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
