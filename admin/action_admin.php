@@ -17,6 +17,7 @@ mysqli_select_db($conn, 'signoutdb');
 
 switch ($option) {
 	case "table_students" :
+		$sql = 'SELECT * FROM Students;'; #WHERE TimeIn IS NULL;';
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
