@@ -25,16 +25,9 @@ body {
 
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
-	body{ 
-		font-size: 12em !important;
-	}
-
-	#instructions {
-		font-size: 6px !important;
-	}
 
 	input[type="text"] {
-		width: 50% !important;
+		width: 70% !important;
 	}
 
 	.form_text {
