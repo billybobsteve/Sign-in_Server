@@ -246,11 +246,11 @@ input{
 }
 
 .arrow.top{
-	margin-bottom: -5px;
+	margin-bottom: -10px;
 }
 
 .arrow.bottom{
-
+	margin-top: 5px;
 }
 
 #colon{ /*this helps gives the arrows an hh:mm distinction */
