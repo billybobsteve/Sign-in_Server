@@ -49,7 +49,7 @@ if (!$conn) {
 
 mysqli_select_db($conn, 'signoutdb');
 
-$sql_legal_check = "SELECT * FROM Students WHERE Id = 1;";
+$sql_legal_check = "SELECT * FROM Students;";
 
 $legal_check = mysqli_query($conn, $sql_legal_check);
 
@@ -58,20 +58,11 @@ if(! $legal_check ) {
 	  	die('Could not enter data: ' . mysqli_error($conn));
 }
 
-echo count(mysqli_fetch_array($legal_check));
-
-$v = mysqli_fetch_array($legal_check);
-
-for ($var = 0; $var < $v; $var++) {
-	echo $v[$var];
-}
-
-
 if (mysqli_fetch_array($legal_check)[1] == '0') {
 	echo '-2';
 	die();
 }
-die();
+
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];
 	$legal = false;
