@@ -153,7 +153,7 @@ $(document).ready(function(){
 	$("#in-tab").click(function(){
 		$("#in-tab").addClass("activeLink");
 		$("#out-tab").removeClass("activeLink");
-		$("#dest-div").toggleClass("hide");
+		$("#dest-div").addClass("hide");
 		$("#sign-out-instructions").addClass("hide");
 		$("#sign-in-instructions").removeClass("hide");
 		$("#time-label").html("Time In: ");
@@ -163,7 +163,7 @@ $(document).ready(function(){
 	$("#out-tab").click(function(){
 		$("#out-tab").addClass("activeLink");
 		$("#in-tab").removeClass("activeLink");
-		$("#dest-div").toggleClass("hide");
+		$("#dest-div").removeClass("hide");
 		$("#sign-in-instructions").addClass("hide");
 		$("#sign-out-instructions").removeClass("hide");
 		$("#time-label").html("Time Out: ");
