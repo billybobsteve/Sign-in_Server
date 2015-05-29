@@ -40,7 +40,7 @@ $sql .= " WHERE Name='{$name}';";
 
 $retval = mysqli_query($conn, $sql);
 
-echo $sql; 
+//echo $sql; 
 
 if(! $retval ) {
 	die('Could not enter data: ' . mysqli_error($conn));
