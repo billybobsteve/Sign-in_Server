@@ -249,6 +249,10 @@ input{
 
 }
 
+#colon{ /*this helps gives the arrows an hh:mm distinction */
+	font-size:36px !important; /*was getting overwritten on mobile*/
+}
+
 .tab-box { 
 	padding-bottom:5px;
 	margin-left: 3px;
