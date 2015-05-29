@@ -62,6 +62,8 @@ echo "test";
 
 echo mysqli_fetch_array($legal_check)[0];
 echo mysqli_fetch_array($legal_check)[1];
+echo mysqli_fetch_array($legal_check)[2];
+
 
 if (mysqli_fetch_array($legal_check)[1] == '0') {
 	echo '-2';
