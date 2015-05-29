@@ -34,7 +34,8 @@ body {
 
 	.form_text {
 		display: block !important;
-		width: 250px !important;
+		width: 300px !important;
+		
 	}
 
 	label{
@@ -45,14 +46,12 @@ body {
 	#plus{
 		/*margin-right: 30px !important;
 		padding-bottom: 10px !important;*/
-		display: inline !important;
-
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
 	}
 
 	#arrows_sections {
-		display: inline !important;
+		
 		/*margin-bottom: 40px !important;
 		margin-top: 20px !important;
 		margin-right: 20px !important;*/
