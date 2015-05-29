@@ -28,8 +28,8 @@
 					<div id="sign-out-instructions">
 						<p> To sign out: </p>
 						<ol>
-							<li> Enter your full name, as it appears on the school roster. 
-								You can shorten it to abbreviations to find it faster. </li>
+							<li> Enter your full name, as it appears on the school roster. </li>
+								<ul> <li> You can shorten it to abbreviations to find it faster. </li> </ul>
 							<li> Enter where you will be going. </li>
 							<li> Enter the current time, or time you are leaving. </li>
 							<li> Press the submit button. </li>
@@ -39,8 +39,8 @@
 					<div id = "sign-in-instructions" class="hide">
 						<p> To sign in: </p>
 						<ol>
-							<li> Enter your full name, as it appears on the school roster. 
-								You can shorten it to abbreviations to find it faster. </li>
+							<li> Enter your full name, as it appears on the school roster. </li>
+								<ul> <li> You can shorten it to abbreviations to find it faster. </li> </ul>
 							<li> Enter the current time. </li>
 							<li> Press the submit button. </li>
 						</ol>
