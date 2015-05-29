@@ -75,10 +75,10 @@ body {
 	.hide {
 		display: none !important;
 	}
-/*
+
 	#colon{
-		font-size: 12px !important;
-	}*/
+		color: #F7F7F7 !important; /*blend in w/ bg*/
+	}
 }
 
 
