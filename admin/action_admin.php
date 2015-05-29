@@ -90,7 +90,9 @@ switch ($option) {
 		echo "Campus has been opened: sign outs are permitted.";
 		break;
 	case "clear_db" :
-		$sql = "DELETE * FROM Students WHERE Id > 1;";
+		$sql = "TRUNCATE TABLE Students;";
+		$retval = mysqli_query($conn, $sql);
+		$sql = "INSERT INTO Students Name='1';";
 		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
