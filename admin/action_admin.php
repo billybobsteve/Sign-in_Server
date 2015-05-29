@@ -73,9 +73,6 @@ switch ($option) {
 		} 
 		echo "</div>";
 		break;
-	case "edit_student" :
-		//TODO
-		break;
 	case "clear_db" :
 		$sql = "TRUNCATE TABLE Students;";
 		$retval = mysqli_query($conn, $sql);
@@ -83,27 +80,6 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
 		echo "Database has been cleared";
-		break;
-	case "print_students":
-		$sql = 'SELECT * FROM Students';
-		$retval = mysqli_query($conn, $sql);
-		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysqli_error($conn));
-		}
-		$myfile = fopen("database.txt", "a") or die('Cannot open file: database.txt');
-		while($row = mysqli_fetch_assoc($retval)) {
-			$text = "Student name: {$row['Name']}   ";
-			fwrite($myfile, $text);
-			$text = "Location: {$row['Location']}   ";
-			fwrite($myfile, $text);
-			$text = "Time out: {$row['TimeOut']}   ";
-			fwrite($myfile, $text);
-			$text = "Time in: {$row['TimeIn']} \n";
-			fwrite($myfile, $text);
-			
-		}
-		fclose($myfile);
-		echo "Database has been printed in database.txt: <a href='database.txt'>Download database</a> (right click: 'save link as' to download.)";
 		break;
 		
 }

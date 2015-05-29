@@ -17,12 +17,8 @@
 				<option value = "clear_db">Clear Database</option>
 			</select>
 			<div id = "other_info" class="hide">
-				<!--<input type = "text" placeholder = "Enter Student Location">
-				<input type = "text" placeholder = "Enter Student Time in">
-				<input type = "text" placeholder = "Enter Student Time Out">-->
 			</div>
-			<!--<input type = "submit" value = "Submit"> -->
-				<input type = "button" value = "Submit" id="submit" onclick="post();">
+			<input type = "button" value = "Submit" id="submit" onclick="post();">
 
 		</form>
 		<div id="table">
