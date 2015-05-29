@@ -58,7 +58,6 @@ body {
 	}
 
 	#arrows_sections {
-		
 		/*margin-bottom: 40px !important;
 		margin-top: 20px !important;
 		margin-right: 20px !important;*/
@@ -73,8 +72,11 @@ body {
 	}
 
 
-.hide { display: none !important;}
+	.hide { display: none !important;}
 
+	#colon{
+		font-size: 48px;
+	}
 }
 
 
@@ -250,7 +252,7 @@ input{
 }
 
 #colon{ /*this helps gives the arrows an hh:mm distinction */
-	font-size:36px !important; /*was getting overwritten on mobile*/
+	font-size:36px;
 }
 
 .tab-box { 
