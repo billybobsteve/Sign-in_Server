@@ -34,8 +34,7 @@ switch ($option) {
 		}
 		$fields_num = mysql_num_fields($retval);
 		// printing table rows
-		while($row = mysql_fetch_assoc($retval))
-		{
+		while($row = mysql_fetch_assoc($retval)) {
 		    echo "<tr>";
 		    // $row is array... foreach( .. ) puts every element
 		    // of $row to $cell variable
