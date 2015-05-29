@@ -49,6 +49,19 @@ if (!$conn) {
 
 mysqli_select_db($conn, 'signoutdb');
 
+$sql_legal_check = "SELECT * FROM Students WHERE Id = 1;";
+
+$legal_check = mysqli_query($conn, $sql_legal_check);
+
+if(! $retval ) {
+		echo mysqli_error($conn);
+	  	die('Could not enter data: ' . mysqli_error($conn));
+}
+
+if (mysql_fetch_array($retval)[1] == '1') {
+	echo '-2';
+	die();
+}
 
 for ($i = 0; $i < count($name_array); $i++) {
 	$current_name = $name_array[$i];

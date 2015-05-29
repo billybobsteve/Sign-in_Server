@@ -73,8 +73,21 @@ switch ($option) {
 		} 
 		echo "</div>";
 		break;
-	case "prevent_signout":
-
+	case "close_campus":
+		$sql = 'UPDATE Students SET Name="0" WHERE Id="1";';
+		$retval = mysqli_query($conn, $sql);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysqli_error($conn));
+		}
+		echo "Campus has been closed: sign outs are no longer permitted."
+		break;
+	case "open_campus":
+		$sql = 'UPDATE Students SET Name="1" WHERE Id="1";';
+		$retval = mysqli_query($conn, $sql);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysqli_error($conn));
+		}
+		echo "Campus has been opened: sign outs are permitted."
 		break;
 	case "clear_db" :
 		$sql = "DELETE * FROM Students WHERE Id > 1;";
