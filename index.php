@@ -57,7 +57,7 @@
 					</div>
 					
 					<div class = "form_text" id="dest-div">
-						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off" autocorrect = "off"/>
+						<label for = "destination">Destination: </label> <input type="text" name = "destination" id = "destination" class = "in" autocomplete = "off" maxlength = "25" autocorrect = "off"/>
 					</div>
 
 					<div class = "form_text">

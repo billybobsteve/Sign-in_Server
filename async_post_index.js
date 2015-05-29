@@ -1,17 +1,19 @@
-var global = "";
+var global = ""; //global variable
 function post() {
+	//Temp variable with name and destination
 	var interim = $('#sign_out_form').serializeArray();
+	//Gets names that were added to group
 	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
-	var form_data = "name=" + interim[0].value; // + ",";
-
+	//form data for POST request
+	var form_data = "name=" + interim[0].value; 
 	var time = document.getElementById('time').value;
 	var hour = parseInt(time.substring(0, 2));
 	var min = parseInt(time.substring(3, 5));
-	hour += (time.substring(6, time.length) == 'AM') ? 0 : 12;
+	hour += (time.substring(6, time.length) == 'AM') ? 0 : 12; // 24 hour time
 
-	var datetime = "" + hour + ":" + min + ":00";
+	var datetime = "" + hour + ":" + min + ":00"; 
 
-	for (var i = 0; i < list.length; i++) {
+	for (var i = 0; i < list.length; i++) { //synthesizes form_data var
 			//name_list[i] = list[i].innerText;
 			if (form_data !== "name=") {
 				form_data += ",";
@@ -22,16 +24,15 @@ function post() {
 		}
 
 
-	global = form_data;
+	global = form_data; 
 	global = global.substring(5, global.length);
 	global = global.split(',');
 
-	form_data += "&datetime=" + datetime;
+	form_data += "&datetime=" + datetime; //adds date & time to form data
 
 	var selector = document.getElementsByClassName("activeLink")[0].id;
 
-
-	if (selector == "out-tab") {
+	if (selector == "out-tab") { //Signing out
 		//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
 		if (document.getElementById("destination").value.trim() === "") {
 			alert("Please enter a destination!");
@@ -59,7 +60,7 @@ function post() {
 
 		//form_data += "&datetime=" + datetime;
 
-		form_data = serialize_string(form_data.toLowerCase().trim());
+		form_data = serialize_string(form_data.toLowerCase().trim()); //makes sure string can be passed in URL data
 
 		//console.log(global);
 		console.log(form_data);
@@ -68,7 +69,7 @@ function post() {
 
 		//var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
-		var ajax_post = $.ajax({
+		var ajax_post = $.ajax({ //asynchronous POST request
 			url:post_url,
 			type:'post',
 			data:form_data
@@ -77,7 +78,7 @@ function post() {
 	}
 	else {
 		//form_data += "&datetime=" + datetime;
-		form_data = form_data.toLowerCase().trim();
+		form_data = serialize_string(form_data.toLowerCase().trim());
 
 		var post_url = 'action_in.php'
 		var ajax_post = $.ajax({
