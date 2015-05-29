@@ -5,10 +5,10 @@ function post() {
 	if (form_data.indexOf("clear_db") > -1) {
 		var confirmation = confirm("This will erase any existing data.");
 		if (!confirmation) {
-			console.log("aborting");
+			//console.log("aborting");
 			return;
 		}
-		console.log("continuing");
+		//console.log("continuing");
 	}
 	var post_url = 'action_admin.php';
 	var ajax_post = $.ajax({
