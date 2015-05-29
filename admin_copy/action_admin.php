@@ -43,7 +43,7 @@ switch ($option) {
 		    }
 		    echo "</tr>\n";
 		}
-		echo '</table>';
+		echo '</table> </div>';
 		break;
 	case "all_students" :
 		//echo "all_students";
@@ -54,7 +54,8 @@ switch ($option) {
 		}
 		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		echo "<table border='0'>";
+		echo "<div id = 'tablediv' style='display:inline-flex;'>";
+		echo "<table border='1'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval)) {
@@ -66,7 +67,7 @@ switch ($option) {
 		    }
 		    echo "</tr>\n";
 		}
-		echo '</table>';
+		echo '</table> </div>';
 		break;
 	case "edit_student" :
 		//TODO
