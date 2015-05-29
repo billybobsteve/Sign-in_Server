@@ -27,7 +27,7 @@ body {
 	/* Need to make everything !imporant because of specificity issues*/
 
 	input[type="text"] {
-		width: 70% !important;
+		width: 150px !important;
 	}
 
 	.form_text {
