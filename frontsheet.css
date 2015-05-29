@@ -31,6 +31,7 @@ body {
 	}
 
 	input[type="text"] {
+		font-size: 18px !important;
 		width: 100px !important;
 		display: inline !important;
 		height: 30px !important;
@@ -44,12 +45,14 @@ body {
 
 	label{
 		/*float:left !important;*/
+		font-size: 18px !important;
 		margin-right: 5px !important;
 	}
 
 	#plus{
 		/*margin-right: 30px !important;
 		padding-bottom: 10px !important;*/
+		font-size: 18px !important;
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
 	}
