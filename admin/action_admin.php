@@ -24,8 +24,8 @@ switch ($option) {
 		}
 		$fields_num = mysqli_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		$table = ""
-		$table .= "<div id = 'tablediv' style='display:inline-flex;'>";
+		//$table = ""
+		$table = "<div id = 'tablediv' style='display:inline-flex;'>";
 		$table .= "<table border='1'>";
 		$table .= "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>User Specified Time Out</th> <th>Recorded Time Out</th> <th>User Specified Time In</th> <th>Recorded Time In</th></tr>";
 		// printing table rows
