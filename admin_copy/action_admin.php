@@ -22,7 +22,7 @@ switch ($option) {
 		echo "Time Out: <input class='text-box' id='time_out' style='width:150px' type='text'>";
 		echo "Server Time Out: <input class='text-box' id='server_time_out' style='width:150px' type='text'>";
 		echo "Time In: <input class='text-box' id='time_in' style='width:150px' type='text'>";
-		echo "Server Time In: <input class='text-box' id='server_time_in' style='width:150px' type='text'> </div>";
+		echo "Server Time In: <input class='text-box' id='server_time_in' style='width:150px' type='text'> <input class='text-box' id='server_time_in' style='width:150px' type='text'> </div>";
 		echo "<table border='1'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		//echo "out_students";
@@ -54,7 +54,7 @@ switch ($option) {
 		}
 		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		echo "<table border='1'>";
+		echo "<table border='0'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval)) {
