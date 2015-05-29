@@ -107,7 +107,7 @@ switch ($option) {
 			
 		}
 		fclose($myfile);
-		echo "Database has been printed in database.txt";
+		echo "Database has been printed in database.txt: <a href='database.txt'>Download database</a>";
 		break;
 		
 }
