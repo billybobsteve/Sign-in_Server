@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//pad a time with 0's
 	var pad = function(x){
 		if(x<10){
 			return "0"+x;
@@ -8,7 +9,7 @@ $(document).ready(function(){
 	var now = new Date();
 	var hours = now.getHours();
 	var mins = now.getMinutes();
-	var sec_since_midnight = hours*3600+mins*60;
+	var sec_since_midnight = hours*3600+mins*60; 
 	var counter = 0;
 
 	var repeat = function(){
@@ -19,10 +20,11 @@ $(document).ready(function(){
 		$("#time").val(format(sec_since_midnight));
 	}
 
+	//update time every 60s so that people don't sign in with the same time they sign out
 	setInterval(repeat, 60000);
 
+	//format # of seconds into a time
 	var format = function (v) {
-		console.log(v);
 		v = Number(v);
 		var h = Math.floor(v / 3600);
 		v = v - h*3600;
@@ -32,12 +34,12 @@ $(document).ready(function(){
 			h %= 12;
 		}
 		h = pad(h);
-		console.log(h + ":" + "m");
 		return h + ":" + m + " " + ampm;
 	};
 
 	$("#time").val(format(sec_since_midnight));
 
+	//time arrow functionality
 	$("#upHRbutton").click(function(){
 		sec_since_midnight+=3600;
 		if(sec_since_midnight > 86400){
@@ -69,6 +71,8 @@ $(document).ready(function(){
 		}
 		$("#time").val(format(sec_since_midnight));
 	});
+
+	//autocomplete data
 	var data = $("#class_data").html().split('\n');
 	data = $.grep(data, function(val){
 		return val.indexOf("12") > -1;
@@ -81,6 +85,7 @@ $(document).ready(function(){
 		local: data
 	});
 
+	//special array contains method. it's special don't screw with it
 	var arr_contains = function(arr, val){
 		if($("#in-tab").hasClass("activeLink")){
 			return true;
@@ -95,6 +100,7 @@ $(document).ready(function(){
 		return false;
 	}
 
+	//stuff to run when plus button is clicked
 	$("#plus").click(function(){
 		var index = ++counter;
 		if($("#name").val() !== "" ){
@@ -152,7 +158,6 @@ $(document).ready(function(){
 		$("#sign-in-instructions").removeClass("hide");
 		$("#time-label").html("Time In: ");
 		$("#title").html("Sign In To Campus");
-		console.log("in clicked");
 	});
 
 	$("#out-tab").click(function(){
@@ -163,7 +168,6 @@ $(document).ready(function(){
 		$("#sign-out-instructions").removeClass("hide");
 		$("#time-label").html("Time Out: ");
 		$("#title").html("Sign Out Of Campus");
-		console.log("out clicked");
 	});
 		
 });
@@ -173,9 +177,7 @@ var insert_overlay = function(message) {
 	confirmation = document.getElementById("confirmation");
 	zIndex = window.getComputedStyle(overlay).getPropertyValue('z-index');
 	//zIndex = style.getPropertyValue('z-index');
-	console.log(zIndex);
 	if (zIndex == "-10") {
-		console.log("showing");
 		overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
 		confirmation.style.backgroundColor = "rgba(0,0,0,.5)";
 		overlay.style.zIndex = 10;
@@ -186,7 +188,6 @@ var insert_overlay = function(message) {
 		//setTimeout(insert_overlay, 5000);
 	}
 	else { //if (zIndex > 0) {
-		console.log("hiding");
 		overlay.onclick = null;
 		confirmation.onclick = null;
 		overlay.style.backgroundColor = "rgba(0,0,0,0)";
