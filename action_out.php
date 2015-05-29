@@ -1,10 +1,10 @@
 <?php 
 $name = htmlspecialchars($_POST['name']);
-//$name = mysqli_real_escape_string($name);
+$name = mysqli_real_escape_string($name);
 $dest = htmlspecialchars($_POST['destination']);
-//$dest = mysqli_real_escape_string($dest);
+$dest = mysqli_real_escape_string($dest);
 $time = htmlspecialchars($_POST['datetime']);
-//$time = mysqli_real_escape_string($time);
+$time = mysqli_real_escape_string($time);
 $current_date = new DateTime();
 $time = $current_date->format('Y-m-d ') . $time;
 
