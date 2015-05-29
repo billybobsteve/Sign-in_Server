@@ -14,7 +14,6 @@
 				<option value = "table_students">All Students in Table </option>
 				<option value = "out_students">Edit Out Students</option>
 				<option value = "all_students">Edit All Students</option>
-				<option value = "print_students">Print Database to File</option>
 				<option value = "clear_db">Clear Database</option>
 			</select>
 			<div id = "other_info" class="hide">
