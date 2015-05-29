@@ -55,12 +55,11 @@ input[type = "button"]:hover {
 }
 
 #tablediv {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 280px;
 }
 
 td, th {
-  width: 4rem;
+  width: 6rem;
   height: 2rem;
   border: 1px solid #ccc;
   text-align: center;
