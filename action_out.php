@@ -60,6 +60,12 @@ if(! $legal_check ) {
 
 echo count(mysqli_fetch_array($legal_check));
 
+$v = mysqli_fetch_array($legal_check);
+
+for ($var = 0; $var < $v; $var++) {
+	echo $v[$var];
+}
+
 
 if (mysqli_fetch_array($legal_check)[1] == '0') {
 	echo '-2';
