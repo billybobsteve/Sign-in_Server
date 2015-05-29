@@ -26,6 +26,10 @@ body {
 @media (max-width: 600px){	
 	/* Need to make everything !imporant because of specificity issues*/
 
+	* {
+		font-size: 12px !important;
+	}
+
 	input[type="text"] {
 		width: 100px !important;
 		display: inline !important;
@@ -208,6 +212,7 @@ input{
 #arrows_sections{
 	display: inline-block;
 	margin-left: -20px;
+	margin-top: 10px;
 }
 
 #second_arrows{
