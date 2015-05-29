@@ -15,14 +15,6 @@ mysql_select_db('signoutdb');
 
 switch ($option) {
 	case "out_students" :
-		//echo "out_students";
-		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
-		//echo "all_students";
-		$retval = mysql_query($sql, $conn);
-		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysql_error());
-		}
-		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
 		echo "<div style='display:inline-flex;'><label>Id: </label> <input class='text-box' style='width:50px' id='id' type='text'>";
 		echo "Name: <input class='text-box' id='name' style='width:150px' type='text'>";
@@ -33,6 +25,14 @@ switch ($option) {
 		echo "Server Time In: <input class='text-box' id='server_time_in' style='width:150px' type='text'> </div>";
 		echo "<table border='0'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
+		//echo "out_students";
+		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
+		//echo "all_students";
+		$retval = mysql_query($sql, $conn);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysql_error());
+		}
+		$fields_num = mysql_num_fields($retval);
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval))
 		{
