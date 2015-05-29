@@ -14,6 +14,9 @@ if (!$conn) {
 }
 
 mysqli_select_db($conn, 'signoutdb');
+$myfile = fopen("database.txt", "a") or die('Cannot open file: database.txt');
+$text = "Student   Location   Time Out   Time In \n";
+fwrite($myfile, $text);
 
 switch ($option) {
 	case "table_students" :
@@ -93,14 +96,15 @@ switch ($option) {
 		}
 		$myfile = fopen("database.txt", "w") or die('Cannot open file: database.txt');
 		while($row = mysqli_fetch_assoc($retval)) {
-			$text = "Student name: {$row['Name']} \n";
+			$text = "Student name: {$row['Name']}   ";
 			fwrite($myfile, $text);
-			$text = "Location: {$row['Location']} \n";
+			$text = "Location: {$row['Location']}   ";
 			fwrite($myfile, $text);
-			$text = "Time out: {$row['TimeOut']} \n";
+			$text = "Time out: {$row['TimeOut']}   ";
 			fwrite($myfile, $text);
-			$text = "Time in: {$row['TimeIn']} \n \n";
+			$text = "Time in: {$row['TimeIn']} \n";
 			fwrite($myfile, $text);
+			
 		}
 		fclose($myfile);
 		echo "Database has been printed in database.txt";
