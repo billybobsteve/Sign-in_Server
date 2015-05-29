@@ -1,10 +1,7 @@
 <?php 
-$name = mysql_real_escape_string($_POST['name']);
-//$name = mysql_real_escape_string($name);
-$dest = mysql_real_escape_string($_POST['destination']);
-//$dest = mysql_real_escape_string($dest);
-$time = mysql_real_escape_string($_POST['datetime']);
-//=$time = mysql_real_escape_string($time);
+$name = htmlspecialchars($_POST['name']);
+$dest = htmlspecialchars($_POST['destination']);
+$time = htmlspecialchars($_POST['datetime']);
 $current_date = new DateTime();
 $time = $current_date->format('Y-m-d ') . $time;
 
@@ -39,6 +36,12 @@ $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+
+$name = mysql_real_escape_string($name);
+
+$dest = mysql_real_escape_string($dest);
+
+$time = mysql_real_escape_string($time);
 
 if (!$conn) {
 	die('Could not connect: ' . mysql_error());
