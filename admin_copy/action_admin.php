@@ -81,9 +81,7 @@ switch ($option) {
        	 	"<li>Location: <span>{$row['Location']} </span> </li>".
          	"<li>Time out: <span>{$row['TimeOut']}</span>  </li>".
      		"<li>Time in: <span>{$row['TimeIn']} </span> </li> </ul> </div>";
-		} 
-		break;
-
+		}
 		break;
 	case "clear_db" :
 		$sql = "TRUNCATE TABLE Students;";
