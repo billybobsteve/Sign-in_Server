@@ -235,7 +235,14 @@ input{
 .arrow{
 	font-size:80%;
 	cursor: pointer;
+}
+
+.arrow.top{
 	margin-top: 5px;
+}
+
+.arrow.bottom{
+
 }
 
 .tab-box { 
