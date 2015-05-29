@@ -1,7 +1,7 @@
 body {
 	margin-left:auto;
     margin-right:auto;
-    max-width: 500px;
+    max-width: 1000px;
     background: #F7F7F7;
     padding: 25px 15px 25px 10px;
     font: 14px Georgia, "Times New Roman", Times, serif;
@@ -45,13 +45,13 @@ input[type = "button"]:hover {
 	border: 1px solid #DADADA;
 	margin-top: 15px;
 	appearance: none;
-	width: 70%;
+	width: 30%;
 	height: 40px;
 	line-height: 20px;
 	outline: 0 none;
 	box-shadow: inset 0px 1px 2px #ECECEC;
 	font-size: 16px;
-	margin-left: 75;
+	margin-left: 350px;
 }
 
 #tablediv {
