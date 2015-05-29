@@ -75,10 +75,6 @@ body {
 	.hide {
 		display: none !important;
 	}
-
-	#colon{
-		color: #F7F7F7 !important; /*blend in w/ bg*/
-	}
 }
 
 
@@ -251,10 +247,6 @@ input{
 
 .arrow.bottom{
 	margin-top: 5px;
-}
-
-#colon{ /*this helps gives the arrows an hh:mm distinction */
-	font-size:36px;
 }
 
 .tab-box { 

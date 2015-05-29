@@ -32,6 +32,7 @@
 								<ul> <li> You can shorten it to abbreviations to find it faster. </li> </ul>
 							<li> Enter where you will be going. </li>
 							<li> Enter the current time, or time you are leaving. </li>
+								<ul> <li> You can use the arrows to adjust the time too. </li> </ul>
 							<li> Press the submit button. </li>
 						</ol>
 					</div>
@@ -42,6 +43,7 @@
 							<li> Enter your full name, as it appears on the school roster. </li>
 								<ul> <li> You can shorten it to abbreviations to find it faster. </li> </ul>
 							<li> Enter the current time. </li>
+								<ul> <li> You can use the arrows to adjust the time too. </li> </ul>
 							<li> Press the submit button. </li>
 						</ol>
 					</div>
@@ -72,7 +74,7 @@
 								<div id="upHRbutton" class="arrow top">&#x25b2;</div>
 								<div id="downHRbutton" class="arrow bottom">&#x25bc;</div>
 							</div>
-							<span id="colon"> : </span>
+
 							<div id="third_arrows">
 								<div id="upMINbutton" class="arrow top">&#x25b2;</div>
 								<div id="downMINbutton" class="arrow bottom">&#x25bc;</div>
