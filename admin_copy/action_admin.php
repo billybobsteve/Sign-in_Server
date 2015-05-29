@@ -33,7 +33,7 @@ switch ($option) {
   			die('Could not retrieve data: ' . mysql_error());
 		}
 		$fields_num = mysql_num_fields($retval);
-		echo $field_num;
+		echo $fields_num;
 		// printing table rows
 		while($row = mysql_fetch_assoc($retval)) {
 		    echo "<tr>";
