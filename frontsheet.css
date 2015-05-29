@@ -33,7 +33,7 @@ body {
 
 	.form_text {
 		display: block !important;
-		width: 200px !important;
+		width: 225px !important;
 	}
 
 	label{
@@ -51,7 +51,7 @@ body {
 	}
 
 	#arrows_sections {
-		display: inline-block !important;
+		display: inline !important;
 		/*margin-bottom: 40px !important;
 		margin-top: 20px !important;
 		margin-right: 20px !important;*/
