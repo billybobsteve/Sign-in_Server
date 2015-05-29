@@ -54,6 +54,15 @@ input[type = "button"]:hover {
 	margin-left: 350px;
 }
 
+#tablediv {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#table {
+	
+}
+
 
 h3 {
 	text-shadow: 1px 1px 1px #FFF;
