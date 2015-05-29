@@ -37,11 +37,11 @@ $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
-$name = mysqli_real_escape_string($name);
+$name = mysqli_real_escape_string($name, $conn);
 
-$dest = mysqli_real_escape_string($dest);
+$dest = mysqli_real_escape_string($dest, $conn);
 
-$time = mysqli_real_escape_string($time);
+$time = mysqli_real_escape_string($time, $conn);
 
 if (!$conn) {
 	die('Could not connect: ' . mysqli_error());
@@ -68,19 +68,19 @@ for ($i = 0; $i < count($name_array); $i++) {
 	}
 
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}' AND TimeIn IS NULL;";
-	$name_check = mysqli_query($sql_name_check, $conn);
+	$name_check = mysqli_query($conn, $sql_name_check);
 	if (mysqli_num_rows($name_check) > 0) {
 		echo '-1' . ',';
 		continue;
 	}
 
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out_str}', '{$server_time_out}');";
-	$retval = mysqli_query($sql, $conn);
+	$retval = mysqli_query($conn, $sql);
 	//echo $sql;
 
 	if(! $retval ) {
-		echo mysqli_error();
-	  	die('Could not enter data: ' . mysqli_error());
+		echo mysqli_error($conn);
+	  	die('Could not enter data: ' . mysqli_error($conn));
 	}
 	//echo $current_name . ','; //"\r\n"; 
 	echo '1' . ',';
