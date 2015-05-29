@@ -41,8 +41,8 @@ body {
 	}
 
 	#plus{
-		margin-right: 30px !important;
-		padding-bottom: 10px !important;
+		/*margin-right: 30px !important;
+		padding-bottom: 10px !important;*/
 		display: inline !important;
 
 		border-bottom-right-radius: 5px;
