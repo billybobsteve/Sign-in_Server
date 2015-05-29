@@ -32,7 +32,7 @@ switch ($option) {
 	case "all_students" :
 		//echo "all_students";
 		$sql = 'SELECT * FROM Students';
-		$retval = mysqli_query($sql, $conn);
+		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
