@@ -51,9 +51,9 @@ body {
 
 	#arrows_sections {
 		display: inline-block !important;
-		margin-bottom: 40px !important;
+		/*margin-bottom: 40px !important;
 		margin-top: 20px !important;
-		margin-right: 20px !important;
+		margin-right: 20px !important;*/
 	}
 
 }
