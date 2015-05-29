@@ -17,7 +17,6 @@
 				<option value = "clear_db">Clear Database</option>
 			</select>
 			<div id = "other_info" class="hide">
-				<input type = "text" placeholder = "Search for Student" id = "search" autocomplete = "off">
 				<!--<input type = "text" placeholder = "Enter Student Location">
 				<input type = "text" placeholder = "Enter Student Time in">
 				<input type = "text" placeholder = "Enter Student Time Out">-->
