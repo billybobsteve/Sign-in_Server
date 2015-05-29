@@ -29,11 +29,12 @@ body {
 	input[type="text"] {
 		width: 100px !important;
 		display: inline !important;
+		height: 30px !important;
 	}
 
 	.form_text {
 		display: block !important;
-		width: 225px !important;
+		width: 250px !important;
 	}
 
 	label{
