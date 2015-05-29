@@ -37,17 +37,17 @@ $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
-$name = mysqli_real_escape_string($name, $conn);
+$name = mysqli_real_escape_string($conn, $name);
 
-$dest = mysqli_real_escape_string($dest, $conn);
+$dest = mysqli_real_escape_string($conn, $dest);
 
-$time = mysqli_real_escape_string($time, $conn);
+$time = mysqli_real_escape_string($conn, $time);
 
 if (!$conn) {
-	die('Could not connect: ' . mysqli_error());
+	die('Could not connect: ' . mysqli_error($conn));
 }
 
-mysqli_select_db('signoutdb');
+mysqli_select_db($conn, 'signoutdb');
 
 
 for ($i = 0; $i < count($name_array); $i++) {
