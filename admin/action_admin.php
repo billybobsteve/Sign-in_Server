@@ -26,7 +26,7 @@ switch ($option) {
 		//echo "<h1>Students</h1>";
 		echo "<div id = 'tablediv' style='display:inline-flex;'>";
 		echo "<table border='1'>";
-		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
+		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Specified Time Out</th> <th>Recorded Time Out</th> <th>Specified Time In</th> <th>Recorded Time In</th></tr>";
 		// printing table rows
 		while($row = mysqli_fetch_assoc($retval)) {
 		    echo "<tr>";
