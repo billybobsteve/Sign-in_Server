@@ -17,7 +17,26 @@ mysqli_select_db($conn, 'signoutdb');
 
 switch ($option) {
 	case "table_students" :
-
+		$retval = mysql_query($sql, $conn);
+		if(! $retval ) {
+  			die('Could not retrieve data: ' . mysql_error());
+		}
+		$fields_num = mysql_num_fields($retval);
+		//echo "<h1>Students</h1>";
+		echo "<div id = 'tablediv' style='display:inline-flex;'>";
+		echo "<table border='1'>";
+		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
+		// printing table rows
+		while($row = mysql_fetch_assoc($retval)) {
+		    echo "<tr>";
+		    // $row is array... foreach( .. ) puts every element
+		    // of $row to $cell variable
+		    foreach($row as $key => $cell){
+		        echo "<td> $cell </td>";
+		    }
+		    echo "</tr>\n";
+		}
+		echo '</table> </div>';
 		break;
 	case "out_students" :
 		//echo "out_students";

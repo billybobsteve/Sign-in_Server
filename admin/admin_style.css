@@ -54,6 +54,24 @@ input[type = "button"]:hover {
 	margin-left: 75;
 }
 
+#tablediv {
+	margin-left: 150px;
+	margin-top: 10px;
+}
+
+td, th {
+  width: 6rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background: lightblue;
+  border-color: white;
+}
+
+
 
 h3 {
 	text-shadow: 1px 1px 1px #FFF;
