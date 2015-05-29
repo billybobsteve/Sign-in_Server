@@ -28,7 +28,7 @@ body {
 
 	input[type="text"] {
 		width: 100px !important;
-		display: inline-block;
+		display: inline;
 	}
 
 	.form_text {
@@ -43,7 +43,7 @@ body {
 	#plus{
 		margin-right: 30px !important;
 		padding-bottom: 10px !important;
-		display: inline-block !important;
+		display: inline !important;
 
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
@@ -51,8 +51,6 @@ body {
 
 	#arrows_sections {
 		display: inline-block !important;
-
-		float: right;
 		margin-bottom: 40px !important;
 		margin-top: 20px !important;
 		margin-right: 20px !important;
