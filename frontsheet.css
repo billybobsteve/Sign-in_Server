@@ -238,7 +238,7 @@ input{
 }
 
 .arrow.top{
-	margin-bottom: 15px;
+	margin-bottom: -15px;
 }
 
 .arrow.bottom{
