@@ -31,6 +31,7 @@ body {
 	}
 
 	input[type="text"] {
+		font-size: 18px !important;
 		width: 100px !important;
 		display: inline !important;
 		height: 30px !important;
