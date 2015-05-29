@@ -72,10 +72,12 @@ body {
 	}
 
 
-	.hide { display: none !important;}
+	.hide {
+		display: none !important;
+	}
 
 	#colon{
-		font-size: 960px !important;
+		font-size: 12px !important;
 	}
 }
 
