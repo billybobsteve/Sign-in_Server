@@ -24,13 +24,13 @@ switch ($option) {
 		}
 		$fields_num = mysql_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		echo "<ul> <li>Id: <input class='text-box' id='id' type='text'> </li>";
+		echo "<ol> <li>Id: <input class='text-box' id='id' type='text'> </li>";
 		echo "<li>Name: <input class='text-box' id='name' type='text'> </li>";
 		echo "<li>Location: <input class='text-box' id='dest' type='text'></li>";
 		echo "<li>Time Out: <input class='text-box' id='time_out' type='text'></li>";
 		echo "<li>Server Time Out: <input class='text-box' id='server_time_out' type='text'></li>";
 		echo "<li>Time In: <input class='text-box' id='time_in' type='text'></li>";
-		echo "<li>Server Time In: <input class='text-box' id='server_time_in' type='text'> </li></ul>";
+		echo "<li>Server Time In: <input class='text-box' id='server_time_in' type='text'> </ol></ul>";
 		echo "<table border='0'>";
 		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>Time Out</th> <th>Server Time Out</th> <th>Time In</th> <th>Server Time In</th></tr>";
 		// printing table rows
