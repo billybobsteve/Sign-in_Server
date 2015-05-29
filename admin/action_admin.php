@@ -5,23 +5,25 @@ $option = htmlspecialchars($_POST['list']);
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+
+$option = mysqli_real_escape_string($conn, $option);
 
 if (!$conn) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error($conn));
 }
 
-mysql_select_db('signoutdb');
+mysqli_select_db($conn, 'signoutdb');
 
 switch ($option) {
 	case "out_students" :
 		//echo "out_students";
 		$sql = 'SELECT * FROM Students WHERE TimeIn IS NULL;';
-		$retval = mysql_query($sql, $conn);
+		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysql_error());
+  			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
-		while($row = mysql_fetch_assoc($retval)) {
+		while($row = mysqli_fetch_assoc($retval)) {
     		echo "<div class='table-entry'> <ul> <li>Student name: <span>{$row['Name']}</span></li> ".
        	 	"<li> Location: <span>{$row['Location']}</span>  </li>".
          	"<li> Time out: <span>{$row['TimeOut']}</span> </li> </ul> </div> ";
@@ -30,11 +32,11 @@ switch ($option) {
 	case "all_students" :
 		//echo "all_students";
 		$sql = 'SELECT * FROM Students';
-		$retval = mysql_query($sql, $conn);
+		$retval = mysqli_query($sql, $conn);
 		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysql_error());
+  			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
-		while($row = mysql_fetch_assoc($retval)) {
+		while($row = mysqli_fetch_assoc($retval)) {
     		echo "<div class='table-entry'> <ul> <li>Student name: <span>{$row['Name']}</span></li>  ".
        	 	"<li>Location: <span>{$row['Location']} </span> </li>".
          	"<li>Time out: <span>{$row['TimeOut']}</span>  </li>".
@@ -46,20 +48,20 @@ switch ($option) {
 		break;
 	case "clear_db" :
 		$sql = "TRUNCATE TABLE Students;";
-		$retval = mysql_query($sql, $conn);
+		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysql_error());
+  			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
 		echo "Database has been cleared";
 		break;
 	case "print_students":
 		$sql = 'SELECT * FROM Students';
-		$retval = mysql_query($sql, $conn);
+		$retval = mysqli_query($conn, $sql);
 		if(! $retval ) {
-  			die('Could not retrieve data: ' . mysql_error());
+  			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
 		$myfile = fopen("database.txt", "w") or die('Cannot open file: database.txt');
-		while($row = mysql_fetch_assoc($retval)) {
+		while($row = mysqli_fetch_assoc($retval)) {
 			$text = "Student name: {$row['Name']} \n";
 			fwrite($myfile, $text);
 			$text = "Location: {$row['Location']} \n";
@@ -76,6 +78,6 @@ switch ($option) {
 }
 
 
-mysql_close($conn);
+mysqli_close($conn);
 
 ?>

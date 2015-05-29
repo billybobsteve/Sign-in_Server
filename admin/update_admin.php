@@ -9,13 +9,20 @@ $time_in = htmlspecialchars($_POST['time_in']);
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+
+$name = mysqli_real_escape_string($conn, $name);
+$name_new = mysqli_real_escape_string($conn, $name_new);
+$dest = mysqli_real_escape_string($conn, $dest);
+$time_out = mysqli_real_escape_string($conn, $time_out);
+$time_in = mysqli_real_escape_string($conn, $time_in);
+
 
 if (!$conn) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error($conn));
 }
 
-mysql_select_db('signoutdb');
+mysqli_select_db($conn, 'signoutdb');
 
 $sql = "UPDATE Students SET Location='{$dest}', Name='{$name_new}', ";
 
@@ -31,18 +38,14 @@ else if ($time_in) {
 
 $sql .= " WHERE Name='{$name}';";
 
-$retval = mysql_query($sql, $conn);
+$retval = mysqli_query($conn, $sql);
 
 echo $sql; 
 
 if(! $retval ) {
-	die('Could not enter data: ' . mysql_error());
+	die('Could not enter data: ' . mysqli_error($conn));
 }
 
-mysql_close($conn);
-<<<<<<< HEAD
-  
-=======
+mysqli_close($conn);
 
->>>>>>> parent of 95e171d... sd
 ?>
