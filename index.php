@@ -29,7 +29,8 @@
 						<p> To sign out: </p>
 						<ol>
 							<li> Enter your full name, as it appears on the school roster. </li>
-								<ul> <li> You can shorten it to abbreviations to find it faster. </li> 
+								<ul>
+									<li> You can shorten it to abbreviations to find it faster. </li> 
 									<li> You can also sign out multiple people at once! </li>
 								</ul>
 							<li> Enter where you will be going. </li>
@@ -43,8 +44,10 @@
 						<p> To sign in: </p>
 						<ol>
 							<li> Enter your full name, as it appears on the school roster. </li>
-								<ul> <li> You can shorten it to abbreviations to find it faster. </li>
-									<li> You can also sign in multiple people at once! </li> </ul>
+								<ul>
+									<li> You can shorten it to abbreviations to find it faster. </li>
+									<li> You can also sign in multiple people at once! </li>
+								</ul>
 							<li> Enter the current time. </li>
 								<ul> <li> You can use the arrows to adjust the time too. </li> </ul>
 							<li> Press the submit button. </li>
