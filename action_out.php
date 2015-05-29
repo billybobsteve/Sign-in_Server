@@ -60,9 +60,9 @@ if(! $legal_check ) {
 
 echo "test";
 
-echo mysqli_fetch_assoc($legal_check);
+echo mysqli_fetch_array($legal_check);
 
-if (mysqli_fetch_assoc($legal_check)[1] == '1') {
+if (mysqli_fetch_array($legal_check)[1] == '1') {
 	echo '-2';
 	die();
 }
