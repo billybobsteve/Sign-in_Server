@@ -24,20 +24,23 @@ switch ($option) {
 		}
 		$fields_num = mysqli_num_fields($retval);
 		//echo "<h1>Students</h1>";
-		echo "<div id = 'tablediv' style='display:inline-flex;'>";
-		echo "<table border='1'>";
-		echo "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>User Specified Time Out</th> <th>Recorded Time Out</th> <th>User Specified Time In</th> <th>Recorded Time In</th></tr>";
+		$table = ""
+		$table .= "<div id = 'tablediv' style='display:inline-flex;'>";
+		$table .= "<table border='1'>";
+		$table .= "<tr> <th>Id</th> <th>Name</th> <th>Location</th> <th>User Specified Time Out</th> <th>Recorded Time Out</th> <th>User Specified Time In</th> <th>Recorded Time In</th></tr>";
 		// printing table rows
 		while($row = mysqli_fetch_assoc($retval)) {
-		    echo "<tr>";
+		    $table .= "<tr>";
 		    // $row is array... foreach( .. ) puts every element
 		    // of $row to $cell variable
 		    foreach($row as $key => $cell){
-		        echo "<td> $cell </td>";
+		        $table .= "<td> $cell </td>";
 		    }
-		    echo "</tr>\n";
+		    $table .= "</tr>\n";
 		}
-		echo '</table> </div>';
+		$table .= '</table> </div>';
+		$table = str_replace(date("Y-m-d"), "", $table);
+		echo $table;
 		break;
 	case "out_students" :
 		//echo "out_students";
