@@ -70,7 +70,6 @@
 							<div id="upHRbutton" class="arrow">&#x25b2;</div>
 							<div id="downHRbutton" class="arrow">&#x25bc;</div>
 						</div>
-						<span style = "font-size:36px"> : </span>
 						<div id="third_arrows">
 							<div id="upMINbutton" class="arrow">&#x25b2;</div>
 							<div id="downMINbutton" class="arrow">&#x25bc;</div>
