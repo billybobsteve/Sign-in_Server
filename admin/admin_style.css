@@ -71,7 +71,10 @@ th {
   border-color: white;
 }
 
-
+#info {
+	margin-left: 160px;
+	margin-top: 10px;
+}
 
 h3 {
 	text-shadow: 1px 1px 1px #FFF;

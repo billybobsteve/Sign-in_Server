@@ -46,11 +46,13 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
+		echo "<div id = 'info'>";
 		while($row = mysqli_fetch_assoc($retval)) {
     		echo "<div class='table-entry'> <ul> <li>Student name: <span>{$row['Name']}</span></li> ".
        	 	"<li> Location: <span>{$row['Location']}</span>  </li>".
          	"<li> Time out: <span>{$row['TimeOut']}</span> </li> </ul> </div> ";
 		} 
+		echo "</div>";
 		break;
 	case "all_students" :
 		//echo "all_students";
