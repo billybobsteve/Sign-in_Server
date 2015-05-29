@@ -35,19 +35,19 @@ $legal_name_array = array_map("x", $legal_name_array);
 $dbhost = 'localhost';
 $dbuser = 'root';
 $dbpass = 'ec2inmybutt';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
 
-$name = mysql_real_escape_string($name);
+$name = mysqli_real_escape_string($name);
 
-$dest = mysql_real_escape_string($dest);
+$dest = mysqli_real_escape_string($dest);
 
-$time = mysql_real_escape_string($time);
+$time = mysqli_real_escape_string($time);
 
 if (!$conn) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_error());
 }
 
-mysql_select_db('signoutdb');
+mysqli_select_db('signoutdb');
 
 
 for ($i = 0; $i < count($name_array); $i++) {
@@ -68,25 +68,25 @@ for ($i = 0; $i < count($name_array); $i++) {
 	}
 
 	$sql_name_check = "SELECT * FROM Students WHERE Name = '{$current_name}' AND TimeIn IS NULL;";
-	$name_check = mysql_query($sql_name_check, $conn);
-	if (mysql_num_rows($name_check) > 0) {
+	$name_check = mysqli_query($sql_name_check, $conn);
+	if (mysqli_num_rows($name_check) > 0) {
 		echo '-1' . ',';
 		continue;
 	}
 
 	$sql = "INSERT INTO Students (Name, Location, TimeOut, ServerTimeOut) VALUES ('{$current_name}', '{$dest}', '{$time_out_str}', '{$server_time_out}');";
-	$retval = mysql_query($sql, $conn);
+	$retval = mysqli_query($sql, $conn);
 	//echo $sql;
 
 	if(! $retval ) {
-		echo mysql_error();
-	  	die('Could not enter data: ' . mysql_error());
+		echo mysqli_error();
+	  	die('Could not enter data: ' . mysqli_error());
 	}
 	//echo $current_name . ','; //"\r\n"; 
 	echo '1' . ',';
 }
 
-mysql_close($conn);
+mysqli_close($conn);
 
 //echo "{$name} has just been signed out to {$dest}"; 
 
