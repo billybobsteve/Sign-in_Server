@@ -14,10 +14,6 @@ if (!$conn) {
 }
 
 mysqli_select_db($conn, 'signoutdb');
-$myfile = fopen("database.txt", "a") or die('Cannot open file: database.txt');
-$text = "Student   Location   Time Out   Time In \n";
-fwrite($myfile, $text);
-
 switch ($option) {
 	case "table_students" :
 		$sql = 'SELECT * FROM Students;'; #WHERE TimeIn IS NULL;';
@@ -94,7 +90,7 @@ switch ($option) {
 		if(! $retval ) {
   			die('Could not retrieve data: ' . mysqli_error($conn));
 		}
-		$myfile = fopen("database.txt", "w") or die('Cannot open file: database.txt');
+		$myfile = fopen("database.txt", "a") or die('Cannot open file: database.txt');
 		while($row = mysqli_fetch_assoc($retval)) {
 			$text = "Student name: {$row['Name']}   ";
 			fwrite($myfile, $text);
