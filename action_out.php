@@ -58,7 +58,9 @@ if(! $legal_check ) {
 	  	die('Could not enter data: ' . mysqli_error($conn));
 }
 
-if (mysqli_fetch_array($legal_check)[1] == '1') {
+echo mysqli_fetch_assoc($legal_check)[1];
+
+if (mysqli_fetch_assoc($legal_check)[1] == '1') {
 	echo '-2';
 	die();
 }
