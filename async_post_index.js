@@ -95,7 +95,7 @@ function return_data_in(data, textStatus, jqXHR) {
 	message = (signed_in_success != 0) ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
 	message.substring(0, message.length-2) + '</span>' + (signed_in_success > 1 ? ' have' : ' has') + ' successfully been signed back in.' : "";
 	message += (signed_in_failure != 0) ? '<div style="color:#FF0000;font-size:24px;opacity:.9;"> Error: ' +
-	message_error.substring(0, message_error.length-2) + (signed_in_failure > 1 ? ' have' : ' has') + ' not yet been signed out. </div>' : "";
+	message_error.substring(0, message_error.length-2) + (signed_in_failure > 1 ? ' have' : ' has') + ' not yet been signed out or' + (signed_in_failure > 1 ? ' have' : ' has') + ' already signed back in. </div>' : "";
 	insert_overlay(message);
 };
 
@@ -130,7 +130,7 @@ function return_data_out(data, textStatus, jqXHR) { //Processes sign out data fr
 	message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') + ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' :
 	"";
 	message += (signed_out_failure != 0) ? '<div style="color:#FF0000;font-size:24px;opacity:.9;"> Error: ' +
-	message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' have' : ' has') + ' already been signed out or' + (signed_out_failure > 1 ? ' have' : ' has') + ' already signed back in. </div>' : "";
+	message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' have' : ' has') + ' already been signed out. </div>' : "";
 	
 	insert_overlay(message);
 };
