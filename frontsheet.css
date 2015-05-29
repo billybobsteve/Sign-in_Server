@@ -35,7 +35,7 @@ body {
 	.form_text {
 		display: block !important;
 		width: 300px !important;
-		
+
 	}
 
 	label{
@@ -55,6 +55,10 @@ body {
 		/*margin-bottom: 40px !important;
 		margin-top: 20px !important;
 		margin-right: 20px !important;*/
+	}
+
+	#credits {
+		display: none;
 	}
 
 }
