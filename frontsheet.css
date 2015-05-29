@@ -164,6 +164,10 @@ input{
 	text-align: left;
 }
 
+#time4school{
+	float: left;
+}
+
 #plus{
 	font-family: impact;
 	text-decoration: none;

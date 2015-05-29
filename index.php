@@ -61,7 +61,7 @@
 					</div>
 
 					<span id = "time_thing">
-						<div class = "form_text">
+						<div id = "time4school" class = "form_text">
 							<label for = "time" id="time-label">Time Out: </label>
 							<input type="text" class = "in" id="time" autocomplete = "off" autocorrect = "off"/>
 						</div>
