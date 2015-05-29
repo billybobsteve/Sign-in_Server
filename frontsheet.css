@@ -235,7 +235,7 @@ input{
 .arrow{
 	font-size:80%;
 	cursor: pointer;
-	margin-top: 100000px;
+	margin-top: 5px;
 }
 
 .tab-box { 
