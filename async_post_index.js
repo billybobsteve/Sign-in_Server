@@ -102,7 +102,7 @@ function return_data_in(data, textStatus, jqXHR) {
 function return_data_out(data, textStatus, jqXHR) { //Processes sign out data from server 
 	console.log(data);
 	if (data.indexOf('-2') > -1) {
-		insert_overlay("Campus is closed now, you have NOT been signed out.");
+		insert_overlay("Campus is closed now, you have not been signed out.");
 		return;
 	}
 
