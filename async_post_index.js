@@ -3,7 +3,7 @@ function post() {
 	//Temp variable with name and destination
 	var interim = $('#sign_out_form').serializeArray();
 	//Gets names that were added to group
-	var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
+	var list = document.getElementById('nameList').getElementsByClassName("name-item");
 	//form data for POST request
 	var form_data = "name=" + interim[0].value; 
 	var time = document.getElementById('time').value;
@@ -13,14 +13,11 @@ function post() {
 
 	var datetime = "" + hour + ":" + min + ":00"; 
 
-	for (var i = 0; i < list.length; i++) { //synthesizes form_data var
-			//name_list[i] = list[i].innerText;
+	for (var i = 0; i < list.length; i++) { //synthesizes form data variable with names
 			if (form_data !== "name=") {
 				form_data += ",";
-				//global += ",";
 			}
 			form_data += list[i].innerText;
-			//console.log(form_data);
 		}
 
 
@@ -33,41 +30,16 @@ function post() {
 	var selector = document.getElementsByClassName("activeLink")[0].id;
 
 	if (selector == "out-tab") { //Signing out
-		//var option = document.getElementById("options").value; //if (location.pathname.includes("index.php")) {
+
 		if (document.getElementById("destination").value.trim() === "") {
 			alert("Please enter a destination!");
 			return;
 		}
-		//var interim = $('#sign_out_form').serializeArray();
-		//var form_data = "name=" + serialize_string(interim[0].value); // + ",";
-		//global += interim[0].value;
-
-		//console.log(form_data);
-		//console.log("test");
-
-		//var list = document.getElementById('nameList').getElementsByClassName("name-item"); //.getElementsByTagName('li');
-		//name_list = [];
-		/*for (var i = 0; i < list.length; i++) {
-			//name_list[i] = list[i].innerText;
-			if (form_data !== "name=") {
-				form_data += ",";
-				//global += ",";
-			}
-			form_data += serialize_string(list[i].innerText);
-		} */
 
 		form_data += "&destination=" + interim[1].value;
 
-		//form_data += "&datetime=" + datetime;
-
 		form_data = serialize_string(form_data.toLowerCase().trim()); //makes sure string can be passed in URL data
 
-		//console.log(global);
-		console.log(form_data);
-		//console.log("test2");
-
-
-		//var form_data = $('#sign_out_form').serialize();
 		var post_url = 'action_out.php'
 		var ajax_post = $.ajax({ //asynchronous POST request
 			url:post_url,
@@ -127,38 +99,24 @@ function return_data_in(data, textStatus, jqXHR) {
 	insert_overlay(message);
 };
 
-function return_data_out(data, textStatus, jqXHR) {
-	//global = global.split(',');
-	//alert("test");
-	console.log("data:" + data);
-	//return;
-	//console.log(data);
+function return_data_out(data, textStatus, jqXHR) { //Processes sign out data from server 
+
 	var signed_out = data.trim().split(',');
 	signed_out.pop();
 	var message = "";
 	var message_error = "";
-	//console.log(signed_out);
-	//console.log(signed_out.length);
 
 	var signed_out_success = 0;
 	var signed_out_failure = 0;
 
-	for (var i = 0; i < signed_out.length; i++) {
+	for (var i = 0; i < signed_out.length; i++) { //Counts number of errors/successes
 		if (signed_out[i] == '1') 
 			signed_out_success++;
-		else //if (signed_out[i] == '-1')
+		else 
 			signed_out_failure++;
 	}
 
-	/*if (signed_out.length === 1) {
-		if (signed_out[0] == '1')
-			message = '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + global[0] + '</span>' + " has successfully been signed out to " + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>';
-		else
-			message = '<span style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' + global[0] + '</span>' + " has already been signed out.";
-		insert_overlay(message);
-		return;
-	} */
-	for (var i = 0; i < signed_out.length; i++) {
+	for (var i = 0; i < signed_out.length; i++) {   // begins synthesizing message
 		if (signed_out[i] == '1') {
 			message += global[i] + ", ";
 		}
@@ -166,27 +124,19 @@ function return_data_out(data, textStatus, jqXHR) {
 			message_error += global[i] + ", ";
 		}
 	}
-	//console.log(message);
-	console.log(message.substring(0,message.length-2));
-	console.log(message_error.substring(0, message_error.length-2));
-	//IT WORKS, I PROMISE
+
+	//IT WORKS, I PROMISE --> Synthesizes overlay method to display depending on number of people signing in/out and number of errors
 	message = (signed_out_success != 0) ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
 	message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') + ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' :
 	"";
 	message += (signed_out_failure != 0) ? '<div style="color:#FF0000;font-size:24px;opacity:.9;"> Error: ' +
 	message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' have' : ' has') + ' already been signed out or' + (signed_out_failure > 1 ? ' have' : ' has') + ' already signed back in. </div>' : "";
-
-	//message = (message_error.trim() === "") ? '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
-	//message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') + ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span>' : '<span style="color:#00FF00;font-size:24px;opacity:.9;">' +
-	//message.substring(0, message.length-2) + '</span>' + (signed_out_success > 1 ? ' have' : ' has') +  ' successfully been signed out to ' + '<span style="color:#00FF00;font-size:24px;opacity:.9;">' + document.getElementById("destination").value.trim() + '</span> <div style="color:#FF0000;font-size:24px;opacity:.9;"> ERROR: ' +
-	//message_error.substring(0, message_error.length-2) + (signed_out_failure > 1 ? ' were' : ' was') + ' already signed out. </div>';
 	
 	insert_overlay(message);
 };
 
-function serialize_string(string) { //TODO serialize apostrophe
+function serialize_string(string) { //Removes spaces, replaces them with '+'
 	string.trim();
-	//while (string.includes(' ')) { // Goddamn Safari bullshit
 	while (string.indexOf(' ') > -1) {
 		string = string.replace(' ', '+');
 	}	
